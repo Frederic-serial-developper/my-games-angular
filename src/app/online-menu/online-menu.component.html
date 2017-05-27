@@ -1,0 +1,25 @@
+<div class="online-menu">
+    <md-slide-toggle [(ngModel)]="online">
+        Online
+    </md-slide-toggle>
+    <md-slide-toggle *ngIf="online" [(ngModel)]="includeExpansion">
+        Expansions
+    </md-slide-toggle>
+    <md-slide-toggle *ngIf="online" [(ngModel)]="includePreviouslyOwned">
+        Previously Owned
+    </md-slide-toggle>
+    <form class="online-menu-form" *ngIf="online" #bggUserForm="ngForm" (ngSubmit)="reload(bggUserForm.value.bggUser, bggUserForm.value.service)">
+        <!-- bgg user -->
+        <input class="online-menu-form-item" placeholder="BGG user" type="text" id="bggUser" [ngModel]="bggUser" name="bggUser" required>
+        <!-- service selection -->
+        <md-select class="online-menu-form-item" placeholder="Service to use" [(ngModel)]="selectedService" name="service" required>
+            <md-option *ngFor="let service of availableServices" [value]="service.value">
+                {{service.viewValue}}
+            </md-option>
+        </md-select>
+        <!-- form validation button -->
+        <button md-icon-button type="submit" [disabled]="bggUserForm.invalid" data-toggle="tooltip" title="Reload collection">
+            <span class="button-icon glyphicon glyphicon-refresh" aria-hidden="true"></span>
+        </button>
+    </form>
+</div>

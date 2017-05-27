@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.menu-item {
+  color: white;
+  margin-right: 20px;
+}
+.menu-item:hover {
+  color: lightgray;
+}
+
+.online-menu {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.online-menu-form {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.online-menu-form-item {
+  margin-right: 20px;
+}
+
+.library-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.button-icon {
+    font-size: 20px;
+}
+
+.library-thumbnail {
+  margin: 30px;
+}
+
+.game-details {
+  margin: 30px;
+  width: 200px;
+}
+
+.statistics-container {
+  margin-top: 10px;
+  margin-left: 10px;
+}

@@ -1,0 +1,31 @@
+<div *ngIf="game">
+    <div class="media">
+        <div class="media-left">
+            <a>
+                <img class="media-object" src="{{game.image}}" width="64px" height="64px">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{game.name}} ({{game.year}})</h4>
+        </div>
+    </div>
+    <div>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{game.minPlayers}}-{{game.maxPlayers}}
+    </div>
+    <div>
+        <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> {{game.playingTime}} min
+    </div>
+    <div>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{game.rating| number:'1.1-1'}}/10
+    </div>
+    <div>
+        <span class="glyphicon glyphicon-knight" aria-hidden="true"></span> {{game.playsCount}} play(s)
+    </div>
+    <div>
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        <span *ngIf="game.type === 'EXPANSION'">Expansion </span>
+        <span *ngIf="game.type === 'GAME'">Game </span>
+        <span *ngIf="game.status === 'OWNED'"> owned</span>
+        <span *ngIf="game.status === 'PREVIOUSLY_OWNED'">previously owned</span>
+    </div>
+</div>
