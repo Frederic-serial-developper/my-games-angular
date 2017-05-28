@@ -17,13 +17,9 @@ h1 {
   margin-left: 10px;
 }
 
-.online-menu-form {
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.online-menu-form-item {
-  margin-right: 20px;
+.online-menu-toggle {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .library-btn {
