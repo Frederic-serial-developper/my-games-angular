@@ -21,7 +21,7 @@ export class GamesStatisticsComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = false;
-    let parameters = new OnlineMenuParameters();
+    const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
     parameters.bggUser = environment.defaultBggUser;
     parameters.includeExpansion = environment.defaultIncludeExpansion;

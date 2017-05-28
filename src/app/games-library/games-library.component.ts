@@ -35,7 +35,7 @@ export class GamesLibraryComponent implements OnInit {
     this.playsOrderAsc = 1;
     this.defaultPlayerCountFilter = 4;
 
-    let parameters = new OnlineMenuParameters();
+    const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
     parameters.bggUser = environment.defaultBggUser;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
@@ -45,10 +45,9 @@ export class GamesLibraryComponent implements OnInit {
 
     reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
-    if(parameter.service ==='local') {
+    if (parameter.service === 'local') {
       this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
-    }
-    else {
+    } else {
       this.gameLibrayService.getGames( //
         parameter.bggUser, //
         parameter.service, //
