@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  boardGameServiceUrl: 'http://vps415804.ovh.net:8080/my-games-services',
+  boardGameServiceUrl: 'http://vps415804.ovh.net/my-games-services',
   defaultBggUser : 'fredericdib',
   defaultIncludeExpansion : true,
   defaultIncludePreviouslyOwned : false
