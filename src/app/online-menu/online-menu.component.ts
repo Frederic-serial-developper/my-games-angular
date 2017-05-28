@@ -17,17 +17,15 @@ export class OnlineMenuComponent implements OnInit {
   includePreviouslyOwned: boolean;
 
   ngOnInit(): void {
-    this.bggUser = 'fredericdib';
-    this.includeExpansion = true;
-    this.includePreviouslyOwned = false;
+    this.bggUser = environment.defaultBggUser;
+    this.includeExpansion = environment.defaultIncludeExpansion;
+    this.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
   }
 
   reload(): void {
     const parameters = new OnlineMenuParameters();
-    if (environment.production) {
-      parameters.bggUser = this.bggUser;
-      parameters.service = environment.boardGameServiceUrl;
-    }
+    parameters.bggUser = this.bggUser;
+    parameters.service = environment.boardGameServiceUrl;
     parameters.includeExpansion = this.includeExpansion;
     parameters.includePreviouslyOwned = this.includePreviouslyOwned;
     this.reloadAction.emit(parameters);

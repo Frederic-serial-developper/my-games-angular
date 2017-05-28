@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { environment } from '../../environments/environment';
+
 import { Game } from '../model/game';
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
@@ -32,19 +34,27 @@ export class GamesLibraryComponent implements OnInit {
     this.nameOrderAsc = -1;
     this.playsOrderAsc = 1;
     this.defaultPlayerCountFilter = 4;
+
+    let parameters = new OnlineMenuParameters();
+    parameters.service = environment.boardGameServiceUrl;
+    parameters.bggUser = environment.defaultBggUser;
+    parameters.includeExpansion = environment.defaultIncludeExpansion;
+    parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
+    this.reload(parameters);
   }
 
     reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
-    if (parameter && parameter.bggUser && parameter.service) {
+    if(parameter.service ==='local') {
+      this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
+    }
+    else {
       this.gameLibrayService.getGames( //
         parameter.bggUser, //
         parameter.service, //
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //
         .subscribe(receivedGames => this.onReceiveData(receivedGames));
-    } else {
-      this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
     }
   }
 

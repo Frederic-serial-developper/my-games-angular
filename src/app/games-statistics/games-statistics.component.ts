@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { environment } from '../../environments/environment';
+
 import { CollectionStatistics } from '../model/collectionStatistics';
 import { CollectionStatisticsService } from './games-statistics.service';
 
@@ -19,6 +21,12 @@ export class GamesStatisticsComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = false;
+    let parameters = new OnlineMenuParameters();
+    parameters.service = environment.boardGameServiceUrl;
+    parameters.bggUser = environment.defaultBggUser;
+    parameters.includeExpansion = environment.defaultIncludeExpansion;
+    parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
+    this.reload(parameters);
   }
 
   onReceiveData(receivedStats: CollectionStatistics) {
@@ -28,15 +36,15 @@ export class GamesStatisticsComponent implements OnInit {
 
   reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
-    if (parameter && parameter.bggUser && parameter.service) {
+    if (parameter.service === 'local') {
+      this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
+    } else {
       this.statsService.getCollectionStatistics( //
         parameter.bggUser, //
         parameter.service, //
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //
         .subscribe(receivedStats => this.onReceiveData(receivedStats));
-    } else {
-      this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
     }
   }
 }

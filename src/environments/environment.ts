@@ -5,5 +5,8 @@
 
 export const environment = {
   production: false,
-  boardGameServiceUrl: 'local'
+  boardGameServiceUrl: 'local',
+  defaultBggUser : 'fredericdib',
+  defaultIncludeExpansion : true,
+  defaultIncludePreviouslyOwned : false
 };
