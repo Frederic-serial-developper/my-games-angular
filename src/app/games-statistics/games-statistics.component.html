@@ -5,8 +5,8 @@
         <md-spinner></md-spinner>
     </div>
     <div *ngIf="!loading && stats != null">
-        <app-games-statistics-global [stats]="stats"></app-games-statistics-global>
-        <app-games-statistics-ranking [stats]="stats"></app-games-statistics-ranking>
-        <app-games-statistics-year [stats]="stats"></app-games-statistics-year>
+        <app-games-statistics-global class="col-sm-12" [stats]="stats"></app-games-statistics-global>
+        <app-games-statistics-ranking class="col-sm-6" [stats]="stats"></app-games-statistics-ranking>
+        <app-games-statistics-year class="col-sm-6" [stats]="stats"></app-games-statistics-year>
     </div>
 </div>

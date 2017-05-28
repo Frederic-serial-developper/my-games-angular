@@ -25,10 +25,13 @@ export class GamesStatisticsYearComponent implements OnInit {
     const data: any[] = [];
     const currentYear = new Date().getFullYear();
     for (let year = 1990; year <= currentYear; year++) {
-      this.barChartLabels.push(year.toString());
-      data.push(this.stats.gamesByYear[year]);
+      const stat = this.stats.gamesByYear[year];
+      if (stat != null) {
+        this.barChartLabels.push(year.toString());
+        data.push(stat);
+      }
     }
 
-    this.barChartData = [{data: data, label: 'Game count by year'}];
+    this.barChartData = [{ data: data, label: 'Game count by year' }];
   }
 }
