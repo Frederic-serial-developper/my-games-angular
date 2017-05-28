@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Game } from '../model/game';
 
 @Component({
-  selector: 'games-library-thumbnail',
+  selector: 'app-games-library-thumbnail',
   templateUrl: './games-library-thumbnail.component.html'
 })
 export class GamesLibraryThumbnailComponent implements OnInit {

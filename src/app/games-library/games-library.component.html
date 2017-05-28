@@ -1,5 +1,5 @@
 <div>
-    <online-menu (reloadAction)="reload($event)"></online-menu>
+    <app-online-menu (reloadAction)="reload($event)"></app-online-menu>
     <div *ngIf="loading">
         <md-spinner></md-spinner>
     </div>
@@ -26,7 +26,7 @@
 
         <div fxLayoutWrap>
             <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
-                <games-library-thumbnail [game]="game"></games-library-thumbnail>
+                <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
             </div>
         </div>
     </div>

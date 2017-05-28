@@ -6,7 +6,7 @@ import { CollectionStatisticsService } from './games-statistics.service';
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
 @Component({
-  selector: 'games-statistics',
+  selector: 'app-games-statistics',
   templateUrl: './games-statistics.component.html'
 })
 export class GamesStatisticsComponent implements OnInit {
@@ -29,7 +29,12 @@ export class GamesStatisticsComponent implements OnInit {
   reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
     if (parameter && parameter.bggUser && parameter.service) {
-      this.statsService.getCollectionStatistics(parameter.bggUser, parameter.service, parameter.includeExpansion, parameter.includePreviouslyOwned).subscribe(receivedStats => this.onReceiveData(receivedStats));
+      this.statsService.getCollectionStatistics( //
+        parameter.bggUser, //
+        parameter.service, //
+        parameter.includeExpansion, //
+        parameter.includePreviouslyOwned) //
+        .subscribe(receivedStats => this.onReceiveData(receivedStats));
     } else {
       this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
     }

@@ -6,7 +6,7 @@ import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 import { GameLibraryService } from './games-library.service';
 
 @Component({
-  selector: 'games-library',
+  selector: 'app-games-library',
   templateUrl: './games-library.component.html'
 })
 export class GamesLibraryComponent implements OnInit {
@@ -37,7 +37,12 @@ export class GamesLibraryComponent implements OnInit {
     reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
     if (parameter && parameter.bggUser && parameter.service) {
-      this.gameLibrayService.getGames(parameter.bggUser, parameter.service, parameter.includeExpansion, parameter.includePreviouslyOwned).subscribe(receivedGames => this.onReceiveData(receivedGames));
+      this.gameLibrayService.getGames( //
+        parameter.bggUser, //
+        parameter.service, //
+        parameter.includeExpansion, //
+        parameter.includePreviouslyOwned) //
+        .subscribe(receivedGames => this.onReceiveData(receivedGames));
     } else {
       this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
     }

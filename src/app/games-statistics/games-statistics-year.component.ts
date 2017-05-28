@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CollectionStatistics } from '../model/collectionStatistics';
 
 @Component({
-  selector: 'games-statistics-year',
+  selector: 'app-games-statistics-year',
   templateUrl: './games-statistics-year.component.html'
 })
 export class GamesStatisticsYearComponent implements OnInit {
@@ -11,20 +11,20 @@ export class GamesStatisticsYearComponent implements OnInit {
 
 
   // ng2-charts
-  barChartOptions:any = {
+  barChartOptions: any = {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  barChartLabels:string[] = [];
-  barChartType:string = 'bar';
-  barChartLegend:boolean = true;
+  barChartLabels: string[] = [];
+  barChartType = 'bar';
+  barChartLegend = true;
 
-  barChartData:any[];
+  barChartData: any[];
 
   ngOnInit(): void {
-    let data:any[] = [];
-    let currentYear = new Date().getFullYear();
-    for (let year=1990; year <= currentYear; year++) {
+    const data: any[] = [];
+    const currentYear = new Date().getFullYear();
+    for (let year = 1990; year <= currentYear; year++) {
       this.barChartLabels.push(year.toString());
       data.push(this.stats.gamesByYear[year]);
     }

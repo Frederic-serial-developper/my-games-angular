@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CollectionStatistics } from '../model/collectionStatistics';
 
 @Component({
-  selector: 'games-statistics-ranking',
+  selector: 'app-games-statistics-ranking',
   templateUrl: './games-statistics-ranking.component.html'
 })
 export class GamesStatisticsRankingComponent implements OnInit {
@@ -11,20 +11,20 @@ export class GamesStatisticsRankingComponent implements OnInit {
 
 
   // ng2-charts
-  barChartOptions:any = {
+  barChartOptions: any = {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  barChartLabels:string[] = ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10'];
-  barChartType:string = 'bar';
-  barChartLegend:boolean = true;
+  barChartLabels: string[] = ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10'];
+  barChartType = 'bar';
+  barChartLegend = true;
 
-  barChartData:any[];
+  barChartData: any[];
 
   ngOnInit(): void {
     this.barChartData = [{data: [
-      this.stats.gamesByRatingLevel.LEVEL_0, 
-      this.stats.gamesByRatingLevel.LEVEL_1, 
+      this.stats.gamesByRatingLevel.LEVEL_0,
+      this.stats.gamesByRatingLevel.LEVEL_1,
       this.stats.gamesByRatingLevel.LEVEL_2,
       this.stats.gamesByRatingLevel.LEVEL_3,
       this.stats.gamesByRatingLevel.LEVEL_4,

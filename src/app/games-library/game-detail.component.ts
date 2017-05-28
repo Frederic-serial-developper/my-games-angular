@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Game } from '../model/game';
 
 @Component({
-  selector: 'game-detail',
+  selector: 'app-game-detail',
   templateUrl: './game-detail.component.html'
 })
 

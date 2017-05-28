@@ -20,7 +20,7 @@ import {
 import 'hammerjs';
 
 // flex layout
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // app
 import { AppComponent } from './app.component';

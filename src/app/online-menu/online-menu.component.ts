@@ -6,7 +6,7 @@ import { Game } from '../model/game';
 import { OnlineMenuParameters } from './onlineMenuParameters';
 
 @Component({
-  selector: 'online-menu',
+  selector: 'app-online-menu',
   templateUrl: './online-menu.component.html'
 })
 export class OnlineMenuComponent implements OnInit {
@@ -17,13 +17,13 @@ export class OnlineMenuComponent implements OnInit {
   includePreviouslyOwned: boolean;
 
   ngOnInit(): void {
-    this.bggUser = "fredericdib";
+    this.bggUser = 'fredericdib';
     this.includeExpansion = true;
     this.includePreviouslyOwned = false;
   }
 
   reload(): void {
-    let parameters = new OnlineMenuParameters();
+    const parameters = new OnlineMenuParameters();
     if (environment.production) {
       parameters.bggUser = this.bggUser;
       parameters.service = environment.boardGameServiceUrl;
