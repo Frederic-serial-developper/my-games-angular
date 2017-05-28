@@ -10,16 +10,15 @@ import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
   templateUrl: './games-statistics.component.html'
 })
 export class GamesStatisticsComponent implements OnInit {
-  private stats: CollectionStatistics;
+  stats: CollectionStatistics;
 
-  private loading: boolean;
+  loading: boolean;
 
   constructor(private statsService: CollectionStatisticsService) {
   }
 
   ngOnInit(): void {
     this.loading = false;
-    this.reload(null);
   }
 
   onReceiveData(receivedStats: CollectionStatistics) {

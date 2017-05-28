@@ -13,7 +13,7 @@ export class GamesLibraryComponent implements OnInit {
   private games: Game[];
   private displayedGames: Game[];
 
-  private loading: boolean;
+  loading: boolean;
 
   private ratingOrderAsc: number;
   private nameOrderAsc: number;
@@ -32,13 +32,10 @@ export class GamesLibraryComponent implements OnInit {
     this.nameOrderAsc = -1;
     this.playsOrderAsc = 1;
     this.defaultPlayerCountFilter = 4;
-
-    this.reload(null);
   }
 
     reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
-    
     if (parameter && parameter.bggUser && parameter.service) {
       this.gameLibrayService.getGames(parameter.bggUser, parameter.service, parameter.includeExpansion, parameter.includePreviouslyOwned).subscribe(receivedGames => this.onReceiveData(receivedGames));
     } else {

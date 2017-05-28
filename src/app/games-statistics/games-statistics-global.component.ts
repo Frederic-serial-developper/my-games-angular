@@ -8,6 +8,6 @@ import { CollectionStatistics } from '../model/collectionStatistics';
 })
 export class GamesStatisticsGlobalComponent {
   
-  @Input() private stats: CollectionStatistics;
+  @Input() stats: CollectionStatistics;
 
 }

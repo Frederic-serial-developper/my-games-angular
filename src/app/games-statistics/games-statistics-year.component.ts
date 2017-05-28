@@ -11,15 +11,15 @@ export class GamesStatisticsYearComponent implements OnInit {
 
 
   // ng2-charts
-  private barChartOptions:any = {
+  barChartOptions:any = {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  private barChartLabels:string[] = [];
-  private barChartType:string = 'bar';
-  private barChartLegend:boolean = true;
+  barChartLabels:string[] = [];
+  barChartType:string = 'bar';
+  barChartLegend:boolean = true;
 
-  private barChartData:any[];
+  barChartData:any[];
 
   ngOnInit(): void {
     let data:any[] = [];

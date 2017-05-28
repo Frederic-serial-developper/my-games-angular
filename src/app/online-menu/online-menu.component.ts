@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
+import { environment } from '../../environments/environment';
+
 import { Game } from '../model/game';
 import { OnlineMenuParameters } from './onlineMenuParameters';
 
@@ -10,29 +12,22 @@ import { OnlineMenuParameters } from './onlineMenuParameters';
 export class OnlineMenuComponent implements OnInit {
   @Output() reloadAction = new EventEmitter();
 
-  private online: boolean;
-
-  private bggUser: string;
-  private includeExpansion: boolean;
-  private includePreviouslyOwned: boolean;
-  private selectedService: string;
-  private availableServices = [
-    { value: 'https://my-games-services.herokuapp.com', viewValue: 'Heroku' },
-    { value: 'http://localhost:8080/my-games-services', viewValue: 'Local' }
-  ];
+  bggUser: string;
+  includeExpansion: boolean;
+  includePreviouslyOwned: boolean;
 
   ngOnInit(): void {
-    this.online = false;
     this.bggUser = "fredericdib";
     this.includeExpansion = true;
     this.includePreviouslyOwned = false;
-    this.selectedService = 'https://my-games-services.herokuapp.com';
   }
 
-  reload(bggUser: string, service: any): void {
+  reload(): void {
     let parameters = new OnlineMenuParameters();
-    parameters.bggUser = bggUser;
-    parameters.service = service;
+    if (environment.production) {
+      parameters.bggUser = this.bggUser;
+      parameters.service = environment.boardGameServiceUrl;
+    }
     parameters.includeExpansion = this.includeExpansion;
     parameters.includePreviouslyOwned = this.includePreviouslyOwned;
     this.reloadAction.emit(parameters);

@@ -4,7 +4,7 @@
     <div *ngIf="loading">
         <md-spinner></md-spinner>
     </div>
-    <div *ngIf="!loading && stats">
+    <div *ngIf="!loading && stats != null">
         <games-statistics-global [stats]="stats"></games-statistics-global>
         <games-statistics-ranking [stats]="stats"></games-statistics-ranking>
         <games-statistics-year [stats]="stats"></games-statistics-year>

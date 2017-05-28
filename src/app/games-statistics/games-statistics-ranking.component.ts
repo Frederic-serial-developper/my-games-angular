@@ -11,15 +11,15 @@ export class GamesStatisticsRankingComponent implements OnInit {
 
 
   // ng2-charts
-  private barChartOptions:any = {
+  barChartOptions:any = {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  private barChartLabels:string[] = ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10'];
-  private barChartType:string = 'bar';
-  private barChartLegend:boolean = true;
+  barChartLabels:string[] = ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10'];
+  barChartType:string = 'bar';
+  barChartLegend:boolean = true;
 
-  private barChartData:any[];
+  barChartData:any[];
 
   ngOnInit(): void {
     this.barChartData = [{data: [
