@@ -6,6 +6,7 @@ import { Game } from '../model/game';
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
 import { GameLibraryService } from './games-library.service';
+import {ToasterService} from 'angular2-toaster';
 
 @Component({
   selector: 'app-games-library',
@@ -25,7 +26,7 @@ export class GamesLibraryComponent implements OnInit {
 
   private selectedGame: Game;
 
-  constructor(private gameLibrayService: GameLibraryService) {
+  constructor(private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -43,7 +44,7 @@ export class GamesLibraryComponent implements OnInit {
     this.reload(parameters);
   }
 
-    reload(parameter: OnlineMenuParameters): void {
+  reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
     if (parameter.service === 'local') {
       this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
@@ -53,8 +54,15 @@ export class GamesLibraryComponent implements OnInit {
         parameter.service, //
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //
-        .subscribe(receivedGames => this.onReceiveData(receivedGames));
+        .subscribe(
+        receivedGames => this.onReceiveData(receivedGames),
+        error => this.handleError());
     }
+  }
+
+  handleError(): void {
+    this.loading = false;
+    this.toasterService.pop('error', 'Error occurs', 'Cannot display library, an error occurs');
   }
 
   onReceiveData(receivedGames: Game[]) {

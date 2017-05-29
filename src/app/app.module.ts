@@ -10,6 +10,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // ng2-charts
 import { ChartsModule } from 'ng2-charts';
 
+// toaster
+import {ToasterModule, ToasterService} from 'angular2-toaster';
+
 // material2
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -61,7 +64,8 @@ import { OnlineMenuComponent } from './online-menu/online-menu.component';
     BrowserAnimationsModule,
     MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
     MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-    ChartsModule, FlexLayoutModule, MdToolbarModule],
+    ChartsModule, FlexLayoutModule, MdToolbarModule,
+    ToasterModule],
   declarations: [AppComponent,
     GamesLibraryComponent,
     GamesLibraryThumbnailComponent,
@@ -72,6 +76,6 @@ import { OnlineMenuComponent } from './online-menu/online-menu.component';
     GamesStatisticsYearComponent,
     OnlineMenuComponent],
   bootstrap: [AppComponent],
-  providers: [GameLibraryService, CollectionStatisticsService]
+  providers: [GameLibraryService, CollectionStatisticsService, ToasterService]
 })
 export class AppModule { }

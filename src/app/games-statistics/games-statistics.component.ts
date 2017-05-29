@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
+
+import {ToasterService} from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
 
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
@@ -16,7 +18,7 @@ export class GamesStatisticsComponent implements OnInit {
 
   loading: boolean;
 
-  constructor(private statsService: CollectionStatisticsService) {
+  constructor(private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -44,7 +46,14 @@ export class GamesStatisticsComponent implements OnInit {
         parameter.service, //
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //
-        .subscribe(receivedStats => this.onReceiveData(receivedStats));
+        .subscribe(
+          receivedStats => this.onReceiveData(receivedStats),
+          error => this.handleError());
     }
+  }
+
+  handleError(): void {
+    this.loading = false;
+    this.toasterService.pop('error', 'Error occurs', 'Cannot display library, an error occurs');
   }
 }
