@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 // ng bootstrap
@@ -11,7 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
 
 // toaster
-import {ToasterModule, ToasterService} from 'angular2-toaster';
+import { ToasterModule, ToasterService } from 'angular2-toaster';
 
 // material2
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,26 +41,18 @@ import { CollectionStatisticsService } from './games-statistics/games-statistics
 // menu component
 import { OnlineMenuComponent } from './online-menu/online-menu.component';
 
+const appRoutes: Routes = [
+  { path: 'library', component: GamesLibraryComponent },
+  { path: 'statistics', component: GamesStatisticsComponent },
+  { path: '**', redirectTo: '/library', pathMatch: 'full' }
+];
+
 @NgModule({
   imports: [BrowserModule,
     HttpModule,
     FormsModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot([
-      {
-        path: 'library',
-        component: GamesLibraryComponent
-      },
-      {
-        path: 'statistics',
-        component: GamesStatisticsComponent
-      },
-      {
-        path: '',
-        redirectTo: '/library',
-        pathMatch: 'full'
-      },
-    ]),
+    RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
     MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
