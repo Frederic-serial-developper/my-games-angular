@@ -18,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
   MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-  MdToolbarModule
+  MdToolbarModule, MdDialogModule
 } from '@angular/material';
 import 'hammerjs';
 
@@ -31,6 +31,7 @@ import { AppComponent } from './app.component';
 import { GamesLibraryComponent } from './games-library/games-library.component';
 import { GamesLibraryThumbnailComponent } from './games-library/games-library-thumbnail.component';
 import { GameDetailComponent } from './games-library/game-detail.component';
+import { GameFullDetailComponent } from './games-library/game-full-detail.component';
 import { GameLibraryService } from './games-library/games-library.service';
 // app components & services for statistics
 import { GamesStatisticsComponent } from './games-statistics/games-statistics.component';
@@ -56,8 +57,11 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
     MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-    ChartsModule, FlexLayoutModule, MdToolbarModule,
+    ChartsModule, FlexLayoutModule, MdToolbarModule, MdDialogModule,
     ToasterModule],
+  exports: [
+    GameFullDetailComponent
+  ],
   declarations: [AppComponent,
     GamesLibraryComponent,
     GamesLibraryThumbnailComponent,
@@ -66,8 +70,10 @@ const appRoutes: Routes = [
     GamesStatisticsRankingComponent,
     GamesStatisticsGlobalComponent,
     GamesStatisticsYearComponent,
-    OnlineMenuComponent],
+    OnlineMenuComponent,
+    GameFullDetailComponent],
   bootstrap: [AppComponent],
-  providers: [GameLibraryService, CollectionStatisticsService, ToasterService]
+  providers: [GameLibraryService, CollectionStatisticsService, ToasterService],
+  entryComponents: [GameFullDetailComponent]
 })
 export class AppModule { }

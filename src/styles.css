@@ -45,3 +45,11 @@ h1 {
   margin-top: 10px;
   margin-left: 10px;
 }
+
+.full-details-container-description {
+  max-height: 300px;
+}
+
+.full-details-container-button {
+  margin-top : 20px;
+}

@@ -1,6 +1,6 @@
 <div>
-    <div class="library-thumbnail" *ngIf="!displayDetails">
-        <img [src]="game.image" height="200px" width="200px" (click)="onClickImage()">
+    <div class="library-thumbnail" *ngIf="!displayDetailsFlag">
+        <img [src]="game.image" height="200px" width="200px" (click)="displayDetails()">
         <div class="caption">
             <ngb-rating [(rate)]="game.rating" [readonly]="true"></ngb-rating>
             <span *ngIf="game.playsCount" class="badge badge-default">{{game.playsCount}}</span>
@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="game-details" *ngIf="displayDetails" (click)="onClickImage()">
-        <app-game-detail [game]="game"></app-game-detail>
+    <div class="game-details" *ngIf="displayDetailsFlag">
+        <app-game-detail [game]="game" (hideDetailsEventEmitter)="hideDetails()"></app-game-detail>
     </div>
 </div>

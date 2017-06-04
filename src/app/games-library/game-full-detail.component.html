@@ -8,11 +8,11 @@
         <div class="media-body">
             <h4 class="media-heading">
                 {{game.name}} ({{game.year}})
-                <button md-icon-button (click)="openFullDetails()" data-toggle="tooltip" title="Game details">
-                    <span class="button-icon glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                </button>
             </h4>
         </div>
+    </div>
+    <div class="full-details-container-description">
+        <p [innerHTML]="game.description"></p>
     </div>
     <div>
         <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{game.minPlayers}}-{{game.maxPlayers}}
@@ -27,10 +27,21 @@
         <span class="glyphicon glyphicon-knight" aria-hidden="true"></span> {{game.playsCount}} play(s)
     </div>
     <div>
+        <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> {{game.categories}}
+    </div>
+    <div>
+        <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> {{game.mechanisms}}
+    </div>
+    <div>
         <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
         <span *ngIf="game.type === 'EXPANSION'">Expansion </span>
         <span *ngIf="game.type === 'GAME'">Game </span>
         <span *ngIf="game.status === 'OWNED'"> owned</span>
         <span *ngIf="game.status === 'PREVIOUSLY_OWNED'">previously owned</span>
+    </div>
+    <div class="full-details-container-button">
+        <button type="button" md-button (click)="close()">
+            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> Close
+        </button>
     </div>
 </div>

@@ -9,13 +9,17 @@ import { Game } from '../model/game';
 export class GamesLibraryThumbnailComponent implements OnInit {
   @Input() private game: Game;
 
-  displayDetails: boolean;
+  displayDetailsFlag: boolean;
 
-   ngOnInit(): void {
-    this.displayDetails = false;
+  ngOnInit(): void {
+    this.displayDetailsFlag = false;
   }
 
-  onClickImage(): void {
-    this.displayDetails = !this.displayDetails;
+  displayDetails(): void {
+    this.displayDetailsFlag = true;
+  }
+
+  hideDetails(): void {
+    this.displayDetailsFlag = false;
   }
 }

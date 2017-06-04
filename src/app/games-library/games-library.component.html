@@ -25,6 +25,8 @@
             </div>
         </div>
 
+        <h3>{{displayedGames.length}} games</h3>
+
         <div fxLayoutWrap>
             <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
                 <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
