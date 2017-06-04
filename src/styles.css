@@ -48,6 +48,7 @@ h1 {
 
 .full-details-container-description {
   max-height: 300px;
+  overflow-y: scroll;
 }
 
 .full-details-container-button {
