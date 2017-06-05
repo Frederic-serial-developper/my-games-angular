@@ -38,6 +38,7 @@ import { GamesStatisticsComponent } from './games-statistics/games-statistics.co
 import { GamesStatisticsRankingComponent } from './games-statistics/games-statistics-ranking.component';
 import { GamesStatisticsYearComponent } from './games-statistics/games-statistics-year.component';
 import { GamesStatisticsGlobalComponent } from './games-statistics/games-statistics-global.component';
+import { GamesStatisticsPlaysComponent } from './games-statistics/games-statistics-plays.component';
 import { CollectionStatisticsService } from './games-statistics/games-statistics.service';
 // menu component
 import { OnlineMenuComponent } from './online-menu/online-menu.component';
@@ -70,6 +71,7 @@ const appRoutes: Routes = [
     GamesStatisticsRankingComponent,
     GamesStatisticsGlobalComponent,
     GamesStatisticsYearComponent,
+    GamesStatisticsPlaysComponent,
     OnlineMenuComponent,
     GameFullDetailComponent],
   bootstrap: [AppComponent],
