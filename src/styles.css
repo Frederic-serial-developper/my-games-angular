@@ -54,3 +54,7 @@ h1 {
 .full-details-container-button {
   margin-top : 20px;
 }
+
+.stats-global-date {
+  font-style: italic;
+}

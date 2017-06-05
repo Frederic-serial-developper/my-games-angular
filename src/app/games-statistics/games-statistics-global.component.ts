@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
 
@@ -6,8 +6,13 @@ import { CollectionStatistics } from '../model/collectionStatistics';
   selector: 'app-games-statistics-global',
   templateUrl: './games-statistics-global.component.html'
 })
-export class GamesStatisticsGlobalComponent {
+export class GamesStatisticsGlobalComponent implements OnInit {
 
   @Input() stats: CollectionStatistics;
+  lastUpdate: Date;
+
+  ngOnInit(): void {
+    this.lastUpdate = new Date(this.stats.lasUpdate);
+  }
 
 }
