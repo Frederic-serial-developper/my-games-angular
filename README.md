@@ -28,5 +28,14 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Tomcat configuration
+# install tomcat
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-apache-tomcat-on-a-debian-server
+# configure it
 add in tomcat/conf/context.xml
  <Valve className="org.apache.catalina.valves.rewrite.RewriteValve" />
+
+ ## Apache Configuration
+ # Enable SSL
+ https://devops.profitbricks.com/tutorials/configure-apache-as-a-reverse-proxy-using-mod_proxy-on-ubuntu/
+ # reverse proxy
+ https://journaldunadminlinux.fr/tutoriel-mettre-en-place-un-reverse-proxy-sur-apache-via-mod_proxy/
