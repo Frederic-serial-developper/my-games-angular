@@ -4,6 +4,9 @@ import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+// auth service
+import { AuthService } from './auth-service';
+
 // ng bootstrap
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -46,7 +49,7 @@ import { OnlineMenuComponent } from './online-menu/online-menu.component';
 const appRoutes: Routes = [
   { path: 'library', component: GamesLibraryComponent },
   { path: 'statistics', component: GamesStatisticsComponent },
-  { path: '**', redirectTo: '/library', pathMatch: 'full' }
+  { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -75,7 +78,7 @@ const appRoutes: Routes = [
     OnlineMenuComponent,
     GameFullDetailComponent],
   bootstrap: [AppComponent],
-  providers: [GameLibraryService, CollectionStatisticsService, ToasterService],
+  providers: [GameLibraryService, CollectionStatisticsService, ToasterService, AuthService],
   entryComponents: [GameFullDetailComponent]
 })
 export class AppModule { }

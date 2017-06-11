@@ -4,10 +4,12 @@ import { environment } from '../../environments/environment';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
 
-import {ToasterService} from 'angular2-toaster';
+import { ToasterService } from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
 
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
+
+import { AuthService } from '../auth-service';
 
 @Component({
   selector: 'app-games-statistics',
@@ -18,7 +20,7 @@ export class GamesStatisticsComponent implements OnInit {
 
   loading: boolean;
 
-  constructor(private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService, private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -37,6 +39,10 @@ export class GamesStatisticsComponent implements OnInit {
   }
 
   reload(parameter: OnlineMenuParameters): void {
+    this.auth.getUser().subscribe(
+      user => console.log('user info', user),
+      error => this.handleError());
+
     this.loading = true;
     if (parameter.service === 'local') {
       this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
@@ -47,8 +53,8 @@ export class GamesStatisticsComponent implements OnInit {
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //
         .subscribe(
-          receivedStats => this.onReceiveData(receivedStats),
-          error => this.handleError());
+        receivedStats => this.onReceiveData(receivedStats),
+        error => this.handleError());
     }
   }
 

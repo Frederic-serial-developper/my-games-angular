@@ -6,7 +6,9 @@ import { Game } from '../model/game';
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
 import { GameLibraryService } from './games-library.service';
-import {ToasterService} from 'angular2-toaster';
+import { ToasterService } from 'angular2-toaster';
+
+import { AuthService } from '../auth-service';
 
 @Component({
   selector: 'app-games-library',
@@ -25,8 +27,7 @@ export class GamesLibraryComponent implements OnInit {
   private defaultPlayerCountFilter: number;
 
   private selectedGame: Game;
-
-  constructor(private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {

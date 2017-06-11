@@ -5,6 +5,7 @@ import { environment } from '../../environments/environment';
 import { Game } from '../model/game';
 import { OnlineMenuParameters } from './onlineMenuParameters';
 
+
 @Component({
   selector: 'app-online-menu',
   templateUrl: './online-menu.component.html'

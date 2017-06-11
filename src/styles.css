@@ -58,3 +58,16 @@ h1 {
 .stats-global-date {
   font-style: italic;
 }
+
+.welcome-page-container {
+  margin-top: 0px;
+  background: #3f51b5;
+  color: white;
+  text-align: center;
+  height: 600px;
+}
+
+.welcome-page-data {
+ margin-top: 50px;
+ margin-bottom: 20px;
+}

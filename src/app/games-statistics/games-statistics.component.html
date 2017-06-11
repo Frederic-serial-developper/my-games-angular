@@ -1,15 +1,16 @@
-<toaster-container></toaster-container>
+<div *ngIf="auth.isAuthenticated()">
+    <toaster-container></toaster-container>
+    <app-online-menu (reloadAction)="reload($event)"></app-online-menu>
 
-<app-online-menu (reloadAction)="reload($event)"></app-online-menu>
-
-<div class="statistics-container">
-    <div *ngIf="loading">
-        <md-spinner></md-spinner>
-    </div>
-    <div *ngIf="!loading && stats != null">
-        <app-games-statistics-global class="col-sm-12" [stats]="stats"></app-games-statistics-global>
-        <app-games-statistics-ranking class="col-sm-6" [stats]="stats"></app-games-statistics-ranking>
-        <app-games-statistics-year class="col-sm-6" [stats]="stats"></app-games-statistics-year>
-        <app-games-statistics-plays class="col-sm-6" [stats]="stats"></app-games-statistics-plays>
+    <div class="statistics-container">
+        <div *ngIf="loading">
+            <md-spinner></md-spinner>
+        </div>
+        <div *ngIf="!loading && stats != null">
+            <app-games-statistics-global class="col-sm-12" [stats]="stats"></app-games-statistics-global>
+            <app-games-statistics-ranking class="col-sm-6" [stats]="stats"></app-games-statistics-ranking>
+            <app-games-statistics-year class="col-sm-6" [stats]="stats"></app-games-statistics-year>
+            <app-games-statistics-plays class="col-sm-6" [stats]="stats"></app-games-statistics-plays>
+        </div>
     </div>
 </div>
