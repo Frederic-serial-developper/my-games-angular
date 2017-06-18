@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
+import { UserMetadata } from '../model/userMetadata';
 
 import { ToasterService } from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
@@ -17,19 +18,26 @@ import { AuthService } from '../auth-service';
 })
 export class GamesStatisticsComponent implements OnInit {
   stats: CollectionStatistics;
-
+  bggUser: string;
   loading: boolean;
 
   constructor(public auth: AuthService, private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
-    this.loading = false;
+    this.loading = true;
+    this.auth.getUserMetadata().subscribe(
+      metadata => this.initializeScreen(metadata),
+      error => this.handleError());
+  }
+
+  initializeScreen(metadata: UserMetadata): void {
+    this.bggUser = metadata.bggLogin;
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
-    parameters.bggUser = environment.defaultBggUser;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
+
     this.reload(parameters);
   }
 
@@ -39,16 +47,12 @@ export class GamesStatisticsComponent implements OnInit {
   }
 
   reload(parameter: OnlineMenuParameters): void {
-    this.auth.getUser().subscribe(
-      user => console.log('user info', user),
-      error => this.handleError());
-
     this.loading = true;
     if (parameter.service === 'local') {
       this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
     } else {
       this.statsService.getCollectionStatistics( //
-        parameter.bggUser, //
+        this.bggUser, //
         parameter.service, //
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //

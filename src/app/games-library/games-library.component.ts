@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 import { Game } from '../model/game';
+import { UserMetadata } from '../model/userMetadata';
+
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
 import { GameLibraryService } from './games-library.service';
@@ -20,6 +22,8 @@ export class GamesLibraryComponent implements OnInit {
 
   loading: boolean;
 
+  bggUser: string;
+
   private ratingOrderAsc: number;
   private nameOrderAsc: number;
   private playsOrderAsc: number;
@@ -31,15 +35,21 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loading = false;
+    this.loading = true;
+    this.auth.getUserMetadata().subscribe(
+      metadata => this.initializeScreen(metadata),
+      error => this.handleError());
+  }
+
+  initializeScreen(metadata: UserMetadata): void {
     this.ratingOrderAsc = 1;
     this.nameOrderAsc = -1;
     this.playsOrderAsc = 1;
     this.defaultPlayerCountFilter = 4;
+    this.bggUser = metadata.bggLogin;
 
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
-    parameters.bggUser = environment.defaultBggUser;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
     this.reload(parameters);
@@ -51,7 +61,7 @@ export class GamesLibraryComponent implements OnInit {
       this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
     } else {
       this.gameLibrayService.getGames( //
-        parameter.bggUser, //
+        this.bggUser, //
         parameter.service, //
         parameter.includeExpansion, //
         parameter.includePreviouslyOwned) //

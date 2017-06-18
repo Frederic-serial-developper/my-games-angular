@@ -1,23 +1,28 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import 'rxjs/add/operator/filter';
 import auth0 from 'auth0-js';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
-import { User } from './model/user';
+import { UserMetadata } from './model/userMetadata';
+import { environment } from '../environments/environment';
 
 @Injectable()
-export class AuthService {
+export class AuthService implements OnInit {
 
     auth0 = new auth0.WebAuth({
         clientID: 'UrkVR9RkXyq7H0fB-NKDYOYefXTlB56O',
         domain: 'fdib.eu.auth0.com',
         responseType: 'token id_token',
         audience: 'https://fdib.eu.auth0.com/userinfo',
-        redirectUri: 'http://localhost:4200/',
+        redirectUri: environment.auth0RedirectUrl,
+        leeway: 60,
         scope: 'openid profile email'
     });
+
+    ngOnInit(): void {
+    }
 
     constructor(public router: Router, private http: Http) { }
 
@@ -62,15 +67,15 @@ export class AuthService {
         return new Date().getTime() < expiresAt;
     }
 
-    getUser(): Observable<User> {
+    getUserMetadata(): Observable<UserMetadata> {
         const headers = new Headers();
         const authToken = localStorage.getItem('access_token');
         headers.append('Authorization', `Bearer ${authToken}`);
         const options = new RequestOptions({ headers: headers });
-
-        return this.http.get('https://fdib.eu.auth0.com/userinfo', options) //
+        const url = 'https://fdib.eu.auth0.com/userinfo';
+        return this.http.get(url, options) //
             .map((response: Response) => { //
-                return <User>response.json();
+                return <UserMetadata>response.json()['https://fdib:eu:auth0:com/userinfo/user_metadata'];
             }).catch(this.handleError);
     }
 

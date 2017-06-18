@@ -71,3 +71,16 @@ h1 {
  margin-top: 50px;
  margin-bottom: 20px;
 }
+
+.welcome-page-button {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 250%;
+ margin-top: 50px;
+ margin-bottom: 20px;
+ width: 250px;
+ height: 70px;
+}
+
+.logout-button {
+  float: right;
+}
