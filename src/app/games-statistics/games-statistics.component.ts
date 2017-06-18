@@ -3,11 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
+import { UserMetadata } from '../model/userMetadata';
 
-import {ToasterService} from 'angular2-toaster';
+import { ToasterService } from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
 
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
+
+import { AuthService } from '../auth-service';
 
 @Component({
   selector: 'app-games-statistics',
@@ -15,19 +18,26 @@ import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 })
 export class GamesStatisticsComponent implements OnInit {
   stats: CollectionStatistics;
-
+  bggUser: string;
   loading: boolean;
 
-  constructor(private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService, private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
-    this.loading = false;
+    this.loading = true;
+    this.auth.getUserMetadata().subscribe(
+      metadata => this.initializeScreen(metadata),
+      error => this.handleError());
+  }
+
+  initializeScreen(metadata: UserMetadata): void {
+    this.bggUser = metadata.bggLogin;
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
-    parameters.bggUser = environment.defaultBggUser;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
+
     this.reload(parameters);
   }
 
@@ -38,17 +48,21 @@ export class GamesStatisticsComponent implements OnInit {
 
   reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
-    if (parameter.service === 'local') {
-      this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
-    } else {
-      this.statsService.getCollectionStatistics( //
-        parameter.bggUser, //
-        parameter.service, //
-        parameter.includeExpansion, //
-        parameter.includePreviouslyOwned) //
-        .subscribe(
+    if (this.bggUser) {
+      if (parameter.service === 'local') {
+        this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
+      } else {
+        this.statsService.getCollectionStatistics( //
+          this.bggUser, //
+          parameter.service, //
+          parameter.includeExpansion, //
+          parameter.includePreviouslyOwned) //
+          .subscribe(
           receivedStats => this.onReceiveData(receivedStats),
           error => this.handleError());
+      }
+    } else {
+      this.loading = false;
     }
   }
 

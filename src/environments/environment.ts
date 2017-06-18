@@ -7,7 +7,7 @@ export const environment = {
   production: false,
   // boardGameServiceUrl: 'http://localhost:8080/my-games-services',
   boardGameServiceUrl: 'local',
-  defaultBggUser : 'fredericdib',
   defaultIncludeExpansion : true,
-  defaultIncludePreviouslyOwned : false
+  defaultIncludePreviouslyOwned : false,
+  auth0RedirectUrl: 'http://localhost:4200/'
 };

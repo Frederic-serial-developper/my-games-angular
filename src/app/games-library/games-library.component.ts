@@ -3,10 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 import { Game } from '../model/game';
+import { UserMetadata } from '../model/userMetadata';
+
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
 import { GameLibraryService } from './games-library.service';
-import {ToasterService} from 'angular2-toaster';
+import { ToasterService } from 'angular2-toaster';
+
+import { AuthService } from '../auth-service';
 
 @Component({
   selector: 'app-games-library',
@@ -18,6 +22,8 @@ export class GamesLibraryComponent implements OnInit {
 
   loading: boolean;
 
+  bggUser: string;
+
   private ratingOrderAsc: number;
   private nameOrderAsc: number;
   private playsOrderAsc: number;
@@ -25,38 +31,47 @@ export class GamesLibraryComponent implements OnInit {
   private defaultPlayerCountFilter: number;
 
   private selectedGame: Game;
-
-  constructor(private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
-    this.loading = false;
+    this.loading = true;
+    this.auth.getUserMetadata().subscribe(
+      metadata => this.initializeScreen(metadata),
+      error => this.handleError());
+  }
+
+  initializeScreen(metadata: UserMetadata): void {
     this.ratingOrderAsc = 1;
     this.nameOrderAsc = -1;
     this.playsOrderAsc = 1;
     this.defaultPlayerCountFilter = 4;
+    this.bggUser = metadata.bggLogin;
 
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
-    parameters.bggUser = environment.defaultBggUser;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
     this.reload(parameters);
   }
 
   reload(parameter: OnlineMenuParameters): void {
-    this.loading = true;
-    if (parameter.service === 'local') {
-      this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
+    if (this.bggUser) {
+      this.loading = true;
+      if (parameter.service === 'local') {
+        this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
+      } else {
+        this.gameLibrayService.getGames( //
+          this.bggUser, //
+          parameter.service, //
+          parameter.includeExpansion, //
+          parameter.includePreviouslyOwned) //
+          .subscribe(
+          receivedGames => this.onReceiveData(receivedGames),
+          error => this.handleError());
+      }
     } else {
-      this.gameLibrayService.getGames( //
-        parameter.bggUser, //
-        parameter.service, //
-        parameter.includeExpansion, //
-        parameter.includePreviouslyOwned) //
-        .subscribe(
-        receivedGames => this.onReceiveData(receivedGames),
-        error => this.handleError());
+      this.loading;
     }
   }
 

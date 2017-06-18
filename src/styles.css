@@ -6,7 +6,7 @@ h1 {
 
 .menu-item {
   color: white;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .menu-item:hover {
   color: lightgray;
@@ -47,7 +47,7 @@ h1 {
 }
 
 .full-details-container-description {
-  max-height: 300px;
+  max-height: 200px;
   overflow-y: scroll;
 }
 
@@ -57,4 +57,30 @@ h1 {
 
 .stats-global-date {
   font-style: italic;
+}
+
+.welcome-page-container {
+  margin-top: 0px;
+  background: #3f51b5;
+  color: white;
+  text-align: center;
+  height: 600px;
+}
+
+.welcome-page-data {
+ margin-top: 50px;
+ margin-bottom: 20px;
+}
+
+.welcome-page-button {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 250%;
+ margin-top: 50px;
+ margin-bottom: 20px;
+ width: 250px;
+ height: 70px;
+}
+
+.logout-button {
+  float: right;
 }

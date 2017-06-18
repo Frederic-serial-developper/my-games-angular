@@ -28,11 +28,13 @@
       ],
       "scripts": [
         "../node_modules/systemjs/dist/system.js",
-        "../node_modules/chart.js/dist/Chart.bundle.min.js"
+        "../node_modules/chart.js/dist/Chart.bundle.min.js",
+        "../node_modules/auth0-js/build/auth0.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
+        "local": "environments/environment.local.ts",
         "prod": "environments/environment.prod.ts"
       }
     }

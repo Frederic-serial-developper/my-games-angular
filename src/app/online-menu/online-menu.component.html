@@ -1,13 +1,14 @@
-<div class="online-menu">
+<div *ngIf="loading">
+    <md-spinner></md-spinner>
+</div>
+<div *ngIf="!loading" class="online-menu">
     <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion">
         Expansions
     </md-slide-toggle>
     <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned">
         Previously Owned
     </md-slide-toggle>
-    <!-- bgg user -->
-    <input placeholder="BGG user" type="text" id="bggUser" [(ngModel)]="bggUser">
     <button md-button-icon (click)="reload()">
         <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-    </button>    
+    </button>
 </div>

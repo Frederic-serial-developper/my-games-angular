@@ -3,5 +3,5 @@ export const environment = {
   boardGameServiceUrl: 'http://vps415804.ovh.net:8080/my-games-services',
   defaultIncludeExpansion : true,
   defaultIncludePreviouslyOwned : false,
-  auth0RedirectUrl: 'http://www.my-games.ovh/'
+  auth0RedirectUrl: 'http://localhost:8080/dist/'
 };

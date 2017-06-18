@@ -4,6 +4,7 @@ import { environment } from '../../environments/environment';
 
 import { Game } from '../model/game';
 import { OnlineMenuParameters } from './onlineMenuParameters';
+import { UserMetadata } from '../model/userMetadata';
 
 @Component({
   selector: 'app-online-menu',
@@ -12,19 +13,19 @@ import { OnlineMenuParameters } from './onlineMenuParameters';
 export class OnlineMenuComponent implements OnInit {
   @Output() reloadAction = new EventEmitter();
 
-  bggUser: string;
   includeExpansion: boolean;
   includePreviouslyOwned: boolean;
+  loading: boolean;
 
   ngOnInit(): void {
-    this.bggUser = environment.defaultBggUser;
+    this.loading = true;
     this.includeExpansion = environment.defaultIncludeExpansion;
     this.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
+    this.loading = false;
   }
 
   reload(): void {
     const parameters = new OnlineMenuParameters();
-    parameters.bggUser = this.bggUser;
     parameters.service = environment.boardGameServiceUrl;
     parameters.includeExpansion = this.includeExpansion;
     parameters.includePreviouslyOwned = this.includePreviouslyOwned;
