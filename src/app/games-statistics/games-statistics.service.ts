@@ -16,16 +16,18 @@ export class CollectionStatisticsService {
     }
 
     getCollectionStatistics(bggUser: string, //
-                            service: string, //
-                            includeExpansion: boolean, //
-                            includePreviouslyOwned: boolean): Observable<CollectionStatistics> {
-        return this.http.get(
-            service + '/bgg/collection/' + bggUser //
-            + '/stats?includeExpansions=' + includeExpansion //
-            + '&includePreviouslyOwned=' + includePreviouslyOwned) //
-            .map((response: Response) => { //
-            return <CollectionStatistics>response.json();
-        }).catch(this.handleError);
+        service: string, //
+        includeExpansion: boolean, //
+        includePreviouslyOwned: boolean): Observable<CollectionStatistics> {
+        if (bggUser) {
+            return this.http.get(
+                service + '/bgg/collection/' + bggUser //
+                + '/stats?includeExpansions=' + includeExpansion //
+                + '&includePreviouslyOwned=' + includePreviouslyOwned) //
+                .map((response: Response) => { //
+                    return <CollectionStatistics>response.json();
+                }).catch(this.handleError);
+        }
     }
 
     private handleError(error: Response) {

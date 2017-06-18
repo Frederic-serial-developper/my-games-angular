@@ -6,7 +6,7 @@ h1 {
 
 .menu-item {
   color: white;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .menu-item:hover {
   color: lightgray;
@@ -47,7 +47,7 @@ h1 {
 }
 
 .full-details-container-description {
-  max-height: 300px;
+  max-height: 200px;
   overflow-y: scroll;
 }
 

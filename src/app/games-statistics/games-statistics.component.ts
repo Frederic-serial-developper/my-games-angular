@@ -48,17 +48,21 @@ export class GamesStatisticsComponent implements OnInit {
 
   reload(parameter: OnlineMenuParameters): void {
     this.loading = true;
-    if (parameter.service === 'local') {
-      this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
+    if (this.bggUser) {
+      if (parameter.service === 'local') {
+        this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
+      } else {
+        this.statsService.getCollectionStatistics( //
+          this.bggUser, //
+          parameter.service, //
+          parameter.includeExpansion, //
+          parameter.includePreviouslyOwned) //
+          .subscribe(
+          receivedStats => this.onReceiveData(receivedStats),
+          error => this.handleError());
+      }
     } else {
-      this.statsService.getCollectionStatistics( //
-        this.bggUser, //
-        parameter.service, //
-        parameter.includeExpansion, //
-        parameter.includePreviouslyOwned) //
-        .subscribe(
-        receivedStats => this.onReceiveData(receivedStats),
-        error => this.handleError());
+      this.loading = false;
     }
   }
 

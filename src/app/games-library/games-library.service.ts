@@ -16,13 +16,15 @@ export class GameLibraryService {
     }
 
     getGames(bggUser: string, service: string, includeExpansions: boolean, includePreviouslyOwned: boolean): Observable<Game[]> {
-        return this.http.get(
-            service + '/bgg/collection/' + bggUser //
-            + '?includeExpansions=' + includeExpansions //
-            + '&includePreviouslyOwned=' + includePreviouslyOwned) //
-            .map((response: Response) => { //
-            return <Game[]>response.json();
-        }).catch(this.handleError);
+        if (bggUser) {
+            return this.http.get(
+                service + '/bgg/collection/' + bggUser //
+                + '?includeExpansions=' + includeExpansions //
+                + '&includePreviouslyOwned=' + includePreviouslyOwned) //
+                .map((response: Response) => { //
+                    return <Game[]>response.json();
+                }).catch(this.handleError);
+        }
     }
 
     private handleError(error: Response) {

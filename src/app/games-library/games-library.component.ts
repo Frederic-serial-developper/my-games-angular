@@ -56,18 +56,22 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   reload(parameter: OnlineMenuParameters): void {
-    this.loading = true;
-    if (parameter.service === 'local') {
-      this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
+    if (this.bggUser) {
+      this.loading = true;
+      if (parameter.service === 'local') {
+        this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
+      } else {
+        this.gameLibrayService.getGames( //
+          this.bggUser, //
+          parameter.service, //
+          parameter.includeExpansion, //
+          parameter.includePreviouslyOwned) //
+          .subscribe(
+          receivedGames => this.onReceiveData(receivedGames),
+          error => this.handleError());
+      }
     } else {
-      this.gameLibrayService.getGames( //
-        this.bggUser, //
-        parameter.service, //
-        parameter.includeExpansion, //
-        parameter.includePreviouslyOwned) //
-        .subscribe(
-        receivedGames => this.onReceiveData(receivedGames),
-        error => this.handleError());
+      this.loading;
     }
   }
 

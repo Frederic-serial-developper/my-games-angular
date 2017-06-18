@@ -1,7 +1,7 @@
 <div *ngIf="auth.isAuthenticated()">
     <toaster-container></toaster-container>
-    <div>
-        <app-online-menu (reloadAction)="reload($event)"></app-online-menu>
+    <div *ngIf="bggUser">
+        <app-online-menu *ngIf="!loading" (reloadAction)="reload($event)"></app-online-menu>
         <div *ngIf="loading">
             <md-spinner></md-spinner>
         </div>
@@ -35,4 +35,10 @@
             </div>
         </div>
     </div>
+     <div *ngIf="!loading && !bggUser">
+         <h3>
+             <p>Your boardgamegeek user is not yet configured.</p>
+             <p>Please, send a mail to <A HREF="mailto:admin@my-games.ovh">admin@my-games.ovh</A>, with your BGG login, so that I configure your My-Games account!</p>
+         </h3>
+     </div>
 </div>
