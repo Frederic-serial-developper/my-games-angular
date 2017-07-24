@@ -36,6 +36,12 @@ import { GamesLibraryThumbnailComponent } from './games-library/games-library-th
 import { GameDetailComponent } from './games-library/game-detail.component';
 import { GameFullDetailComponent } from './games-library/game-full-detail.component';
 import { GameLibraryService } from './games-library/games-library.service';
+import { PlayerCountPipe } from './pipes/player-count-pipe';
+import { ExpansionPipe } from './pipes/expansion-pipe';
+import { PreviouslyOwnedPipe } from './pipes/previously-owned-pipe';
+import { SortByNamePipe } from './pipes/sort-by-name-pipe';
+import { SortByRatingPipe } from './pipes/sort-by-rating-pipe';
+import { SortByPlaysCountPipe } from './pipes/sort-by-plays-count-pipe';
 // app components & services for statistics
 import { GamesStatisticsComponent } from './games-statistics/games-statistics.component';
 import { GamesStatisticsRankingComponent } from './games-statistics/games-statistics-ranking.component';
@@ -45,6 +51,7 @@ import { GamesStatisticsPlaysComponent } from './games-statistics/games-statisti
 import { CollectionStatisticsService } from './games-statistics/games-statistics.service';
 // menu component
 import { OnlineMenuComponent } from './online-menu/online-menu.component';
+
 
 const appRoutes: Routes = [
   { path: 'library', component: GamesLibraryComponent },
@@ -76,7 +83,8 @@ const appRoutes: Routes = [
     GamesStatisticsYearComponent,
     GamesStatisticsPlaysComponent,
     OnlineMenuComponent,
-    GameFullDetailComponent],
+    GameFullDetailComponent,
+    PlayerCountPipe, ExpansionPipe, PreviouslyOwnedPipe, SortByNamePipe, SortByRatingPipe, SortByPlaysCountPipe],
   bootstrap: [AppComponent],
   providers: [GameLibraryService, CollectionStatisticsService, ToasterService, AuthService],
   entryComponents: [GameFullDetailComponent]

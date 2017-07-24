@@ -8,6 +8,6 @@ export const environment = {
   // boardGameServiceUrl: 'http://localhost:8080/my-games-services',
   boardGameServiceUrl: 'local',
   defaultIncludeExpansion : true,
-  defaultIncludePreviouslyOwned : false,
+  defaultIncludePreviouslyOwned : true,
   auth0RedirectUrl: 'http://localhost:4200/'
 };
