@@ -5,6 +5,7 @@
             <md-spinner></md-spinner>
         </div>
         <div *ngIf="!loading">
+            <span class="library-btn">{{displayedGamesCount}} games</span>
             <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
                 <button md-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
                     <span *ngIf="nameOrderAsc == 1" class="button-icon glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
@@ -19,8 +20,6 @@
                     <span *ngIf="playsOrderAsc == 1" class="button-icon glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
                 </button>
             </div>
-
-            <h3>I've played to {{displayedGamesCount}} games</h3>
 
             <div fxLayoutWrap>
                 <div *ngFor="let game of displayedGames | SortByRatingPipe:ratingOrderAsc  | SortByPlaysCountPipe:playsOrderAsc | SortByNamePipe:nameOrderAsc" (click)="onSelect(game)">

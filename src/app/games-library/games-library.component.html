@@ -12,6 +12,7 @@
                 <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="computeDisplayedGamesCount()">
                     Previously Owned
                 </md-slide-toggle>
+                <span>{{displayedGamesCount}} games</span>
             </div>
             <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
                 <button md-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
@@ -31,8 +32,6 @@
                     </md-slider>
                 </div>
             </div>
-
-            <h3>{{displayedGamesCount}} games</h3>
 
             <div fxLayoutWrap>
                 <div *ngFor="let game of displayedGames | PlayerCountPipe:playerCountFilter | ExpansionPipe:includeExpansion | PreviouslyOwnedPipe:includePreviouslyOwned
