@@ -27,6 +27,22 @@ export class GameLibraryService {
         }
     }
 
+    getPlaysFromFile(): Observable<Game[]> {
+        return this.http.get('assets/plays.json').map((response: Response) => {
+            return <Game[]>response.json();
+        }).catch(this.handleError);
+    }
+
+    getPlays(bggUser: string, service: string): Observable<Game[]> {
+        if (bggUser) {
+            return this.http.get(
+                service + '/bgg/collection/' + bggUser + '/plays') //
+                .map((response: Response) => { //
+                    return <Game[]>response.json();
+                }).catch(this.handleError);
+        }
+    }
+
     private handleError(error: Response) {
         return Observable.throw(error);
     }

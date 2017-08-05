@@ -35,6 +35,7 @@ import { GamesLibraryComponent } from './games-library/games-library.component';
 import { GamesLibraryThumbnailComponent } from './games-library/games-library-thumbnail.component';
 import { GameDetailComponent } from './games-library/game-detail.component';
 import { GameFullDetailComponent } from './games-library/game-full-detail.component';
+import { GamesPlaysComponent } from './games-library/games-plays.component';
 import { GameLibraryService } from './games-library/games-library.service';
 import { PlayerCountPipe } from './pipes/player-count-pipe';
 import { ExpansionPipe } from './pipes/expansion-pipe';
@@ -56,6 +57,7 @@ import { OnlineMenuComponent } from './online-menu/online-menu.component';
 const appRoutes: Routes = [
   { path: 'library', component: GamesLibraryComponent },
   { path: 'statistics', component: GamesStatisticsComponent },
+  { path: 'plays', component: GamesPlaysComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
@@ -77,6 +79,7 @@ const appRoutes: Routes = [
     GamesLibraryComponent,
     GamesLibraryThumbnailComponent,
     GameDetailComponent,
+    GamesPlaysComponent,
     GamesStatisticsComponent,
     GamesStatisticsRankingComponent,
     GamesStatisticsGlobalComponent,

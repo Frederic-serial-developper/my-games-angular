@@ -1,11 +1,11 @@
 {
-    "lasUpdate": "2017-08-05T14:38:45.851",
+    "lasUpdate": "2017-08-05T16:30:48.266",
     "totalSize": 170,
     "totalPlays": 1206,
     "gamesByRatingLevel": {
+        "LEVEL_7": 71,
         "LEVEL_8": 8,
         "LEVEL_5": 14,
-        "LEVEL_7": 71,
         "LEVEL_6": 77
     },
     "gamesByYear": {
