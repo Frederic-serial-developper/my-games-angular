@@ -111,7 +111,7 @@ export class GamesLibraryComponent implements OnInit {
     this.displayedGamesCount = 0;
     if (this.displayedGames) {
       for (const game of this.displayedGames) {
-        const shouldIncludeExpansion = this.includeExpansion === true || game.type === 'GAME';
+        const shouldIncludeExpansion = this.includeExpansion === true || game.data.type === 'GAME';
         const shouldIncludePreviouslyOwned = this.includePreviouslyOwned === true || game.status === 'OWNED';
         if (shouldIncludeExpansion && shouldIncludePreviouslyOwned) {
           this.displayedGamesCount++;

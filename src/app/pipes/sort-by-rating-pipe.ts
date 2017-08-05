@@ -8,6 +8,6 @@ import { Game } from '../model/game';
 export class SortByRatingPipe implements PipeTransform {
 
   transform(games: [Game], order: number) {
-    return games.sort((g1, g2) => (g1.rating - g2.rating) * order);
+    return games.sort((g1, g2) => (g1.data.rating - g2.data.rating) * order);
   }
 }

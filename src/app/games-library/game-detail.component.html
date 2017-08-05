@@ -2,12 +2,12 @@
     <div class="media">
         <div class="media-left">
             <a>
-                <img class="media-object" src="{{game.image}}" width="64px" height="64px" (click)="hideDetails()">
+                <img class="media-object" src="{{game.data.image}}" width="64px" height="64px" (click)="hideDetails()">
             </a>
         </div>
         <div class="media-body">
             <h4 class="media-heading">
-                {{game.name}} ({{game.year}})
+                {{game.name}} ({{game.data.year}})
                 <button md-icon-button (click)="openFullDetails()" data-toggle="tooltip" title="Game details">
                     <span class="button-icon glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                 </button>
@@ -15,22 +15,22 @@
         </div>
     </div>
     <div>
-        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{game.minPlayers}}-{{game.maxPlayers}}
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{game.data.minPlayers}}-{{game.data.maxPlayers}}
     </div>
     <div>
-        <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> {{game.playingTime}} min
+        <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> {{game.data.playingTime}} min
     </div>
     <div>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{game.rating| number:'1.1-1'}}/10
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{game.data.rating| number:'1.1-1'}}/10
     </div>
     <div>
         <span class="glyphicon glyphicon-knight" aria-hidden="true"></span> {{game.playsCount}} play(s)
     </div>
     <div>
         <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-        <span *ngIf="game.type === 'EXPANSION'">Expansion </span>
-        <span *ngIf="game.type === 'GAME'">Game </span>
-        <span *ngIf="game.status === 'OWNED'"> owned</span>
+        <span *ngIf="game.data.type === 'EXPANSION'">Expansion </span>
+        <span *ngIf="game.data.type === 'GAME'">Game </span>
+        <span *ngIf="gamestatus === 'OWNED'"> owned</span>
         <span *ngIf="game.status === 'PREVIOUSLY_OWNED'">previously owned</span>
     </div>
 </div>

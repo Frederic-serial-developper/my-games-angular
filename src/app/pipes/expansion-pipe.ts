@@ -10,7 +10,7 @@ export class ExpansionPipe implements PipeTransform {
       if (expansion === true) {
         return true;
       }
-      return game.type === 'GAME';
+      return game.data.type === 'GAME';
     });
   }
 }
