@@ -13,10 +13,10 @@ import { ToasterService } from 'angular2-toaster';
 import { AuthService } from '../auth-service';
 
 @Component({
-  selector: 'app-games-library',
-  templateUrl: './games-library.component.html'
+  selector: 'app-games-plays',
+  templateUrl: './games-plays.component.html'
 })
-export class GamesLibraryComponent implements OnInit {
+export class GamesPlaysComponent implements OnInit {
   private displayedGames: Game[];
   private displayedGamesCount: number;
 
@@ -27,9 +27,6 @@ export class GamesLibraryComponent implements OnInit {
   private ratingOrderAsc: number;
   private nameOrderAsc: number;
   private playsOrderAsc: number;
-  private includeExpansion: boolean;
-  private includePreviouslyOwned: boolean;
-  private playerCountFilter: number;
 
   private selectedGame: Game;
   constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
@@ -46,14 +43,11 @@ export class GamesLibraryComponent implements OnInit {
     this.ratingOrderAsc = 1;
     this.nameOrderAsc = -1;
     this.playsOrderAsc = 1;
-    this.playerCountFilter = 4;
     this.displayedGamesCount = 0;
     this.bggUser = metadata.bggLogin;
 
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
-    this.includeExpansion = false;
-    this.includePreviouslyOwned = false;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
     this.reload(parameters);
@@ -63,13 +57,11 @@ export class GamesLibraryComponent implements OnInit {
     if (this.bggUser) {
       this.loading = true;
       if (parameter.service === 'local') {
-        this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
+        this.gameLibrayService.getPlaysFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
       } else {
-        this.gameLibrayService.getGames( //
+        this.gameLibrayService.getPlays( //
           this.bggUser, //
-          parameter.service, //
-          parameter.includeExpansion, //
-          parameter.includePreviouslyOwned) //
+          parameter.service) //
           .subscribe(
           receivedGames => this.onReceiveData(receivedGames),
           error => this.handleError());
@@ -111,17 +103,9 @@ export class GamesLibraryComponent implements OnInit {
     this.displayedGamesCount = 0;
     if (this.displayedGames) {
       for (const game of this.displayedGames) {
-        const shouldIncludeExpansion = this.includeExpansion === true || game.data.type === 'GAME';
-        const shouldIncludePreviouslyOwned = this.includePreviouslyOwned === true || game.status === 'OWNED';
-        if (shouldIncludeExpansion && shouldIncludePreviouslyOwned) {
           this.displayedGamesCount++;
-        }
       }
     }
-  }
-
-  onSliderPlayerCountEvent(event: any): void {
-    this.playerCountFilter = event.value;
   }
 
 }

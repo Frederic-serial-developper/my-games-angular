@@ -7,7 +7,7 @@ export class PlayerCountPipe implements PipeTransform {
 
   transform(value, count: number) {
     return value.filter(game => {
-      return game.minPlayers <= count && count <= game.maxPlayers;
+      return game.data.minPlayers <= count && count <= game.data.maxPlayers;
     });
   }
 }
