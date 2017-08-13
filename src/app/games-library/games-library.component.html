@@ -23,9 +23,13 @@
                     <span *ngIf="ratingOrderAsc == -1" class="button-icon glyphicon glyphicon-sort-by-order" aria-hidden="true"></span>
                     <span *ngIf="ratingOrderAsc == 1" class="button-icon glyphicon glyphicon-sort-by-order-alt" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByPlays()" data-toggle="tooltip" title="Sort by plays">
-                    <span *ngIf="playsOrderAsc == -1" class="button-icon glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span>
-                    <span *ngIf="playsOrderAsc == 1" class="button-icon glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
+                <button md-icon-button (click)="sortByPlaysCount()" data-toggle="tooltip" title="Sort by plays count">
+                    <span *ngIf="playsCountOrderAsc == -1" class="button-icon glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span>
+                    <span *ngIf="playsCountOrderAsc == 1" class="button-icon glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
+                </button>
+                <button md-icon-button (click)="sortByPlaysDate()" data-toggle="tooltip" title="Sort by plays date">
+                    <span *ngIf="playsDateOrderAsc == -1" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <span *ngIf="playsDateOrderAsc == 1" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                 </button>
                 <div mdTooltip="Players count" mdTooltipPosition="right">
                     <md-slider [min]="1" [max]="10" [step]="1" [thumb-label]="true" [tick-interval]="1" [value]="playerCountFilter" (input)="onSliderPlayerCountEvent($event)">
@@ -35,7 +39,7 @@
 
             <div fxLayoutWrap>
                 <div *ngFor="let game of displayedGames | PlayerCountPipe:playerCountFilter | ExpansionPipe:includeExpansion | PreviouslyOwnedPipe:includePreviouslyOwned
-                | SortByRatingPipe:ratingOrderAsc  | SortByPlaysCountPipe:playsOrderAsc | SortByNamePipe:nameOrderAsc" (click)="onSelect(game)">
+                | SortByRatingPipe:ratingOrderAsc  | SortByPlaysCountPipe:playsCountOrderAsc | SortByPlaysDatePipe:playsDateOrderAsc | SortByNamePipe:nameOrderAsc" (click)="onSelect(game)">
                     <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
                 </div>
             </div>

@@ -26,7 +26,8 @@ export class GamesLibraryComponent implements OnInit {
 
   private ratingOrderAsc: number;
   private nameOrderAsc: number;
-  private playsOrderAsc: number;
+  private playsCountOrderAsc: number;
+  private playsDateOrderAsc: number;
   private includeExpansion: boolean;
   private includePreviouslyOwned: boolean;
   private playerCountFilter: number;
@@ -45,7 +46,8 @@ export class GamesLibraryComponent implements OnInit {
   initializeScreen(metadata: UserMetadata): void {
     this.ratingOrderAsc = 1;
     this.nameOrderAsc = -1;
-    this.playsOrderAsc = 1;
+    this.playsCountOrderAsc = 1;
+    this.playsDateOrderAsc = 1;
     this.playerCountFilter = 4;
     this.displayedGamesCount = 0;
     this.bggUser = metadata.bggLogin;
@@ -103,10 +105,13 @@ export class GamesLibraryComponent implements OnInit {
     this.ratingOrderAsc = this.ratingOrderAsc * -1;
   }
 
-  sortByPlays(): void {
-    this.playsOrderAsc = this.playsOrderAsc * -1;
+  sortByPlaysCount(): void {
+    this.playsCountOrderAsc = this.playsCountOrderAsc * -1;
   }
 
+  sortByPlaysDate(): void {
+    this.playsDateOrderAsc = this.playsDateOrderAsc * -1;
+  }
   computeDisplayedGamesCount(): void {
     this.displayedGamesCount = 0;
     if (this.displayedGames) {

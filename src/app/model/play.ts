@@ -1,4 +1,5 @@
 export class Play {
-  id: number;
+  bggId: number;
   date: Date;
+  count : number;
 }

@@ -8,4 +8,15 @@ export class Game {
   playsCount: number;
   plays: Play[];
   data: GameData;
+
+  public getLastPlay(): Date {
+    let lastPlayDate: Date = null;
+    if (this.plays) {
+      this.plays.forEach(play => {
+        if(lastPlayDate === null  || lastPlayDate < play.date)
+        lastPlayDate = play.date;
+      });
+    }
+    return lastPlayDate;
+  }
 }

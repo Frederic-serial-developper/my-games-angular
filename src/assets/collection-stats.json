@@ -1,12 +1,12 @@
 {
-    "lasUpdate": "2017-08-06T15:07:07.938",
+    "lasUpdate": "2017-08-13T14:50:42.792",
     "totalSize": 170,
-    "totalPlays": 1208,
+    "totalPlays": 1216,
     "gamesByRatingLevel": {
-        "LEVEL_8": 8,
-        "LEVEL_5": 14,
         "LEVEL_7": 71,
-        "LEVEL_6": 77
+        "LEVEL_8": 8,
+        "LEVEL_6": 77,
+        "LEVEL_5": 14
     },
     "gamesByYear": {
         "1800": 1,
@@ -42,8 +42,8 @@
     "playsByYear": {
         "2013": 13,
         "2014": 42,
-        "2015": 487,
-        "2016": 659,
-        "2017": 242
+        "2015": 421,
+        "2016": 649,
+        "2017": 257
     }
 }
