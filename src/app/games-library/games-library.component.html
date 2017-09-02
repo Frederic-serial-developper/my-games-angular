@@ -6,12 +6,14 @@
         </div>
         <div *ngIf="!loading">
             <div class="filtering-menu">
+
                 <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="filterGames()">
                     Expansions
                 </md-slide-toggle>
                 <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="filterGames()">
                     Previously Owned
                 </md-slide-toggle>
+                <input mdInput placeholder="Game name" [(ngModel)]="gameName" (ngModelChange)="filterGames()">
                 <span>{{displayedGames.length}} games</span>
             </div>
             <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">

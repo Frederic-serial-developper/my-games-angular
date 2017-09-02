@@ -47,7 +47,7 @@ import { GamesStatisticsPlaysComponent } from './games-statistics/games-statisti
 import { CollectionStatisticsService } from './games-statistics/games-statistics.service';
 // menu component
 import { OnlineMenuComponent } from './online-menu/online-menu.component';
-import { GamesService } from "app/games-library/games.service";
+import { GamesService } from 'app/games-library/games.service';
 
 
 const appRoutes: Routes = [

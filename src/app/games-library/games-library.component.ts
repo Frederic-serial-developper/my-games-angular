@@ -11,7 +11,7 @@ import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { AuthService } from '../auth-service';
-import { GamesService } from "app/games-library/games.service";
+import { GamesService } from 'app/games-library/games.service';
 
 @Component({
   selector: 'app-games-library',
@@ -33,9 +33,13 @@ export class GamesLibraryComponent implements OnInit {
   private includeExpansion: boolean;
   private includePreviouslyOwned: boolean;
   private playerCountFilter: number;
+  private gameName: string;
 
   private selectedGame: Game;
-  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private gameService: GamesService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService,
+    private gameLibrayService: GameLibraryService,
+    private gameService: GamesService,
+    private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -99,7 +103,12 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   filterGames(): void {
-    this.displayedGames = this.gameService.filterGames(this.receivedGames, this.includeExpansion, this.includePreviouslyOwned, this.playerCountFilter);
+    this.displayedGames = this.gameService.filterGamesWithName(
+      this.receivedGames,
+      this.gameName,
+      this.includeExpansion,
+      this.includePreviouslyOwned,
+      this.playerCountFilter);
     this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
   }
 

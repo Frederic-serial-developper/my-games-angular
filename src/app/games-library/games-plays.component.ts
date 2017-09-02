@@ -11,7 +11,7 @@ import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { AuthService } from '../auth-service';
-import { GamesService } from "app/games-library/games.service";
+import { GamesService } from 'app/games-library/games.service';
 
 @Component({
   selector: 'app-games-plays',
@@ -33,7 +33,10 @@ export class GamesPlaysComponent implements OnInit {
 
   private selectedGame: Game;
 
-  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private gameService: GamesService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService,
+    private gameLibrayService: GameLibraryService,
+    private gameService: GamesService,
+    private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {

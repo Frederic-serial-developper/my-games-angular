@@ -5,11 +5,12 @@ import { Game } from '../model/game';
 @Injectable()
 export class GamesService {
 
-    public filterGames(games: Game[], expansion: boolean, previouslyOwned: boolean, playerCount: number): Game[] {
-        let filteredGames = [];
+    public filterGamesWithName(games: Game[], gameName: string, expansion: boolean, previouslyOwned: boolean, playerCount: number): Game[] {
+        const filteredGames = [];
 
         for (const game of games) {
-            if (this.matchExpansionFilter(game, expansion)
+            if (this.matchGameNameFilter(game, gameName)
+                && this.matchExpansionFilter(game, expansion)
                 && this.matchPreviouslyOwnedFilter(game, previouslyOwned)
                 && this.matchPlayerCountFilter(game, playerCount)) {
                 filteredGames.push(game);
@@ -17,6 +18,17 @@ export class GamesService {
         }
 
         return filteredGames;
+    }
+
+    public filterGames(games: Game[], expansion: boolean, previouslyOwned: boolean, playerCount: number): Game[] {
+        return this.filterGamesWithName(games, null, expansion, previouslyOwned, playerCount);
+    }
+
+    private matchGameNameFilter(game: Game, gameName: string): boolean {
+        if (!gameName || gameName === '') {
+            return true;
+        }
+        return game.name.toLowerCase().indexOf(gameName.toLowerCase()) !== -1;
     }
 
     private matchExpansionFilter(game: Game, expansion: boolean): boolean {
