@@ -7,7 +7,7 @@ export class ExpansionPipe implements PipeTransform {
 
   transform(value, expansion: boolean) {
     return value.filter(game => {
-      if (expansion === true) {
+      if (expansion === true || game.data === null) {
         return true;
       }
       return game.data.type === 'GAME';
