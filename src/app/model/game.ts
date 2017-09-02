@@ -13,8 +13,9 @@ export class Game {
     let lastPlayDate: Date = null;
     if (this.plays) {
       this.plays.forEach(play => {
-        if(lastPlayDate === null  || lastPlayDate < play.date)
-        lastPlayDate = play.date;
+        if (lastPlayDate === null || lastPlayDate < play.date) {
+          lastPlayDate = play.date;
+        }
       });
     }
     return lastPlayDate;

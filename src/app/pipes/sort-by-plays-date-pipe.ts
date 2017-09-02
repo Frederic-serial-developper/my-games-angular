@@ -18,8 +18,9 @@ export class SortByPlaysDatePipe implements PipeTransform {
     let lastPlayDate: Date = null;
     if (game && game.plays) {
       game.plays.forEach(play => {
-        if (lastPlayDate === null || lastPlayDate < play.date)
+        if (lastPlayDate === null || lastPlayDate < play.date) {
           lastPlayDate = play.date;
+        }
       });
     }
     if (lastPlayDate === null) {

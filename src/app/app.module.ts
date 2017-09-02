@@ -43,7 +43,7 @@ import { PreviouslyOwnedPipe } from './pipes/previously-owned-pipe';
 import { SortByNamePipe } from './pipes/sort-by-name-pipe';
 import { SortByRatingPipe } from './pipes/sort-by-rating-pipe';
 import { SortByPlaysCountPipe } from './pipes/sort-by-plays-count-pipe';
-import { SortByPlaysDatePipe } from "app/pipes/sort-by-plays-date-pipe";
+import { SortByPlaysDatePipe } from 'app/pipes/sort-by-plays-date-pipe';
 // app components & services for statistics
 import { GamesStatisticsComponent } from './games-statistics/games-statistics.component';
 import { GamesStatisticsRankingComponent } from './games-statistics/games-statistics-ranking.component';
@@ -88,7 +88,7 @@ const appRoutes: Routes = [
     GamesStatisticsPlaysComponent,
     OnlineMenuComponent,
     GameFullDetailComponent,
-    PlayerCountPipe, ExpansionPipe, PreviouslyOwnedPipe, 
+    PlayerCountPipe, ExpansionPipe, PreviouslyOwnedPipe,
     SortByNamePipe, SortByRatingPipe, SortByPlaysCountPipe, SortByPlaysDatePipe],
   bootstrap: [AppComponent],
   providers: [GameLibraryService, CollectionStatisticsService, ToasterService, AuthService],
