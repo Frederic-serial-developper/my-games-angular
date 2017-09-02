@@ -11,12 +11,14 @@ import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { AuthService } from '../auth-service';
+import { GamesService } from "app/games-library/games.service";
 
 @Component({
   selector: 'app-games-plays',
   templateUrl: './games-plays.component.html'
 })
 export class GamesPlaysComponent implements OnInit {
+  private receivedGames: Game[];
   private displayedGames: Game[];
   private displayedGamesCount: number;
 
@@ -29,9 +31,9 @@ export class GamesPlaysComponent implements OnInit {
   private playsCountOrderAsc: number;
   private playsDateOrderAsc: number;
 
-
   private selectedGame: Game;
-  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
+
+  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private gameService: GamesService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -80,9 +82,8 @@ export class GamesPlaysComponent implements OnInit {
   }
 
   onReceiveData(receivedGames: Game[]) {
-    this.displayedGames = receivedGames;
-    this.displayedGames.sort((g1, g2) => (g1.name.localeCompare(g2.name)));
-    this.computeDisplayedGamesCount();
+    this.receivedGames = receivedGames;
+    this.displayedGames = this.gameService.sortByName(this.receivedGames, this.nameOrderAsc);
     this.loading = false;
   }
 
@@ -92,27 +93,22 @@ export class GamesPlaysComponent implements OnInit {
 
   sortByName(): void {
     this.nameOrderAsc = this.nameOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
   }
 
   sortByRating(): void {
     this.ratingOrderAsc = this.ratingOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByRating(this.displayedGames, this.ratingOrderAsc);
   }
 
   sortByPlaysCount(): void {
     this.playsCountOrderAsc = this.playsCountOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByPlaysCount(this.displayedGames, this.playsCountOrderAsc);
   }
 
   sortByPlaysDate(): void {
     this.playsDateOrderAsc = this.playsDateOrderAsc * -1;
-  }
-
-  computeDisplayedGamesCount(): void {
-    this.displayedGamesCount = 0;
-    if (this.displayedGames) {
-      for (const game of this.displayedGames) {
-        this.displayedGamesCount++;
-      }
-    }
+    this.displayedGames = this.gameService.sortByPlaysDate(this.displayedGames, this.playsDateOrderAsc);
   }
 
 }

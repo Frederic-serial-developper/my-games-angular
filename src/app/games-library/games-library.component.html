@@ -6,13 +6,13 @@
         </div>
         <div *ngIf="!loading">
             <div class="filtering-menu">
-                <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="computeDisplayedGamesCount()">
+                <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="filterGames()">
                     Expansions
                 </md-slide-toggle>
-                <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="computeDisplayedGamesCount()">
+                <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="filterGames()">
                     Previously Owned
                 </md-slide-toggle>
-                <span>{{displayedGamesCount}} games</span>
+                <span>{{displayedGames.length}} games</span>
             </div>
             <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
                 <button md-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
@@ -38,8 +38,7 @@
             </div>
 
             <div fxLayoutWrap>
-                <div *ngFor="let game of displayedGames | PlayerCountPipe:playerCountFilter | ExpansionPipe:includeExpansion | PreviouslyOwnedPipe:includePreviouslyOwned
-                | SortByRatingPipe:ratingOrderAsc  | SortByPlaysCountPipe:playsCountOrderAsc | SortByPlaysDatePipe:playsDateOrderAsc | SortByNamePipe:nameOrderAsc" (click)="onSelect(game)">
+                <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
                     <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
                 </div>
             </div>

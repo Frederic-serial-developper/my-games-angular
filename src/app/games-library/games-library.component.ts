@@ -11,6 +11,7 @@ import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { AuthService } from '../auth-service';
+import { GamesService } from "app/games-library/games.service";
 
 @Component({
   selector: 'app-games-library',
@@ -18,6 +19,7 @@ import { AuthService } from '../auth-service';
 })
 export class GamesLibraryComponent implements OnInit {
   private displayedGames: Game[];
+  private receivedGames: Game[];
   private displayedGamesCount: number;
 
   loading: boolean;
@@ -33,7 +35,7 @@ export class GamesLibraryComponent implements OnInit {
   private playerCountFilter: number;
 
   private selectedGame: Game;
-  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private toasterService: ToasterService) {
+  constructor(public auth: AuthService, private gameLibrayService: GameLibraryService, private gameService: GamesService, private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -49,7 +51,6 @@ export class GamesLibraryComponent implements OnInit {
     this.playsCountOrderAsc = 1;
     this.playsDateOrderAsc = 1;
     this.playerCountFilter = 4;
-    this.displayedGamesCount = 0;
     this.bggUser = metadata.bggLogin;
 
     const parameters = new OnlineMenuParameters();
@@ -87,9 +88,9 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   onReceiveData(receivedGames: Game[]) {
-    this.displayedGames = receivedGames;
-    this.displayedGames.sort((g1, g2) => (g1.name.localeCompare(g2.name)));
-    this.computeDisplayedGamesCount();
+    this.receivedGames = receivedGames;
+    this.filterGames();
+    this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
     this.loading = false;
   }
 
@@ -97,36 +98,36 @@ export class GamesLibraryComponent implements OnInit {
     this.selectedGame = game;
   }
 
+  filterGames(): void {
+    this.displayedGames = this.gameService.filterGames(this.receivedGames, this.includeExpansion, this.includePreviouslyOwned, this.playerCountFilter);
+    this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
+  }
+
   sortByName(): void {
     this.nameOrderAsc = this.nameOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
   }
 
   sortByRating(): void {
     this.ratingOrderAsc = this.ratingOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByRating(this.displayedGames, this.ratingOrderAsc);
   }
 
   sortByPlaysCount(): void {
     this.playsCountOrderAsc = this.playsCountOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByPlaysCount(this.displayedGames, this.playsCountOrderAsc);
   }
 
   sortByPlaysDate(): void {
     this.playsDateOrderAsc = this.playsDateOrderAsc * -1;
+    this.displayedGames = this.gameService.sortByPlaysDate(this.displayedGames, this.playsDateOrderAsc);
   }
-  computeDisplayedGamesCount(): void {
-    this.displayedGamesCount = 0;
-    if (this.displayedGames) {
-      for (const game of this.displayedGames) {
-        const shouldIncludeExpansion = this.includeExpansion === true || game.data === null || game.data.type === 'GAME';
-        const shouldIncludePreviouslyOwned = this.includePreviouslyOwned === true || game.status === 'OWNED';
-        if (shouldIncludeExpansion && shouldIncludePreviouslyOwned) {
-          this.displayedGamesCount++;
-        }
-      }
-    }
-  }
+
+
 
   onSliderPlayerCountEvent(event: any): void {
     this.playerCountFilter = event.value;
+    this.filterGames();
   }
 
 }
