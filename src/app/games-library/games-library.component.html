@@ -6,17 +6,16 @@
         </div>
         <div *ngIf="!loading">
             <div class="filtering-menu">
-
                 <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="filterGames()">
                     Expansions
                 </md-slide-toggle>
                 <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="filterGames()">
                     Previously Owned
                 </md-slide-toggle>
-                <input mdInput placeholder="Game name" [(ngModel)]="gameName" (ngModelChange)="filterGames()">
+                <input class="hidden-xs" mdInput placeholder="Game name" [(ngModel)]="gameName" (ngModelChange)="filterGames()">
                 <span>{{displayedGames.length}} games</span>
             </div>
-            <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
+            <div fxLayoutWrap class="btn-group library-btn hidden-xs" data-toggle="buttons">
                 <button md-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
                     <span *ngIf="nameOrderAsc == 1" class="button-icon glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
                     <span *ngIf="nameOrderAsc == -1" class="button-icon glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span>
@@ -39,10 +38,14 @@
                 </div>
             </div>
 
-            <div fxLayoutWrap>
+            <div fxLayoutWrap class="hidden-xs">
                 <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
                     <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
                 </div>
+            </div>
+            <div class="hidden-sm">
+                <ag-grid-angular #agGrid style="width: 100%; height: 450px;" class="ag-fresh" [gridOptions]="gridOptions">
+                </ag-grid-angular>
             </div>
         </div>
     </div>

@@ -89,3 +89,8 @@ h1 {
 .logout-button {
   float: right;
 }
+
+.ag-body-viewport {
+  /* Use momentum-based scrolling on WebKit-based touch devices. */
+  -webkit-overflow-scrolling: touch;
+}
