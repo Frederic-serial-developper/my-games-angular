@@ -24,9 +24,7 @@
         "./css/bootstrap-reboot.min.css",
         "./css/bootstrap.min.css",
         "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-        "../node_modules/angular2-toaster/toaster.css",
-        "../node_modules/ag-grid/dist/styles/ag-grid.css",
-        "../node_modules/ag-grid/dist/styles/theme-fresh.css"
+        "../node_modules/angular2-toaster/toaster.css"
       ],
       "scripts": [
         "../node_modules/systemjs/dist/system.js",
