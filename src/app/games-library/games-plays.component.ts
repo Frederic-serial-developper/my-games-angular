@@ -26,10 +26,10 @@ export class GamesPlaysComponent implements OnInit {
 
   bggUser: string;
 
-  private ratingOrderAsc: number;
-  private nameOrderAsc: number;
-  private playsCountOrderAsc: number;
-  private playsDateOrderAsc: number;
+  private ratingOrderAsc: boolean;
+  private nameOrderAsc: boolean;
+  private playsCountOrderAsc: boolean;
+  private playsDateOrderAsc: boolean;
 
   private selectedGame: Game;
 
@@ -47,11 +47,10 @@ export class GamesPlaysComponent implements OnInit {
   }
 
   initializeScreen(metadata: UserMetadata): void {
-    this.ratingOrderAsc = 1;
-    this.nameOrderAsc = -1;
-    this.playsCountOrderAsc = 1;
-    this.playsDateOrderAsc = 1;
-    this.displayedGamesCount = 0;
+    this.ratingOrderAsc = false;
+    this.nameOrderAsc = true;
+    this.playsCountOrderAsc = false;
+    this.playsDateOrderAsc = true;
     this.bggUser = metadata.bggLogin;
 
     const parameters = new OnlineMenuParameters();
@@ -86,7 +85,7 @@ export class GamesPlaysComponent implements OnInit {
 
   onReceiveData(receivedGames: Game[]) {
     this.receivedGames = receivedGames;
-    this.displayedGames = this.gameService.sortByName(this.receivedGames, this.nameOrderAsc);
+    this.displayedGames = this.gameService.sortByPlaysDate(this.receivedGames, this.nameOrderAsc);
     this.loading = false;
   }
 
@@ -95,22 +94,22 @@ export class GamesPlaysComponent implements OnInit {
   }
 
   sortByName(): void {
-    this.nameOrderAsc = this.nameOrderAsc * -1;
+    this.nameOrderAsc = !this.nameOrderAsc;
     this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
   }
 
   sortByRating(): void {
-    this.ratingOrderAsc = this.ratingOrderAsc * -1;
+    this.ratingOrderAsc = !this.ratingOrderAsc;
     this.displayedGames = this.gameService.sortByRating(this.displayedGames, this.ratingOrderAsc);
   }
 
   sortByPlaysCount(): void {
-    this.playsCountOrderAsc = this.playsCountOrderAsc * -1;
+    this.playsCountOrderAsc = !this.playsCountOrderAsc;
     this.displayedGames = this.gameService.sortByPlaysCount(this.displayedGames, this.playsCountOrderAsc);
   }
 
   sortByPlaysDate(): void {
-    this.playsDateOrderAsc = this.playsDateOrderAsc * -1;
+    this.playsDateOrderAsc = !this.playsDateOrderAsc;
     this.displayedGames = this.gameService.sortByPlaysDate(this.displayedGames, this.playsDateOrderAsc);
   }
 
