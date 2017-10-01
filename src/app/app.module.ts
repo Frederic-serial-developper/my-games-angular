@@ -21,12 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
   MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-  MdToolbarModule, MdDialogModule
+  MdToolbarModule, MdDialogModule, MdListModule
 } from '@angular/material';
-import 'hammerjs';
 
-// ag grid
-import {AgGridModule} from 'ag-grid-angular/main';
+import 'hammerjs';
 
 // flex layout
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -51,8 +49,6 @@ import { CollectionStatisticsService } from './games-statistics/games-statistics
 // menu component
 import { OnlineMenuComponent } from './online-menu/online-menu.component';
 import { GamesService } from 'app/games-library/games.service';
-import { NumberComponent } from 'app/games-library/number.component';
-import { ImageComponent } from 'app/games-library/image.component';
 
 const appRoutes: Routes = [
   { path: 'library', component: GamesLibraryComponent },
@@ -70,8 +66,8 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
     MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-    ChartsModule, FlexLayoutModule, MdToolbarModule, MdDialogModule,
-    ToasterModule, AgGridModule.withComponents([GamesLibraryComponent, NumberComponent, ImageComponent])],
+    ChartsModule, FlexLayoutModule, MdToolbarModule, MdDialogModule, MdListModule,
+    ToasterModule],
   exports: [
     GameFullDetailComponent
   ],
@@ -86,8 +82,7 @@ const appRoutes: Routes = [
     GamesStatisticsYearComponent,
     GamesStatisticsPlaysComponent,
     OnlineMenuComponent,
-    GameFullDetailComponent,
-    NumberComponent, ImageComponent],
+    GameFullDetailComponent],
   bootstrap: [AppComponent],
   providers: [GameLibraryService, GamesService, CollectionStatisticsService, ToasterService, AuthService],
   entryComponents: [GameFullDetailComponent]

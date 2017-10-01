@@ -7,15 +7,11 @@ import { UserMetadata } from '../model/userMetadata';
 
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 
-import { GridOptions } from 'ag-grid';
-
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { AuthService } from '../auth-service';
 import { GamesService } from 'app/games-library/games.service';
-import { NumberComponent } from 'app/games-library/number.component';
-import { ImageComponent } from 'app/games-library/image.component';
 
 @Component({
   selector: 'app-games-library',
@@ -25,7 +21,7 @@ export class GamesLibraryComponent implements OnInit {
   private displayedGames: Game[];
   private receivedGames: Game[];
   private displayedGamesCount: number;
-
+  
   loading: boolean;
 
   bggUser: string;
@@ -40,8 +36,6 @@ export class GamesLibraryComponent implements OnInit {
   private gameName: string;
 
   private selectedGame: Game;
-
-  private gridOptions: GridOptions;
 
   constructor(public auth: AuthService,
     private gameLibrayService: GameLibraryService,
@@ -76,23 +70,11 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   private initializeGrid(): void {
-    this.gridOptions = <GridOptions>{ enableSorting: true };
-    this.gridOptions.columnDefs = [
-      { headerName: '', field: 'image', width: 30, cellRendererFramework: ImageComponent },
-      { headerName: 'Name', field: 'name', width: 90, sort: 'asc' },
-      { headerName: 'Min', field: 'data.minPlayers', width: 45, type: 'numericColumn' },
-      { headerName: 'Max', field: 'data.maxPlayers', width: 45, type: 'numericColumn' },
-      { headerName: 'Rating', field: 'data.rating', width: 55, type: 'numericColumn', cellRendererFramework: NumberComponent },
-      { headerName: 'Plays', field: 'playsCount', width: 55, type: 'numericColumn' }
-    ];
+    
   }
 
   private setGridData(): void {
-    if (this.gridOptions.api) {
-      this.gridOptions.api.setRowData(this.displayedGames);
-    } else {
-      this.gridOptions.rowData = this.displayedGames;
-    }
+    
   }
 
   reload(parameter: OnlineMenuParameters): void {
