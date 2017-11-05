@@ -10,8 +10,8 @@ import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
-import { AuthService } from '../auth-service';
 import { GamesService } from 'app/games-library/games.service';
+import { UserService } from 'app/user.service';
 
 @Component({
   selector: 'app-games-library',
@@ -21,7 +21,7 @@ export class GamesLibraryComponent implements OnInit {
   private displayedGames: Game[];
   private receivedGames: Game[];
   private displayedGamesCount: number;
-  
+
   loading: boolean;
 
   bggUser: string;
@@ -37,7 +37,7 @@ export class GamesLibraryComponent implements OnInit {
 
   private selectedGame: Game;
 
-  constructor(public auth: AuthService,
+  constructor(private uerService: UserService,
     private gameLibrayService: GameLibraryService,
     private gameService: GamesService,
     private toasterService: ToasterService) {
@@ -45,18 +45,16 @@ export class GamesLibraryComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
-    this.auth.getUserMetadata().subscribe(
-      metadata => this.initializeScreen(metadata),
-      error => this.handleError());
+    this.initializeScreen();
   }
 
-  initializeScreen(metadata: UserMetadata): void {
+  initializeScreen(): void {
     this.ratingOrderAsc = false;
     this.nameOrderAsc = true;
     this.playsCountOrderAsc = true;
     this.playsDateOrderAsc = true;
     this.playerCountFilter = 4;
-    this.bggUser = metadata.bggLogin;
+    this.bggUser = this.uerService.getCurrentUser();
 
     this.initializeGrid();
 
@@ -70,11 +68,11 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   private initializeGrid(): void {
-    
+
   }
 
   private setGridData(): void {
-    
+
   }
 
   reload(parameter: OnlineMenuParameters): void {

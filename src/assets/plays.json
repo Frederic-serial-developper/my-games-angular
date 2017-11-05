@@ -24,7 +24,7 @@
             "playingTime": 75,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.2,
+            "rating": 8.15537,
             "categories": [
                 "Puzzle",
                 "Real-time",
@@ -101,7 +101,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.37963,
+            "rating": 7.29031,
             "categories": [
                 "Medieval",
                 "Bluffing",
@@ -159,7 +159,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.78038,
+            "rating": 6.70102,
             "categories": [
                 "Medieval",
                 "Animals",
@@ -197,7 +197,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.3049,
+            "rating": 7.30167,
             "categories": [
                 "Economic",
                 "American West",
@@ -238,7 +238,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.84943,
+            "rating": 6.84529,
             "categories": [
                 "Adventure",
                 "Horror",
@@ -282,7 +282,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.4467,
+            "rating": 6.43713,
             "categories": [
                 "Trains",
                 "Transportation",
@@ -322,7 +322,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.06372,
+            "rating": 7.06137,
             "categories": [
                 "Negotiation",
                 "Card Game",
@@ -342,8 +342,20 @@
         "name": "Profiler",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic3344294_t.jpg",
-        "playsCount": 4,
+        "playsCount": 6,
         "plays": [
+            {
+                "bggId": 218126,
+                "gameName": "Profiler",
+                "date": "2017-10-15",
+                "count": 1
+            },
+            {
+                "bggId": 218126,
+                "gameName": "Profiler",
+                "date": "2017-09-09",
+                "count": 1
+            },
             {
                 "bggId": 218126,
                 "gameName": "Profiler",
@@ -368,13 +380,95 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.23134,
+            "rating": 7.17647,
             "categories": [
+                "Negotiation",
                 "Party Game",
                 "Deduction"
             ],
             "mechanisms": [
                 "Co-operative Play"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 143884,
+        "name": "Machi Koro",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic1992476_t.jpg",
+        "playsCount": 10,
+        "plays": [
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-10-15",
+                "count": 1
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-10-01",
+                "count": 1
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-09-30",
+                "count": 2
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-09-30",
+                "count": 1
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-09-29",
+                "count": 1
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-09-28",
+                "count": 2
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-09-27",
+                "count": 1
+            },
+            {
+                "bggId": 143884,
+                "gameName": "Machi Koro",
+                "date": "2017-09-26",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 143884,
+            "type": "GAME",
+            "description": "Welcome to the city of Machi Koro. You've just been elected Mayor. Congrats! Unfortunately the citizens have some pretty big demands: jobs, a theme park, a couple of cheese factories and maybe even a radio tower. A tough proposition since the city currently consists of a wheat field, a bakery and a single die.&#10;&#10;Armed only with your trusty die and a dream, you must grow Machi Koro into the largest city in the region. You will need to collect income from developments, build public works, and steal from your neighbors' coffers. Just make sure they aren't doing the same to you!&#10;&#10;Machi Koro is a fast-paced game for 2-4 players. Each player wants to develop the city on his own terms in order to complete all of the landmarks under construction faster than his rivals. On his turn, each player rolls one or two dice. If the sum of the dice rolled matches the number of a building that a player owns, he gets the effect of that building; in some cases opponents will also benefit from your die (just as you can benefit from theirs). Then, with money in hand a player can build a landmark or a new building, ideally adding to the wealth of his city on future turns. The first player to construct all of his landmarks wins!&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic1992476_t.jpg",
+            "year": 2012,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.73614,
+            "categories": [
+                "Dice",
+                "Card Game",
+                "City Building"
+            ],
+            "mechanisms": [
+                "Card Drafting",
+                "Dice Rolling"
             ],
             "expansion": false
         },
@@ -444,7 +538,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.31123,
+            "rating": 7.31264,
             "categories": [
                 "Abstract Strategy"
             ],
@@ -499,7 +593,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.24118,
+            "rating": 8.14947,
             "categories": [
                 "Puzzle",
                 "Novel-based",
@@ -509,6 +603,7 @@
                 "Post-Napoleonic"
             ],
             "mechanisms": [
+                "Storytelling",
                 "Co-operative Play"
             ],
             "expansion": false
@@ -570,7 +665,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.05363,
+            "rating": 6.90731,
             "categories": [
                 "Medieval",
                 "Card Game",
@@ -610,7 +705,7 @@
             "playingTime": 150,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.0455,
+            "rating": 8.04269,
             "categories": [
                 "Animals",
                 "Economic",
@@ -651,7 +746,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.58634,
+            "rating": 7.58604,
             "categories": [
                 "Renaissance",
                 "Economic",
@@ -690,8 +785,9 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.40909,
+            "rating": 7.31333,
             "categories": [
+                "Print & Play",
                 "Puzzle",
                 "Real-time",
                 "Card Game",
@@ -737,7 +833,7 @@
             "playingTime": 180,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.69129,
+            "rating": 7.67512,
             "categories": [
                 "Fighting",
                 "Adventure",
@@ -786,7 +882,7 @@
             "playingTime": 12,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.47484,
+            "rating": 6.4411,
             "categories": [
                 "Party Game",
                 "Real-time",
@@ -863,7 +959,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.75668,
+            "rating": 6.74706,
             "categories": [
                 "Number",
                 "Card Game"
@@ -881,8 +977,20 @@
         "name": "The 7th Continent",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic2648303_t.jpg",
-        "playsCount": 2,
+        "playsCount": 4,
         "plays": [
+            {
+                "bggId": 180263,
+                "gameName": "The 7th Continent",
+                "date": "2017-10-22",
+                "count": 1
+            },
+            {
+                "bggId": 180263,
+                "gameName": "The 7th Continent",
+                "date": "2017-09-10",
+                "count": 1
+            },
             {
                 "bggId": 180263,
                 "gameName": "The 7th Continent",
@@ -899,7 +1007,7 @@
         "data": {
             "id": 180263,
             "type": "GAME",
-            "description": "It's the early 20th century. You have decided to sail back to the newly discovered seventh continent to attempt to lift the terrible curse that has struck you since your return from the previous expedition.&#10;&#10;In The 7th Continent, a solo or cooperative &quot;choose-your-own-adventure&quot; exploration board game, you choose a character and begin your adventure on your own or with a team of other explorers. Inspired by the Fighting Fantasy book series, you will discover the extent of this wild new land through a variety of terrain and event cards. In a land fraught with danger and wonders, you have to use every ounce of wit and cunning to survive, crafting tools, weapons and shelter to ensure your survival.&#10;&#10;Unlike most board games, it will take you many, MANY hours of exploring and searching the seventh continent until you eventually discover how to remove the curse(s)...or die trying.&#10;&#10;The 7th Continent features an easy saving system so that you can stop playing at any time and resume your adventure later on, just like in a video game!&#10;&#10;",
+            "description": "It's the early 20th century. You have decided to sail back to the newly discovered seventh continent to attempt to lift the terrible curse that has struck you since your return from the previous expedition.&#10;&#10;In The 7th Continent, a solo or cooperative &quot;choose-your-own-adventure&quot; exploration board game, you choose a character and begin your adventure on your own or with a team of other explorers. Inspired by the Fighting Fantasy book series, you will discover the extent of this wild new land through a variety of terrain and event cards. In a land fraught with danger and wonders, you have to use every ounce of wit and cunning to survive, crafting tools, weapons, and shelter to ensure your survival.&#10;&#10;Unlike most board games, it will take you many, MANY hours of exploring and searching the seventh continent until you eventually discover how to remove the curse(s)...or die trying.&#10;&#10;The 7th Continent features an easy saving system so that you can stop playing at any time and resume your adventure later on, just like in a video game!&#10;&#10;",
             "image": "https://cf.geekdo-images.com/images/pic2648303_t.jpg",
             "year": 2017,
             "minPlayers": 1,
@@ -907,16 +1015,16 @@
             "playingTime": 1000,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 9.01459,
+            "rating": 8.88163,
             "categories": [
                 "Adventure",
                 "Card Game",
                 "Exploration"
             ],
             "mechanisms": [
-                "Campaign / Battle Card Driven",
                 "Storytelling",
                 "Co-operative Play",
+                "Hand Management",
                 "Modular Board"
             ],
             "expansion": false
@@ -966,17 +1074,18 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.4244,
+            "rating": 6.42466,
             "categories": [
                 "Abstract Strategy",
                 "Territory Building",
                 "American West",
-                "Bluffing"
+                "Bluffing",
+                "Fantasy"
             ],
             "mechanisms": [
                 "Area Enclosure",
                 "Area Control / Area Influence",
-                "Tile Placement"
+                "Secret Unit Deployment"
             ],
             "expansion": false
         },
@@ -1019,7 +1128,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.53222,
+            "rating": 6.5024,
             "categories": [
                 "Science Fiction"
             ],
@@ -1135,7 +1244,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.92461,
+            "rating": 6.92215,
             "categories": [
                 "Movies / TV / Radio theme",
                 "Bluffing",
@@ -1176,7 +1285,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.78069,
+            "rating": 7.77618,
             "categories": [
                 "Fighting",
                 "Miniatures",
@@ -1187,6 +1296,7 @@
                 "Card Drafting",
                 "Action Point Allowance System",
                 "Area Control / Area Influence",
+                "Variable Phase Order",
                 "Area Movement",
                 "Hand Management"
             ],
@@ -1219,7 +1329,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.524,
+            "rating": 7.51537,
             "categories": [
                 "Space Exploration",
                 "Real-time",
@@ -1319,7 +1429,7 @@
             "playingTime": 75,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.15911,
+            "rating": 7.15696,
             "categories": [
                 "Economic",
                 "City Building",
@@ -1358,7 +1468,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.83088,
+            "rating": 7.81703,
             "categories": [
                 "Medieval",
                 "Nautical"
@@ -1366,6 +1476,46 @@
             "mechanisms": [
                 "Set Collection",
                 "Worker Placement",
+                "Hand Management"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 181304,
+        "name": "Mysterium",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic2601683_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 181304,
+                "gameName": "Mysterium",
+                "date": "2017-09-08",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 181304,
+            "type": "GAME",
+            "description": "In the 1920s, Mr. MacDowell, a gifted astrologist, immediately detected a supernatural being upon entering his new house in Scotland. He gathered eminent mediums of his time for an extraordinary s&eacute;ance, and they have seven hours to contact the ghost and investigate any clues that it can provide to unlock an old mystery.&#10;&#10;Unable to talk, the amnesic ghost communicates with the mediums through visions, which are represented in the game by illustrated cards. The mediums must decipher the images to help the ghost remember how he was murdered: Who did the crime? Where did it take place? Which weapon caused the death? The more the mediums cooperate and guess well, the easier it is to catch the right culprit.&#10;&#10;In Mysterium, a reworking of the game system present in Tajemnicze Domostwo, one player takes the role of ghost while everyone else represents a medium. To solve the crime, the ghost must first recall (with the aid of the mediums) all of the suspects present on the night of the murder. A number of suspect, location and murder weapon cards are placed on the table, and the ghost randomly assigns one of each of these in secret to a medium.&#10;&#10;Each hour (i.e., game turn), the ghost hands one or more vision cards face up to each medium, refilling their hand to seven each time they share vision cards. These vision cards present dreamlike images to the mediums, with each medium first needing to deduce which suspect corresponds to the vision cards received. Once the ghost has handed cards to the final medium, they start a two-minute sandtimer. Once a medium has placed their token on a suspect, they may also place clairvoyancy tokens on the guesses made by other mediums to show whether they agree or disagree with those guesses.&#10;&#10;After time runs out, the ghost reveals to each medium whether the guesses were correct or not. Mediums who guessed correctly move on to guess the location of the crime (and then the murder weapon), while those who didn't keep their vision cards and receive new ones next hour corresponding to the same suspect. Once a medium has correctly guessed the suspect, location and weapon, they move their token to the epilogue board and receive one clairvoyancy point for each hour remaining on the clock. They can still use their remaining clairvoyancy tokens to score additional points.&#10;&#10;If one or more mediums fail to identify their proper suspect, location and weapon before the end of the seventh hour, then the ghost has failed and dissipates, leaving the mystery unsolved. If, however, they have all succeeded, then the ghost has recovered enough of its memory to identify the culprit.&#10;&#10;Mediums then group their suspect, location and weapon cards on the table and place a number by each group. The ghost then selects one group, places the matching culprit number face down on the epilogue board, picks three vision cards &mdash; one for the suspect, one for the location, and one for the weapon &mdash; then shuffles these cards. Players who have achieved few clairvoyancy points flip over one vision card at random, then secretly vote on which suspect they think is guilty; players with more points then flip over a second vision card and vote; then those with the most points see the final card and vote.&#10;&#10;If a majority of the mediums have identified the proper suspect, with ties being broken by the vote of the most clairvoyant medium, then the killer has been identified and the ghost can now rest peacefully. If not, well, perhaps you can try again...&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2601683_t.jpg",
+            "year": 2015,
+            "minPlayers": 2,
+            "maxPlayers": 7,
+            "playingTime": 42,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.49158,
+            "categories": [
+                "Party Game",
+                "Deduction",
+                "Murder/Mystery"
+            ],
+            "mechanisms": [
+                "Pattern Recognition",
+                "Co-operative Play",
                 "Hand Management"
             ],
             "expansion": false
@@ -1439,7 +1589,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.4098,
+            "rating": 6.39773,
             "categories": [
                 "Medieval",
                 "Fantasy"
@@ -1480,8 +1630,9 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.14112,
+            "rating": 7.07255,
             "categories": [
+                "Print & Play",
                 "Puzzle",
                 "Real-time",
                 "Exploration",
@@ -1526,7 +1677,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.23218,
+            "rating": 7.22637,
             "categories": [
                 "Territory Building",
                 "Civilization",
@@ -1581,7 +1732,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.08074,
+            "rating": 8.08756,
             "categories": [
                 "Travel",
                 "Medieval",
@@ -1627,7 +1778,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.56086,
+            "rating": 7.56034,
             "categories": [
                 "Medieval",
                 "Farming"
@@ -1761,7 +1912,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.63713,
+            "rating": 6.61739,
             "categories": [
                 "Horror",
                 "Bluffing",
@@ -1824,7 +1975,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.37724,
+            "rating": 6.37191,
             "categories": [
                 "Negotiation",
                 "Travel",
@@ -1872,15 +2023,15 @@
             "playingTime": 240,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.0096,
+            "rating": 7.98093,
             "categories": [
-                "Medieval",
                 "Adventure",
                 "Mature / Adult",
                 "Science Fiction"
             ],
             "mechanisms": [
                 "Variable Player Powers",
+                "Storytelling",
                 "Time Track",
                 "Co-operative Play",
                 "Dice Rolling",
@@ -1915,7 +2066,7 @@
             "playingTime": 10,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.09667,
+            "rating": 6.09938,
             "categories": [
                 "Children's Game",
                 "Real-time",
@@ -2013,7 +2164,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.84403,
+            "rating": 6.83934,
             "categories": [
                 "Card Game"
             ],
@@ -2062,7 +2213,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.78276,
+            "rating": 6.77982,
             "categories": [
                 "Ancient",
                 "Card Game"
@@ -2101,7 +2252,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.16392,
+            "rating": 6.16225,
             "categories": [
                 "Real-time",
                 "Card Game",
@@ -2120,8 +2271,56 @@
         "name": "Love Letter",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic1401448_t.jpg",
-        "playsCount": 73,
+        "playsCount": 83,
         "plays": [
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-10-20",
+                "count": 1
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-10-12",
+                "count": 1
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-10-03",
+                "count": 1
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-09-22",
+                "count": 2
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-09-19",
+                "count": 1
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-09-08",
+                "count": 2
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-09-06",
+                "count": 1
+            },
+            {
+                "bggId": 129622,
+                "gameName": "Love Letter",
+                "date": "2017-09-06",
+                "count": 1
+            },
             {
                 "bggId": 129622,
                 "gameName": "Love Letter",
@@ -2381,7 +2580,29 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 129622,
+            "type": "GAME",
+            "description": "All of the eligible young men (and many of the not-so-young) seek to woo the princess of Tempest. Unfortunately, she has locked herself in the palace, and you must rely on others to take your romantic letters to her. Will yours reach her first?&#10;&#10;Love Letter is a game of risk, deduction, and luck for 2&ndash;4 players. Your goal is to get your love letter into Princess Annette's hands while deflecting the letters from competing suitors. From a deck with only sixteen cards, each player starts with only one card in hand; one card is removed from play. On a turn, you draw one card, and play one card, trying to expose others and knock them from the game. Powerful cards lead to early gains, but make you a target. Rely on weaker cards for too long, however, and your letter may be tossed in the fire!&#10;&#10;Number 4 in the Tempest: Shared World Game Series&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic1401448_t.jpg",
+            "year": 2012,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 20,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.30274,
+            "categories": [
+                "Renaissance",
+                "Deduction",
+                "Card Game"
+            ],
+            "mechanisms": [
+                "Hand Management",
+                "Player Elimination"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -2433,11 +2654,12 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.0458,
+            "rating": 7.07252,
             "categories": [
                 "Negotiation",
                 "Horror",
                 "Bluffing",
+                "Deduction",
                 "Card Game"
             ],
             "mechanisms": [
@@ -2472,7 +2694,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.13261,
+            "rating": 7.12028,
             "categories": [
                 "Abstract Strategy",
                 "Territory Building",
@@ -2530,7 +2752,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.62731,
+            "rating": 6.62717,
             "categories": [
                 "Animals",
                 "Bluffing",
@@ -2602,7 +2824,7 @@
         "data": {
             "id": 2653,
             "type": "GAME",
-            "description": "Survive is a cutthroat game where players seek to evacuate their pieces from an island that is breaking up, while remembering where their highest-valued pieces are located to maximize their score.&#10;&#10;An island made up of 40 hex-tiles is slowly sinking into the ocean (as the tiles are removed from the board). Each player controls ten people (valued from 1 to 6) that they try and move towards the safety of the surrounding islands before the main island finally blows up. Players can either swim or use boats to travel but must avoid sea serpents, whales and sharks on their way to safety.&#10;&#10;Survive is very similar to Escape from Atlantis with some key differences.&#10;&#10;Survive was reprinted as &quot;Survive: Escape from Atlantis!&quot; by publisher Stronghold Games and hit store shelves in February, 2011.   The reprint contains the game Survive, as well as all the extra pieces needed in order to play the game as &quot;Escape from Atlantis&quot;.&#10;&#10;&quot;Survive: Escape from Atlantis!&quot; is game #2 in the Stronghold Games &quot;Survivi Line&quot;.&#10;&#10;Expanded by:&#10;&#10;    Survive!: The Giant Squid&#10;    Survive: Escape from Atlantis! 5-6 Player Mini Expansion&#10;    Survive: Escape from Atlantis! Dolphins & Dive Dice Mini Extension&#10;&#10;&#10;&#10;&#10;",
+            "description": "Survive is a cutthroat game where players seek to evacuate their pieces from an island that is breaking up, while remembering where their highest-valued pieces are located to maximize their score.&#10;&#10;An island made up of 40 hex-tiles is slowly sinking into the ocean (as the tiles are removed from the board). Each player controls ten people (valued from 1 to 6) that they try and move towards the safety of the surrounding islands before the main island finally blows up. Players can either swim or use boats to travel but must avoid sea serpents, whales and sharks on their way to safety.&#10;&#10;Survive is very similar to Escape from Atlantis with some key differences.&#10;&#10;Survive was reprinted as &quot;Survive: Escape from Atlantis!&quot; by publisher Stronghold Games and hit store shelves in February, 2011.   The reprint contains the game Survive, as well as all the extra pieces needed in order to play the game as &quot;Escape from Atlantis&quot;.&#10;&#10;&quot;Survive: Escape from Atlantis!&quot; is game #2 in the Stronghold Games &quot;Survive Line&quot;.&#10;&#10;Expanded by:&#10;&#10;    Survive!: The Giant Squid&#10;    Survive: Escape from Atlantis! 5-6 Player Mini Expansion&#10;    Survive: Escape from Atlantis! Dolphins & Dive Dice Mini Extension&#10;&#10;&#10;&#10;&#10;",
             "image": "https://cf.geekdo-images.com/images/pic1300182_t.png",
             "year": 1982,
             "minPlayers": 2,
@@ -2610,7 +2832,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.32617,
+            "rating": 7.32521,
             "categories": [
                 "Adventure",
                 "Animals",
@@ -2643,7 +2865,29 @@
                 "count": 15
             }
         ],
-        "data": null,
+        "data": {
+            "id": 72287,
+            "type": "GAME",
+            "description": "From Bruno Faidutti's site:&#10;&#10;It has been found again by Bruno Cathala and Ludovic Maublanc with Mr.Jack Pocket, the small card game derived from Mr. Jack. The board is replaced by a square grid made of nine street cards. The suspects, and among them Mr.Jack, are pictured on the cards. Holmes, Watson and a dog are turning around the grid, a system already used by Bruno Cathala in several games, and can &ldquo;look&rdquo; at the streets in a row or column. Every round, like in Mr.Jack, four actions are available. The first player selects one, his opponent two, and the first player then uses the last remaining action. Actions allow moving a detective one or two spaces clockwise around the grid, turning a card in order to change the view of the streets, swapping two street cards or drawing an alibi card. At the end of the round, Mr.Jack states if he can be seen by one of the detectives. Of course, the detectives must identify Jack, who must stay hidden long enough to escape.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic1519530_t.jpg",
+            "year": 2010,
+            "minPlayers": 2,
+            "maxPlayers": 2,
+            "playingTime": 15,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.99418,
+            "categories": [
+                "Bluffing",
+                "Deduction",
+                "Murder/Mystery",
+                "Post-Napoleonic"
+            ],
+            "mechanisms": [
+                "Modular Board"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -2683,7 +2927,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.4176,
+            "rating": 6.4215,
             "categories": [
                 "Renaissance",
                 "Novel-based",
@@ -2770,7 +3014,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.08466,
+            "rating": 6.10385,
             "categories": [],
             "mechanisms": [
                 "Stock Holding"
@@ -2816,7 +3060,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.79492,
+            "rating": 6.79505,
             "categories": [
                 "Card Game",
                 "Fantasy",
@@ -2861,7 +3105,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.96011,
+            "rating": 5.92609,
             "categories": [
                 "Novel-based"
             ],
@@ -2934,7 +3178,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.11896,
+            "rating": 6.11751,
             "categories": [
                 "Fighting",
                 "Bluffing",
@@ -2943,9 +3187,9 @@
                 "Humor"
             ],
             "mechanisms": [
+                "Grid Movement",
                 "Secret Unit Deployment",
-                "Modular Board",
-                "Point to Point Movement"
+                "Modular Board"
             ],
             "expansion": false
         },
@@ -3006,7 +3250,7 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.42279,
+            "rating": 6.42183,
             "categories": [
                 "Spies/Secret Agents",
                 "Card Game"
@@ -3097,7 +3341,7 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.75893,
+            "rating": 6.75507,
             "categories": [
                 "Ancient",
                 "Card Game"
@@ -3167,7 +3411,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.69113,
+            "rating": 6.68923,
             "categories": [
                 "Abstract Strategy",
                 "Maze"
@@ -3204,7 +3448,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.94461,
+            "rating": 6.91578,
             "categories": [
                 "American West",
                 "Bluffing",
@@ -3251,7 +3495,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.07083,
+            "rating": 7.06615,
             "categories": [
                 "Party Game",
                 "Deduction",
@@ -3305,7 +3549,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.80948,
+            "rating": 7.79293,
             "categories": [
                 "Wargame",
                 "Fighting",
@@ -3398,7 +3642,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.8705,
+            "rating": 6.8329,
             "categories": [
                 "Fighting",
                 "Medieval",
@@ -3488,7 +3732,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.54345,
+            "rating": 6.52843,
             "categories": [
                 "Animals",
                 "Card Game"
@@ -3525,7 +3769,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.38435,
+            "rating": 5.39545,
             "categories": [],
             "mechanisms": [
                 "Pattern Recognition"
@@ -3589,7 +3833,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.41555,
+            "rating": 7.41498,
             "categories": [
                 "Space Exploration",
                 "Dice",
@@ -3629,7 +3873,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.96638,
+            "rating": 6.9363,
             "categories": [
                 "Card Game",
                 "Pirates"
@@ -3648,8 +3892,14 @@
         "name": "Blueprints",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic1877243_t.jpg",
-        "playsCount": 3,
+        "playsCount": 5,
         "plays": [
+            {
+                "bggId": 140933,
+                "gameName": "Blueprints",
+                "date": "2017-10-25",
+                "count": 2
+            },
             {
                 "bggId": 140933,
                 "gameName": "Blueprints",
@@ -3680,7 +3930,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.90629,
+            "rating": 6.90133,
             "categories": [
                 "Dice"
             ],
@@ -3718,7 +3968,7 @@
             "playingTime": 150,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.5141,
+            "rating": 8.51002,
             "categories": [
                 "Economic",
                 "City Building",
@@ -3768,7 +4018,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.03319,
+            "rating": 7.04423,
             "categories": [
                 "Card Game",
                 "Fantasy"
@@ -3806,7 +4056,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.1941,
+            "rating": 7.20296,
             "categories": [
                 "Fighting",
                 "Science Fiction"
@@ -3815,6 +4065,47 @@
                 "Variable Player Powers",
                 "Partnerships",
                 "Point to Point Movement"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 192663,
+        "name": "Fleet Commander: Genesis",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic3739764_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 192663,
+                "gameName": "Fleet Commander: Genesis",
+                "date": "2017-10-01",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 192663,
+            "type": "GAME",
+            "description": "Fleet Commander: Genesis&#10;&#10;&quot;Become a Fleet Commander, pick your fleet, choose your weapons and enter the battle. Lead your mighty warships to victory and your name will stand as a wise strategist and an enlightened tactician.&quot;&#10;&#10;Fleet Commander: Genesis is a space battle game for 2 to 4 players. The game is fast and aggressive; set it up in less than five minutes and play it in less than one hour! The rules are so simple and the mechanics so deep that you can teach it to young children, yet still experiment with epic tactical team battles for experienced players.&#10;&#10;&#10;The retail edition (set for a September 2017 release date in France) of &quot;Fleet Commander - Genesis&quot; includes:&#10;&#10;The equivalent of two full retail boxes of Fleet Commander: 1 - Ignition and one set of Fleet Commander: 2 - Beyond the Gate&#10;(plus, in terms of basic ship count, a third full quota of &quot;Ignition&quot; ships, and half of another &quot;Beyond the Gate&quot; set).&#10;&#10;&#10;     50 double-sided space tiles for a modular board (replacing the one piece board in Ignition)&#10;     36 engraved dice (replacing the printed dice in Ignition)&#10;     48 ship miniatures with double-sided base stands to distinguish four different fleets (24 Frigates, 12 Destroyers, 6 Cruisers, 6 Battleships)&#10;     26 command board tiles&#10;     18 special weapon tiles&#10;     6 jump portal tiles&#10;     60 signal tokens&#10;     2 special field tiles&#10;     Rulebooks in French and English&#10;&#10;&#10;The large box (45cm x 30cm x 10cm -- nearly 18&quot; x 12&quot; x 4&quot;) contains a vacuformed insert that holds and organizes all the 'Genesis' parts neatly and safely; and will hold all four (current) expansions comfortably for combined storage.&#10;&#10;&#10;The Kickstarter Edition includes much more than the retail version:&#10;&#10;&#10;     64 space tiles&#10;     57 engraved dice&#10;     78 ship miniatures (6 Heavy Battleships, 8 Battleships, 8 Cruisers, 16 Destroyers, 32 Frigates, 8 Technical)&#10;     KS only Campaign book&#10;     More tokens, boards, etc.&#10;     It supports a six player count&#10;     The first expansion: Avatar&#10;     The second expansion: Salvation&#10;&#10;&#10;The Kickstarter Edition began shipping in July 2017.&#10;&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3739764_t.jpg",
+            "year": 2016,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 120,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 8.07395,
+            "categories": [
+                "Wargame",
+                "Miniatures",
+                "Science Fiction"
+            ],
+            "mechanisms": [
+                "Grid Movement",
+                "Secret Unit Deployment",
+                "Dice Rolling",
+                "Hand Management"
             ],
             "expansion": false
         },
@@ -3851,7 +4142,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.79023,
+            "rating": 6.76086,
             "categories": [
                 "Card Game"
             ],
@@ -3925,7 +4216,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.33709,
+            "rating": 7.33055,
             "categories": [
                 "Card Game",
                 "World War I"
@@ -3965,11 +4256,10 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.6366,
+            "rating": 6.62824,
             "categories": [
                 "Fighting",
                 "Medieval",
-                "Party Game",
                 "Card Game",
                 "Fantasy"
             ],
@@ -4013,7 +4303,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.48245,
+            "rating": 6.47128,
             "categories": [
                 "Fantasy"
             ],
@@ -4028,7 +4318,7 @@
         "id": 128667,
         "name": "Samurai Sword",
         "status": "OTHER",
-        "image": "https://cf.geekdo-images.com/images/pic1411222_t.jpg",
+        "image": "https://cf.geekdo-images.com/images/pic1531841_t.jpg",
         "playsCount": 1,
         "plays": [
             {
@@ -4042,14 +4332,14 @@
             "id": 128667,
             "type": "GAME",
             "description": "Game description from the publisher:&#10;&#10;Samurai Sword is a game based on the proven Bang! mechanisms and set in feudal Japan. In this game, the familiar features of Bang! are enhanced by more dynamic and fast-paced game play, and thanks to a new scoring system &ndash; based on honor points and resilience points &ndash; there is no player elimination. Everybody gets to fight to the very end! Also, weapons and attacks are fused into a single card.&#10;&#10;",
-            "image": "https://cf.geekdo-images.com/images/pic1411222_t.jpg",
+            "image": "https://cf.geekdo-images.com/images/pic1531841_t.jpg",
             "year": 2012,
             "minPlayers": 3,
             "maxPlayers": 7,
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.71947,
+            "rating": 6.71684,
             "categories": [
                 "Fighting",
                 "Medieval",
@@ -4135,7 +4425,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.98246,
+            "rating": 6.96912,
             "categories": [
                 "Party Game",
                 "Card Game",
@@ -4209,7 +4499,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.34531,
+            "rating": 7.33626,
             "categories": [
                 "Fighting",
                 "Space Exploration",
@@ -4252,7 +4542,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.37922,
+            "rating": 6.40841,
             "categories": [
                 "Medieval",
                 "Fantasy"
@@ -4260,6 +4550,80 @@
             "mechanisms": [
                 "Card Drafting",
                 "Area Control / Area Influence",
+                "Worker Placement"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 203420,
+        "name": "Exit: The Game – The Abandoned Cabin",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic3332426_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 203420,
+                "gameName": "Exit: The Game – The Abandoned Cabin",
+                "date": "2017-10-01",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 203420,
+            "type": "GAME",
+            "description": "Everyone meant to use the cabin only as a shelter for the night, but come the morning the door has been secured by a combination lock, with no one knowing the combination of numbers that will let them leave. The windows are barred as well. An enigmatic spinning code dial and a mysterious book is all that you have to go on. Can you escape from this abandoned cottage?&#10;&#10;In Exit: The Game &ndash; The Abandoned Cabin, players must use their team spirit, creativity, and powers of deduction to crack codes, solve puzzles, collect objects, and earn their freedom bit by bit.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3332426_t.jpg",
+            "year": 2016,
+            "minPlayers": 1,
+            "maxPlayers": 6,
+            "playingTime": 90,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.83909,
+            "categories": [
+                "Deduction"
+            ],
+            "mechanisms": [
+                "Co-operative Play"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 203427,
+        "name": "Fabled Fruit",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic3086825_t.jpg",
+        "playsCount": 2,
+        "plays": [
+            {
+                "bggId": 203427,
+                "gameName": "Fabled Fruit",
+                "date": "2017-09-09",
+                "count": 2
+            }
+        ],
+        "data": {
+            "id": 203427,
+            "type": "GAME",
+            "description": "Once upon a time there was a marvelous forest full of gorgeous fruits. These fruits could be squeezed and mixed into the most delicious juices...&#10;&#10;You live in this forest and are in search of the most savory fruits. Friendly forest dwellers will help you in different ways...&#10;&#10;You are greedy and thirsty. Who will be the first to satisfy their appetite for Fabled Fruit?&#10;&#10;Fabled Fruit is a Fable game, a new and unique concept in game experiences, where the gameplay changes over time. The game starts in an initial, simple state, but as you explore deeper into the game system, the mechanisms and gameplay will evolve over time.&#10;&#10;You play the game many times, and each play changes the game slightly. Unlike in a Legacy game, however, the game is never permanently changed.  At any time you may easily restart a Fable game from the beginning, either after you have run through the entire game system, or at any time during the many plays you will get from this game system. This Fable Game will remain just as playable on the 20th play as it was on the first plays of the game.&#10;&#10;Fabled Fruit FAQ&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3086825_t.jpg",
+            "year": 2016,
+            "minPlayers": 2,
+            "maxPlayers": 5,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.19177,
+            "categories": [
+                "Animals",
+                "Card Game"
+            ],
+            "mechanisms": [
+                "Set Collection",
                 "Worker Placement"
             ],
             "expansion": false
@@ -4309,7 +4673,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.97346,
+            "rating": 6.92273,
             "categories": [
                 "Bluffing",
                 "Card Game"
@@ -4349,7 +4713,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.5576,
+            "rating": 6.54937,
             "categories": [
                 "Number",
                 "Card Game"
@@ -4387,7 +4751,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.38113,
+            "rating": 5.35556,
             "categories": [],
             "mechanisms": [
                 "Press Your Luck",
@@ -4430,7 +4794,7 @@
             "playingTime": 80,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.81974,
+            "rating": 7.81219,
             "categories": [
                 "Arabian",
                 "Fantasy",
@@ -4472,7 +4836,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.81701,
+            "rating": 6.82474,
             "categories": [
                 "Abstract Strategy"
             ],
@@ -4508,7 +4872,7 @@
             "playingTime": 150,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.85213,
+            "rating": 7.84779,
             "categories": [
                 "Medieval",
                 "Economic",
@@ -4564,7 +4928,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.10201,
+            "rating": 6.10129,
             "categories": [
                 "Animals",
                 "Puzzle",
@@ -4605,7 +4969,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.54216,
+            "rating": 6.5413,
             "categories": [
                 "Medieval",
                 "City Building"
@@ -4662,7 +5026,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.41495,
+            "rating": 6.40896,
             "categories": [
                 "Space Exploration",
                 "Real-time",
@@ -4689,8 +5053,20 @@
         "name": "Colt Express",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic2869710_t.jpg",
-        "playsCount": 13,
+        "playsCount": 15,
         "plays": [
+            {
+                "bggId": 158899,
+                "gameName": "Colt Express",
+                "date": "2017-09-20",
+                "count": 1
+            },
+            {
+                "bggId": 158899,
+                "gameName": "Colt Express",
+                "date": "2017-09-18",
+                "count": 1
+            },
             {
                 "bggId": 158899,
                 "gameName": "Colt Express",
@@ -4751,7 +5127,7 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.22551,
+            "rating": 7.21685,
             "categories": [
                 "Trains",
                 "Fighting",
@@ -4806,7 +5182,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.29393,
+            "rating": 7.286,
             "categories": [
                 "Movies / TV / Radio theme",
                 "Fighting",
@@ -4849,7 +5225,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.89214,
+            "rating": 6.86069,
             "categories": [
                 "Fighting",
                 "Adventure",
@@ -4890,7 +5266,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.08702,
+            "rating": 6.08868,
             "categories": [
                 "Movies / TV / Radio theme",
                 "Children's Game",
@@ -4930,7 +5306,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.25712,
+            "rating": 7.25526,
             "categories": [
                 "Card Game",
                 "Pirates"
@@ -4976,7 +5352,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.14856,
+            "rating": 7.14235,
             "categories": [
                 "Nautical",
                 "Party Game",
@@ -5017,7 +5393,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.03471,
+            "rating": 7.03182,
             "categories": [
                 "City Building"
             ],
@@ -5061,7 +5437,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.48203,
+            "rating": 7.47762,
             "categories": [
                 "Renaissance",
                 "Economic",
@@ -5168,7 +5544,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.43347,
+            "rating": 6.40714,
             "categories": [
                 "Economic",
                 "Card Game"
@@ -5208,11 +5584,13 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.75798,
+            "rating": 7.72403,
             "categories": [
+                "Wargame",
                 "Civilization",
                 "Economic",
-                "Ancient"
+                "Ancient",
+                "Mythology"
             ],
             "mechanisms": [
                 "Area Control / Area Influence",
@@ -5256,7 +5634,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.06971,
+            "rating": 7.0758,
             "categories": [
                 "Dice"
             ],
@@ -5305,7 +5683,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.46332,
+            "rating": 7.46374,
             "categories": [
                 "Dice",
                 "Card Game",
@@ -5346,7 +5724,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.82501,
+            "rating": 6.82376,
             "categories": [
                 "Abstract Strategy",
                 "Medieval"
@@ -5390,7 +5768,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.26178,
+            "rating": 7.25765,
             "categories": [
                 "Horror",
                 "Novel-based",
@@ -5438,7 +5816,7 @@
             "playingTime": 50,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.60471,
+            "rating": 6.61378,
             "categories": [
                 "Party Game"
             ],
@@ -5482,7 +5860,7 @@
             "playingTime": 125,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.65335,
+            "rating": 7.65068,
             "categories": [
                 "Economic"
             ],
@@ -5527,7 +5905,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.28189,
+            "rating": 7.27181,
             "categories": [
                 "Adventure",
                 "Card Game",
@@ -5568,7 +5946,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.54021,
+            "rating": 7.54271,
             "categories": [
                 "Civilization",
                 "Fighting",
@@ -5616,7 +5994,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.86879,
+            "rating": 7.85038,
             "categories": [
                 "Party Game",
                 "Deduction",
@@ -5713,7 +6091,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.61562,
+            "rating": 5.62727,
             "categories": [
                 "Abstract Strategy",
                 "Card Game"
@@ -5753,7 +6131,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.09874,
+            "rating": 7.09364,
             "categories": [
                 "Nautical",
                 "Transportation",
@@ -5799,12 +6177,14 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.63472,
+            "rating": 7.61553,
             "categories": [
                 "Abstract Strategy"
             ],
             "mechanisms": [
-                "Grid Movement"
+                "Grid Movement",
+                "Area Movement",
+                "Hand Management"
             ],
             "expansion": false
         },
@@ -5841,7 +6221,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.55727,
+            "rating": 6.55384,
             "categories": [
                 "Card Game",
                 "City Building"
@@ -5885,7 +6265,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.55387,
+            "rating": 6.54083,
             "categories": [
                 "Dice",
                 "Action / Dexterity",
@@ -5925,7 +6305,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.16817,
+            "rating": 7.15228,
             "categories": [
                 "Card Game",
                 "Fantasy"
@@ -5972,7 +6352,7 @@
             "playingTime": 75,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.96632,
+            "rating": 6.96254,
             "categories": [
                 "Medieval",
                 "Economic",
@@ -6024,7 +6404,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.13599,
+            "rating": 8.1214,
             "categories": [
                 "Fighting",
                 "Miniatures",
@@ -6111,7 +6491,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.10377,
+            "rating": 7.09254,
             "categories": [
                 "Novel-based",
                 "Deduction",
@@ -6153,7 +6533,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.10245,
+            "rating": 7.09884,
             "categories": [
                 "Novel-based",
                 "Deduction"
@@ -6197,7 +6577,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.35796,
+            "rating": 7.35679,
             "categories": [
                 "Card Game",
                 "Fantasy"
@@ -6225,7 +6605,27 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 140535,
+            "type": "GAME",
+            "description": "Kory&#197;&#143; is a game based on an uchronian and politico-steampunk universe.&#10;&#10;Each turn, players simultaneously choose a family of politician from their hand, and play as many cards of this family as they have and wish to. Each family has a value ranging from 1 to 9, which indicates both the number of cards in the family and the number of victory points the player controlling this family will score at the end of the game.&#10;&#10;A game lasts exactly eight turns, and on each turn a family grants its specific power to the player controlling it. Thus, efficient handling of these powers is the key to success! While their influence increases turn by turn due to the number of authorized cards in their council, the number of cards drawn each turn dwindles, making choices all the more difficult.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic1858262_t.jpg",
+            "year": 2013,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 20,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.79444,
+            "categories": [
+                "Card Game"
+            ],
+            "mechanisms": [
+                "Set Collection",
+                "Simultaneous Action Selection"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -6253,7 +6653,7 @@
             "playingTime": 0,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.18864,
+            "rating": 7.14994,
             "categories": [
                 "Bluffing",
                 "Card Game",
@@ -6299,7 +6699,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.79445,
+            "rating": 7.79298,
             "categories": [
                 "City Building",
                 "Fantasy"
@@ -6428,7 +6828,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.09026,
+            "rating": 7.09761,
             "categories": [
                 "Bluffing",
                 "Card Game"
@@ -6479,10 +6879,11 @@
             "playingTime": 180,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.82347,
+            "rating": 7.8279,
             "categories": [],
             "mechanisms": [
                 "Action Point Allowance System",
+                "Action / Movement Programming",
                 "Simultaneous Action Selection",
                 "Worker Placement",
                 "Tile Placement"
@@ -6534,7 +6935,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.30003,
+            "rating": 6.30238,
             "categories": [
                 "Nautical",
                 "Card Game",
@@ -6574,8 +6975,9 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.07778,
+            "rating": 7.10511,
             "categories": [
+                "Print & Play",
                 "Puzzle",
                 "Real-time",
                 "Exploration",
@@ -6620,7 +7022,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.08195,
+            "rating": 7.07769,
             "categories": [
                 "Deduction",
                 "Murder/Mystery"
@@ -6670,7 +7072,7 @@
             "playingTime": 180,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.30613,
+            "rating": 7.29727,
             "categories": [
                 "Miniatures",
                 "Horror",
@@ -6756,7 +7158,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.52606,
+            "rating": 7.51867,
             "categories": [
                 "Renaissance",
                 "Economic",
@@ -6801,7 +7203,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.34408,
+            "rating": 7.33872,
             "categories": [
                 "Territory Building",
                 "Environmental",
@@ -6810,6 +7212,7 @@
             ],
             "mechanisms": [
                 "Pattern Building",
+                "Action Point Allowance System",
                 "Grid Movement",
                 "Dice Rolling",
                 "Set Collection",
@@ -6864,7 +7267,28 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 265,
+            "type": "GAME",
+            "description": "This pure negotiation game pits the players as Renaissance era families that are engaging in rampant nepotism.  Players are seeking positions in the other families' businesses, and to further that pursuit players offer bribes.  However, once accepting a bribe, the 'bought' player is under absolutely no obligation to honor the highest briber or any other verbal deal.  In a word, this game is vicious.&#10;&#10;The new AMIGO Spiel + Freizeit GmbH edition came out in 2005.&#10;&#10;The main difference between the F.X. Schmid and the AMIGO Spiel + Freizeit GmbH versions are that the the F.X. Schmid version uses five houses/buildings per player, with values of 1,2,3,5, and 10, but the AMIGO Spiel + Freizeit GmbH version uses four buildings/houses per player, with values of 1,3,6, and 10.  Accordingly, the F.X. Schmid version has five professions - knight, merchant, lawyer, writer, and clergy - but the AMIGO Spiel + Freizeit GmbH version retains only clergy and writer, and adds chemist and doctor.&#10;&#10;Online Play&#10;&#10;&#10;     BrettspielWelt (real-time)&#10;&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2740783_t.jpg",
+            "year": 1994,
+            "minPlayers": 3,
+            "maxPlayers": 5,
+            "playingTime": 45,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.37382,
+            "categories": [
+                "Renaissance",
+                "Negotiation"
+            ],
+            "mechanisms": [
+                "Area Control / Area Influence",
+                "Auction/Bidding"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -6892,7 +7316,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.29348,
+            "rating": 6.28125,
             "categories": [
                 "Bluffing",
                 "Party Game",
@@ -6912,7 +7336,7 @@
     {
         "id": 152847,
         "name": "Shinobi WAT-AAH!",
-        "status": "OWNED",
+        "status": "PREVIOUSLY_OWNED",
         "image": "https://cf.geekdo-images.com/images/pic2024983_t.jpg",
         "playsCount": 23,
         "plays": [
@@ -6940,7 +7364,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.43916,
+            "rating": 6.42871,
             "categories": [
                 "Fighting",
                 "Card Game",
@@ -6949,6 +7373,46 @@
             "mechanisms": [
                 "Worker Placement",
                 "Hand Management"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": true
+    },
+    {
+        "id": 176396,
+        "name": "Quadropolis",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic2840020_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 176396,
+                "gameName": "Quadropolis",
+                "date": "2017-11-04",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 176396,
+            "type": "GAME",
+            "description": "Each player builds their own metropolis in Quadropolis (first announced as City Mania), but they're competing with one another for the shops, parks, public services and other structures to be placed in them.&#10;&#10;The game lasts four rounds, and in each round players first lay out tiles for the appropriate round at random on a 5x5 grid. Each player has four architects numbered 1-4 and on a turn, a player places an architect next to a row or column in the grid, claims the tile that's as far in as the number of the architect placed (e.g., the fourth tile in for architect #4), places that tile in the appropriately numbered row or column on the player's 4x4 city board, then claims any resources associated with the tile (inhabitants or energy).&#10;&#10;When a player takes a tile, a figure is placed in this now-empty space and the next player cannot place an architect in the same row or column where this tile was located. In addition, you can't place one architect on top of another, so each placement cuts off play options for you and everyone else later in the round. After all players have placed all four architects, the round ends, all remaining tiles are removed, and the tiles for the next round laid out.&#10;&#10;After four rounds, the game ends. Players can move the inhabitants and energy among their tiles at any point during the game to see how to maximize their score. At game end, they then score for each of the six types of buildings depending on how well they build their city &mdash; as long as they have activated the buildings with inhabitants or energy as required:&#10;&#10;&#10;    Residential buildings score depending on their height&#10;    Shops score depending on how many customers they have&#10;    Public services score depending on the number of districts in your city that have them&#10;    Parks score depending on the number of residential buildings next to them&#10;    Harbors score based on the longest row or column of activated harbors in the city&#10;    Factories score based on the number of adjacent shops and harbors&#10;&#10;&#10;Some buildings are worth victory points (VPs) on their own, and once players sum these values with what they've scored for each type of building in their city, whoever has the highest score wins.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2840020_t.jpg",
+            "year": 2016,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 60,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.44724,
+            "categories": [
+                "Environmental",
+                "City Building"
+            ],
+            "mechanisms": [
+                "Pattern Building",
+                "Set Collection",
+                "Hand Management",
+                "Tile Placement"
             ],
             "expansion": false
         },
@@ -6985,7 +7449,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.01382,
+            "rating": 7.01459,
             "categories": [
                 "American West",
                 "Farming"
@@ -7023,7 +7487,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.06781,
+            "rating": 7.06151,
             "categories": [
                 "Medieval"
             ],
@@ -7061,7 +7525,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.81461,
+            "rating": 6.81395,
             "categories": [
                 "Ancient",
                 "Mythology"
@@ -7157,7 +7621,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.7067,
+            "rating": 6.69664,
             "categories": [
                 "Medieval",
                 "Bluffing",
@@ -7202,7 +7666,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.86589,
+            "rating": 5.83318,
             "categories": [
                 "Card Game"
             ],
@@ -7240,7 +7704,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.52527,
+            "rating": 7.49222,
             "categories": [
                 "Medieval",
                 "Economic",
@@ -7280,7 +7744,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.09573,
+            "rating": 6.10172,
             "categories": [
                 "Negotiation",
                 "Economic",
@@ -7321,7 +7785,7 @@
             "playingTime": 10,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.55149,
+            "rating": 6.52451,
             "categories": [
                 "Children's Game"
             ],
@@ -7411,7 +7875,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.90033,
+            "rating": 6.95045,
             "categories": [
                 "Bluffing",
                 "Deduction",
@@ -7422,6 +7886,42 @@
                 "Take That",
                 "Memory",
                 "Player Elimination"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 168220,
+        "name": "Deal, Gentlemen Collectionneurs",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic2286108_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 168220,
+                "gameName": "Deal, Gentlemen Collectionneurs",
+                "date": "2017-11-05",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 168220,
+            "type": "GAME",
+            "description": "You are playing the roles of millionaires who collect mysterious artefacts from the four corners of the earth. Apparently, when collected in threes, these objects have amazing powers. Auctions bore you, so instead you and your rivals have to agree on how to divvy up each load of artefacts. In each round, three objects must be divided up between two players. Each person takes what he or she wishes &ndash; if the other person agrees! Is it a deal?&#10;&#10;In each round (or Deal), place 3 artefact cards in the middle of the table: 2 face up and 1 face down. Two players must agree on how to divide up these 3 cards. Attention: all the cards must go somewhere; none can be set aside. Cards from previous rounds cannot be exchanged. Negotiations are free and open. They end as soon as both players accept a proposal and say, &ldquo;DEAL!&rdquo;&#10;Once an agreement has been reached, the 2 players each take their share and place it behind their own screens. The player who has obtained the face-down card can look at it (secretly or openly) and put it with his or her other cards.&#10;The game ends with there are no more cards in the stack.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2286108_t.jpg",
+            "year": 2014,
+            "minPlayers": 2,
+            "maxPlayers": 3,
+            "playingTime": 10,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.52174,
+            "categories": [
+                "Negotiation"
+            ],
+            "mechanisms": [
+                "Set Collection"
             ],
             "expansion": false
         },
@@ -7458,7 +7958,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.48145,
+            "rating": 6.45078,
             "categories": [
                 "Wargame",
                 "Ancient",
@@ -7506,13 +8006,14 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.38287,
+            "rating": 7.3763,
             "categories": [
                 "Civilization",
                 "Mythology"
             ],
             "mechanisms": [
                 "Route/Network Building",
+                "Area Control / Area Influence",
                 "Grid Movement",
                 "Hand Management",
                 "Modular Board"
@@ -7546,7 +8047,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.72792,
+            "rating": 6.72594,
             "categories": [
                 "Children's Game",
                 "Party Game",
@@ -7567,8 +8068,14 @@
         "name": "Kingdomino",
         "status": "OTHER",
         "image": "https://cf.geekdo-images.com/images/pic3132685_t.png",
-        "playsCount": 2,
+        "playsCount": 3,
         "plays": [
+            {
+                "bggId": 204583,
+                "gameName": "Kingdomino",
+                "date": "2017-09-30",
+                "count": 1
+            },
             {
                 "bggId": 204583,
                 "gameName": "Kingdomino",
@@ -7593,7 +8100,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.48586,
+            "rating": 7.46151,
             "categories": [
                 "Territory Building",
                 "Medieval",
@@ -7601,6 +8108,7 @@
             ],
             "mechanisms": [
                 "Card Drafting",
+                "Pattern Building",
                 "Variable Phase Order",
                 "Tile Placement"
             ],
@@ -7645,7 +8153,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.65254,
+            "rating": 6.64782,
             "categories": [
                 "Mafia",
                 "Fighting",
@@ -7689,12 +8197,11 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.46277,
+            "rating": 7.45587,
             "categories": [
                 "Fighting",
                 "Miniatures",
                 "Adventure",
-                "Dice",
                 "Fantasy",
                 "Exploration"
             ],
@@ -7741,7 +8248,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.30338,
+            "rating": 7.28282,
             "categories": [
                 "Economic",
                 "Number",
@@ -7759,50 +8266,24 @@
         "previouslyOwned": false
     },
     {
-        "id": 146731,
-        "name": "Sherlock Holmes Détective Conseil: Les Masques Africains",
-        "status": "OWNED",
-        "image": "https://cf.geekdo-images.com/images/pic1752703_t.jpg",
-        "playsCount": 1,
-        "plays": [
-            {
-                "bggId": 146731,
-                "gameName": "Sherlock Holmes Détective Conseil: Les Masques Africains",
-                "date": "2016-08-17",
-                "count": 1
-            }
-        ],
-        "data": {
-            "id": 146731,
-            "type": "EXPANSION",
-            "description": "This expansion to the 2011 Ystari re-edition of Sherlock Holmes Consulting Detective contains 1 Case book and 1 newspaper.&#10;&#10;The date is 5 February 1902 and you have to unleash the mystery of the murder of Sgt MacSwinney, a second boer war veteran.&#10;&#10;This case as a strong historical context and some Times articles are actually out of the real Times archive of this day.&#10;&#10;",
-            "image": "https://cf.geekdo-images.com/images/pic1752703_t.jpg",
-            "year": 2013,
-            "minPlayers": 1,
-            "maxPlayers": 8,
-            "playingTime": 150,
-            "name": null,
-            "source": "BOARDGAMEGEEK",
-            "rating": 7.865,
-            "categories": [
-                "Novel-based",
-                "Deduction",
-                "Murder/Mystery"
-            ],
-            "mechanisms": [
-                "Co-operative Play"
-            ],
-            "expansion": true
-        },
-        "previouslyOwned": false
-    },
-    {
         "id": 143147,
         "name": "Saboteur (compilation editions)",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic904315_t.jpg",
-        "playsCount": 17,
+        "playsCount": 22,
         "plays": [
+            {
+                "bggId": 143147,
+                "gameName": "Saboteur (compilation editions)",
+                "date": "2017-10-17",
+                "count": 3
+            },
+            {
+                "bggId": 143147,
+                "gameName": "Saboteur (compilation editions)",
+                "date": "2017-10-16",
+                "count": 2
+            },
             {
                 "bggId": 143147,
                 "gameName": "Saboteur (compilation editions)",
@@ -7852,7 +8333,68 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 143147,
+            "type": "GAME",
+            "description": "(Note: This listing covers only the compilation versions of Saboteur that include both the base game and the expansion; for a listing of the expansion-only versions, go to Saboteur 2 (expansion-only editions).)&#10;&#10;In Saboteur, each player takes on the role of a gold-digging dwarf or a saboteur who wants to hinder exploration of the gold mines &mdash; but each player knows only his own role, so the digging may or may not go as planned!&#10;&#10;Each turn, a player either lays down a tunnel card to dig from the start card toward one of the goal cards (or potentially away, if a saboteur) or plays an action card to help or hinder someone. If the diggers manage to find the gold hidden under one of the goal cards, then the diggers share the loot found there; if the gold can't be reached before the deck runs out, the saboteurs profit instead. After three rounds, the player with the most gold wins.&#10;&#10;This version of Saboteur includes the base game plus additional role cards (the boss, profiteers, geologists), new action cards (steal gold, change your role), and new tunnel cards featuring doors, ladders and bridges. What's more, the gold seekers can now be divided into teams &mdash; blue vs. green &mdash; and only those on the team that finds the gold score anything &mdash; assuming that anyone finds the gold at all, of course...&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic904315_t.jpg",
+            "year": 2011,
+            "minPlayers": 2,
+            "maxPlayers": 12,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.99724,
+            "categories": [
+                "Bluffing",
+                "Card Game",
+                "Exploration"
+            ],
+            "mechanisms": [
+                "Route/Network Building",
+                "Partnerships",
+                "Hand Management"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 146731,
+        "name": "Sherlock Holmes Détective Conseil: Les Masques Africains",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic1752703_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 146731,
+                "gameName": "Sherlock Holmes Détective Conseil: Les Masques Africains",
+                "date": "2016-08-17",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 146731,
+            "type": "EXPANSION",
+            "description": "This expansion to the 2011 Ystari re-edition of Sherlock Holmes Consulting Detective contains 1 Case book and 1 newspaper.&#10;&#10;The date is 5 February 1902 and you have to unleash the mystery of the murder of Sgt MacSwinney, a second boer war veteran.&#10;&#10;This case as a strong historical context and some Times articles are actually out of the real Times archive of this day.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic1752703_t.jpg",
+            "year": 2013,
+            "minPlayers": 1,
+            "maxPlayers": 8,
+            "playingTime": 150,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.865,
+            "categories": [
+                "Novel-based",
+                "Deduction",
+                "Murder/Mystery"
+            ],
+            "mechanisms": [
+                "Co-operative Play"
+            ],
+            "expansion": true
+        },
         "previouslyOwned": false
     },
     {
@@ -7880,7 +8422,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.92848,
+            "rating": 6.88093,
             "categories": [
                 "Card Game",
                 "Fantasy"
@@ -7932,7 +8474,31 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 150312,
+            "type": "GAME",
+            "description": "Welcome to the Dungeon &mdash; first released as Dungeon of Mandom &mdash; is a push-your-luck dungeon delve in which 2-4 players take turns essentially daring each other to go into a dungeon with less equipment than they start off with while filling the dungeon with monsters. Players can win the game by winning 2 rounds or get eliminated from the game by losing 2 rounds. Each player has a 2-sided players card that has a white side and a red side. The first win taps the player card and the 1st loss flips the card over to the red side. A 2nd loss will have the player turn the card back into the box.&#10;&#10;The game is played in rounds. The player sets up the base character and all the equipment equipped. This represents every player as a fully equipped dungeon delver.&#10;&#10;Each round, the start player (the person who challenged the dungeon last or the last player to be in a dungeon) can choose to draw a card from the monster deck or pass their turn.&#10;&#10;If they choose to draw, they can do one of two things: (1) keep it and de-equip an equipment or (2) place it face down in the dungeon. Placing it face down in the dungeon creates the dungeon deck and fills the dungeon with monsters that the challenger will have to face later. If they choose to pass their turn, they cannot participate in the rest of the round. Once only one person is left after all the other players have passed their turn, that player then becomes the challenger and must go into the dungeon with only the equipment he has equipped.&#10;&#10;The player then flips cards off the dungeon deck and fights the monsters within. Some equipment allow you to null the enemy damage or be able to withstand it by increasing your HP. If the player survives the dungeon with at least 1 HP, they win that round. If not, they lose. The players then reshuffles all the cards to make a new monster deck and re-equips all the equipment to start a new round.&#10;&#10;The game ends when someone has won twice or one player is the last man standing.&#10;&#10;Welcome to the Dungeon includes four different sets of character cards whereas Dungeon of Mandom has only a single character.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2436689_t.jpg",
+            "year": 2013,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.73793,
+            "categories": [
+                "Fighting",
+                "Bluffing",
+                "Card Game",
+                "Fantasy"
+            ],
+            "mechanisms": [
+                "Press Your Luck",
+                "Memory",
+                "Player Elimination"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": true
     },
     {
@@ -7960,7 +8526,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.43564,
+            "rating": 7.43773,
             "categories": [
                 "Abstract Strategy"
             ],
@@ -7976,8 +8542,38 @@
         "name": "Lords of Scotland",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic2338328_t.jpg",
-        "playsCount": 11,
+        "playsCount": 16,
         "plays": [
+            {
+                "bggId": 67888,
+                "gameName": "Lords of Scotland",
+                "date": "2017-10-13",
+                "count": 1
+            },
+            {
+                "bggId": 67888,
+                "gameName": "Lords of Scotland",
+                "date": "2017-10-12",
+                "count": 1
+            },
+            {
+                "bggId": 67888,
+                "gameName": "Lords of Scotland",
+                "date": "2017-10-11",
+                "count": 1
+            },
+            {
+                "bggId": 67888,
+                "gameName": "Lords of Scotland",
+                "date": "2017-10-09",
+                "count": 1
+            },
+            {
+                "bggId": 67888,
+                "gameName": "Lords of Scotland",
+                "date": "2017-10-04",
+                "count": 1
+            },
             {
                 "bggId": 67888,
                 "gameName": "Lords of Scotland",
@@ -8032,7 +8628,7 @@
             "playingTime": 35,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.8049,
+            "rating": 6.80669,
             "categories": [
                 "Fighting",
                 "Medieval",
@@ -8076,7 +8672,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.78584,
+            "rating": 6.79104,
             "categories": [
                 "Environmental",
                 "Economic"
@@ -8150,7 +8746,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.97421,
+            "rating": 6.96081,
             "categories": [
                 "Zombies",
                 "Real-time"
@@ -8195,7 +8791,7 @@
             "playingTime": 25,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.93504,
+            "rating": 6.9328,
             "categories": [
                 "Territory Building",
                 "Novel-based"
@@ -8210,14 +8806,14 @@
     },
     {
         "id": 3383,
-        "name": "Die heisse Schlacht am kalten Buffet",
+        "name": "Mahé",
         "status": "OTHER",
-        "image": "https://cf.geekdo-images.com/images/pic158550_t.jpg",
+        "image": "https://cf.geekdo-images.com/images/pic2215153_t.jpg",
         "playsCount": 1,
         "plays": [
             {
                 "bggId": 3383,
-                "gameName": "Die heisse Schlacht am kalten Buffet",
+                "gameName": "Mahé",
                 "date": "2015-09-25",
                 "count": 1
             }
@@ -8226,14 +8822,14 @@
             "id": 3383,
             "type": "GAME",
             "description": "In Die Heisse Schlacht am Kalten Buffet, alternatively released as Kangaroo and Generalowsky, players try to win prize cards from the limited number available to them &mdash; but to win they must lap a circular track that (typically) consists of 21 spaces, and not only must they circle the track, but they have to do so while being top dog, so to speak.&#10;&#10;On a turn, a player rolls 1-3 six-sided dice to determine whether she moves and if so how far she moves. She rolls the dice one by one, stopping when she wishes, and the sum of the dice rolled can't exceed 7. If she rolls only one die, she moves forward by the number rolled; if she rolled two dice, she moves twice the sum of her dice (if the sum &le; 7); and if she rolled three dice, she moves three times the sum (again, if the sum &le; 7). If her sum exceeds 7, she removes her piece from the board and starts the lap from the beginning next turn.&#10;&#10;If one piece lands on another, the bottom piece must carry the top one when it next moves; what's more, the owner of the piece on top dictates how many dice the bottom player must roll &mdash; and if those dice sum to more than seven, then both pieces are removed from the track. Stacks can have any number of pieces, and whoever is on top dictates to the active player how many dice she must roll. When a piece in the middle of a stack moves, it leaves all pieces below it in place.&#10;&#10;When a piece or a stack lands on or passes the final space in the lap, the owner of the topmost piece takes one of the prize cards; each prize has a value on it, and once all the prizes have been claimed, whoever has the highest sum of prize cards wins.&#10;&#10;The 2014 edition of the game, Mah&eacute;, allows for play with up to seven player turtles, who are circling the island while trying to lay their eggs on the beach and receive points for doing a good job.&#10;&#10;",
-            "image": "https://cf.geekdo-images.com/images/pic158550_t.jpg",
+            "image": "https://cf.geekdo-images.com/images/pic2215153_t.jpg",
             "year": 1974,
             "minPlayers": 2,
             "maxPlayers": 6,
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.28747,
+            "rating": 6.27281,
             "categories": [
                 "Animals",
                 "Dice"
@@ -8303,7 +8899,33 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 169786,
+            "type": "GAME",
+            "description": "It is a time of unrest in 1920s Europa. The ashes from the first great war still darken the snow. The capitalistic city-state known simply as &ldquo;The Factory&rdquo;, which fueled the war with heavily armored mechs, has closed its doors, drawing the attention of several nearby countries.&#10;&#10;Scythe is an engine-building game set in an alternate-history 1920s period. It is a time of farming and war, broken hearts and rusted gears, innovation and valor. In Scythe, each player represents a character from one of five factions of Eastern Europe who are attempting to earn their fortune and claim their faction's stake in the land around the mysterious Factory. Players conquer territory, enlist new recruits, reap resources, gain villagers, build structures, and activate monstrous mechs.&#10;&#10;Each player begins the game with different resources (power, coins, combat acumen, and popularity), a different starting location, and a hidden goal. Starting positions are specially calibrated to contribute to each faction&rsquo;s uniqueness and the asymmetrical nature of the game (each faction always starts in the same place).&#10;&#10;Scythe gives players almost complete control over their fate. Other than each player&rsquo;s individual hidden objective card, the only elements of luck or variability are &ldquo;encounter&rdquo; cards that players will draw as they interact with the citizens of newly explored lands. Each encounter card provides the player with several options, allowing them to mitigate the luck of the draw through their selection. Combat is also driven by choices, not luck or randomness.&#10;&#10;Scythe uses a streamlined action-selection mechanism (no rounds or phases) to keep gameplay moving at a brisk pace and reduce downtime between turns. While there is plenty of direct conflict for players who seek it, there is no player elimination.&#10;&#10;Every part of Scythe has an aspect of engine-building to it. Players can upgrade actions to become more efficient, build structures that improve their position on the map, enlist new recruits to enhance character abilities, activate mechs to deter opponents from invading, and expand their borders to reap greater types and quantities of resources. These engine-building aspects create a sense of momentum and progress throughout the game. The order in which players improve their engine adds to the unique feel of each game, even when playing one faction multiple times.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3163924_t.jpg",
+            "year": 2016,
+            "minPlayers": 1,
+            "maxPlayers": 5,
+            "playingTime": 115,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 8.29783,
+            "categories": [
+                "Territory Building",
+                "Civilization",
+                "Fighting",
+                "Economic",
+                "Science Fiction"
+            ],
+            "mechanisms": [
+                "Area Control / Area Influence",
+                "Grid Movement",
+                "Variable Player Powers",
+                "Simultaneous Action Selection"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -8331,7 +8953,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.40243,
+            "rating": 6.39055,
             "categories": [],
             "mechanisms": [
                 "Area Control / Area Influence",
@@ -8372,7 +8994,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.50313,
+            "rating": 7.5021,
             "categories": [
                 "Renaissance",
                 "Nautical",
@@ -8416,7 +9038,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.07578,
+            "rating": 7.07529,
             "categories": [
                 "Ancient"
             ],
@@ -8502,7 +9124,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.24169,
+            "rating": 7.22598,
             "categories": [
                 "Bluffing",
                 "Card Game",
@@ -8510,6 +9132,7 @@
             ],
             "mechanisms": [
                 "Action / Movement Programming",
+                "Partnerships",
                 "Hand Management",
                 "Deck / Pool Building"
             ],
@@ -8548,7 +9171,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.49073,
+            "rating": 6.49087,
             "categories": [
                 "Renaissance",
                 "Economic"
@@ -8593,7 +9216,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.88693,
+            "rating": 6.88643,
             "categories": [
                 "Fighting",
                 "Party Game",
@@ -8655,7 +9278,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.45019,
+            "rating": 6.4419,
             "categories": [
                 "Bluffing",
                 "Deduction",
@@ -8696,7 +9319,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.3346,
+            "rating": 7.33163,
             "categories": [
                 "Environmental",
                 "Animals",
@@ -8779,7 +9402,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.21352,
+            "rating": 7.19055,
             "categories": [
                 "Card Game",
                 "City Building",
@@ -8818,7 +9441,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.62892,
+            "rating": 7.6255,
             "categories": [
                 "Dice",
                 "Prehistoric"
@@ -8894,7 +9517,29 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 174927,
+            "type": "GAME",
+            "description": "Designer/publisher : Jonathan BIZET&#10;Artist : Gwen VIBANCOS&#10;Rulewriter : J&eacute;r&eacute;mie VUILLARD&#10;&#10;MASTERLINE is a strategy game for 2 players. Goal is to align  five complete gears of your own color.&#10;&#10;Shuffle the deck and distribute 4 cards to each of the two players. The rest of the deck is left face down to form the stock pile. Draw the first card and put it face up between the players. The first player chooses the color of his gear (silver or copper), which will remains his color for the rest of the game.&#10;At your turn, you draw a card, and place one card from your hand. These two phases (drawing and placing) are mandatory.&#10;&#10;Below the type of the cards:&#10;&#10;    Padlock : cannot be rotated, even by a joker card&#10;    Rotation : identified by their arrows. Allow the player to rotate one adjacent card by a quarter turn in the arrow direction&#10;    Joker : purple cards. They bear both colors. When placed, they allow the player to rotate any card by a quarter turn. The color association between gears must always be respected when placing them.&#10;&#10;&#10;&#10;&#10;When placing a card, you are free to decide whether to use its power or not.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3130929_t.jpg",
+            "year": 2015,
+            "minPlayers": 2,
+            "maxPlayers": 2,
+            "playingTime": 15,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 5.32195,
+            "categories": [
+                "Abstract Strategy",
+                "Card Game"
+            ],
+            "mechanisms": [
+                "Tile Placement",
+                "Modular Board",
+                "Line Drawing"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -8928,7 +9573,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.58036,
+            "rating": 7.57377,
             "categories": [
                 "American West",
                 "Racing"
@@ -8969,7 +9614,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.12353,
+            "rating": 7.10041,
             "categories": [
                 "Puzzle",
                 "Card Game"
@@ -9020,7 +9665,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.33561,
+            "rating": 7.32642,
             "categories": [
                 "Card Game",
                 "Mythology",
@@ -9032,6 +9677,52 @@
                 "Press Your Luck",
                 "Set Collection",
                 "Hand Management"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 198994,
+        "name": "Hero Realms",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic3744052_t.jpg",
+        "playsCount": 2,
+        "plays": [
+            {
+                "bggId": 198994,
+                "gameName": "Hero Realms",
+                "date": "2017-09-13",
+                "count": 1
+            },
+            {
+                "bggId": 198994,
+                "gameName": "Hero Realms",
+                "date": "2017-09-13",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 198994,
+            "type": "GAME",
+            "description": "Hero Realms is a fantasy-themed deck-building game that is an adaptation of the award-winning Star Realms game. The game includes basic rules for two-player games, along with rules for multiplayer formats such as Free-For-All, Hunter, and Hydra.&#10;&#10;Each player starts the game with a ten-card personal deck containing gold (for buying) and weapons (for combat). You start each turn with a new hand of five cards from your personal deck. When your deck runs out of cards, you shuffle your discard pile into your new deck. An 80-card Market deck is shared by all players, with five cards being revealed from that deck to create the Market Row. As you play, you use gold to buy champion cards and action cards from the Market. These champions and actions can generate large amounts of gold, combat, or other powerful effects. You use combat to attack your opponent and their champions. When you reduce your opponent's score (called health) to zero, you win!&#10;&#10;Multiple expansions are available for Hero Realms that allow players to start as a particular character (Cleric, Fighter, Ranger, Thief, or Wizard) and fight cooperatively against a Boss, fight Boss decks against one another, or compete in a campaign mode that has you gain experience to work through different levels of missions.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3744052_t.jpg",
+            "year": 2016,
+            "minPlayers": 1,
+            "maxPlayers": 4,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.77833,
+            "categories": [
+                "Fighting",
+                "Card Game",
+                "Fantasy"
+            ],
+            "mechanisms": [
+                "Card Drafting",
+                "Hand Management",
+                "Deck / Pool Building"
             ],
             "expansion": false
         },
@@ -9068,7 +9759,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.89333,
+            "rating": 6.88767,
             "categories": [
                 "Card Game",
                 "City Building",
@@ -9133,7 +9824,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.01107,
+            "rating": 6.99995,
             "categories": [
                 "Civilization",
                 "Negotiation",
@@ -9178,7 +9869,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.6668,
+            "rating": 7.6649,
             "categories": [
                 "Medical"
             ],
@@ -9220,7 +9911,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.74368,
+            "rating": 6.73931,
             "categories": [
                 "Card Game",
                 "Fantasy",
@@ -9262,7 +9953,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.74628,
+            "rating": 6.75008,
             "categories": [
                 "Civilization",
                 "Economic",
@@ -9304,7 +9995,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.05206,
+            "rating": 7.0465,
             "categories": [
                 "Animals",
                 "Nautical",
@@ -9312,7 +10003,8 @@
             ],
             "mechanisms": [
                 "Card Drafting",
-                "Set Collection"
+                "Set Collection",
+                "Simultaneous Action Selection"
             ],
             "expansion": false
         },
@@ -9343,13 +10035,86 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.81793,
+            "rating": 7.81837,
             "categories": [
                 "Trains",
                 "Industry / Manufacturing"
             ],
             "mechanisms": [
                 "Worker Placement"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 159587,
+        "name": "Contrées",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic2039353_t.png",
+        "playsCount": 11,
+        "plays": [
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2017-10-30",
+                "count": 3
+            },
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2017-05-22",
+                "count": 1
+            },
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2016-12-20",
+                "count": 1
+            },
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2016-12-19",
+                "count": 3
+            },
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2015-10-01",
+                "count": 1
+            },
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2015-10-01",
+                "count": 1
+            },
+            {
+                "bggId": 159587,
+                "gameName": "Contrées",
+                "date": "2015-09-29",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 159587,
+            "type": "GAME",
+            "description": "Contr&eacute;es is a two player abstract game based on the mechanism of majority and surrounding.&#10;&#10;Short resume of the rules:&#10;The board is modular, it is made of specific hexagonal territories.&#10;On that board each player plays his pawns on the corner of the hexagons and try to control as much territories as possible.&#10;When a player have 4 pawn around a territory, he can place a possession mark on it and remove the enemy pawns from it. &#10;It is pretty simple but be careful, like in the game of GO, you can surround the opponent pawns and capture them.&#10;When both player have played all their pawns, the one who control the most territories wins.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2039353_t.png",
+            "year": 2014,
+            "minPlayers": 2,
+            "maxPlayers": 2,
+            "playingTime": 15,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.76923,
+            "categories": [
+                "Abstract Strategy"
+            ],
+            "mechanisms": [
+                "Area Control / Area Influence",
+                "Modular Board"
             ],
             "expansion": false
         },
@@ -9422,7 +10187,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.82548,
+            "rating": 7.82063,
             "categories": [
                 "Civilization",
                 "Ancient",
@@ -9441,67 +10206,39 @@
         "previouslyOwned": false
     },
     {
-        "id": 159587,
-        "name": "Contrées",
-        "status": "OWNED",
-        "image": "https://cf.geekdo-images.com/images/pic2039353_t.png",
-        "playsCount": 8,
+        "id": 218465,
+        "name": "Contrast",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic3788079_t.png",
+        "playsCount": 1,
         "plays": [
             {
-                "bggId": 159587,
-                "gameName": "Contrées",
-                "date": "2017-05-22",
-                "count": 1
-            },
-            {
-                "bggId": 159587,
-                "gameName": "Contrées",
-                "date": "2016-12-20",
-                "count": 1
-            },
-            {
-                "bggId": 159587,
-                "gameName": "Contrées",
-                "date": "2016-12-19",
-                "count": 3
-            },
-            {
-                "bggId": 159587,
-                "gameName": "Contrées",
-                "date": "2015-10-01",
-                "count": 1
-            },
-            {
-                "bggId": 159587,
-                "gameName": "Contrées",
-                "date": "2015-10-01",
-                "count": 1
-            },
-            {
-                "bggId": 159587,
-                "gameName": "Contrées",
-                "date": "2015-09-29",
+                "bggId": 218465,
+                "gameName": "Contrast",
+                "date": "2017-09-09",
                 "count": 1
             }
         ],
         "data": {
-            "id": 159587,
+            "id": 218465,
             "type": "GAME",
-            "description": "Contr&eacute;es is a two player abstract game based on the mechanism of majority and surrounding.&#10;&#10;Short resume of the rules:&#10;The board is modular, it is made of specific hexagonal territories.&#10;On that board each player plays his pawns on the corner of the hexagons and try to control as much territories as possible.&#10;When a player have 4 pawn around a territory, he can place a possession mark on it and remove the enemy pawns from it. &#10;It is pretty simple but be careful, like in the game of GO, you can surround the opponent pawns and capture them.&#10;When both player have played all their pawns, the one who control the most territories wins.&#10;&#10;",
-            "image": "https://cf.geekdo-images.com/images/pic2039353_t.png",
-            "year": 2014,
+            "description": "Contrast is a light party game in which players score points by characterizing objects the same way.&#10;&#10;Each player has a deck of the same six cards, and each card has either opposite characteristics (short/long, round/square, etc.) or a pair of colors (red/yellow, blue/green). In each round, players simultaneously reveal one of the four cards they have in hand &mdash; as the other two cards are in front of them and cannot be used &mdash; with that card matching the top picture of the picture card deck in some way. The image might show a red balloon in the sky, for example, so do you reveal red, round, blue, or something else?&#10;&#10;Everyone simultaneously reveals their chosen card. If a player has voted with the majority, they take a picture card from the deck to keep track of their points. Then everyone refreshes their hand by picking up their left-most card and putting down their played card on the right. Then, another round begins.&#10;&#10;After the picture deck runs out, whoever has the most picture cards wins.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3788079_t.png",
+            "year": 2017,
             "minPlayers": 2,
-            "maxPlayers": 2,
-            "playingTime": 15,
+            "maxPlayers": 6,
+            "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.76923,
+            "rating": 6.33333,
             "categories": [
-                "Abstract Strategy"
+                "Party Game",
+                "Card Game"
             ],
             "mechanisms": [
-                "Area Control / Area Influence",
-                "Modular Board"
+                "Pattern Recognition",
+                "Voting",
+                "Simultaneous Action Selection"
             ],
             "expansion": false
         },
@@ -9544,7 +10281,7 @@
             "playingTime": 150,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.29008,
+            "rating": 8.28309,
             "categories": [
                 "Territory Building",
                 "Civilization",
@@ -9553,8 +10290,54 @@
             ],
             "mechanisms": [
                 "Route/Network Building",
+                "Area Control / Area Influence",
                 "Variable Player Powers",
                 "Variable Phase Order"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 176494,
+        "name": "Isle of Skye: From Chieftain to King",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic2524838_t.jpg",
+        "playsCount": 2,
+        "plays": [
+            {
+                "bggId": 176494,
+                "gameName": "Isle of Skye: From Chieftain to King",
+                "date": "2017-09-05",
+                "count": 1
+            },
+            {
+                "bggId": 176494,
+                "gameName": "Isle of Skye: From Chieftain to King",
+                "date": "2017-09-04",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 176494,
+            "type": "GAME",
+            "description": "Isle of Skye is one of the most beautiful places in the world, with soft sand beaches, gently sloping hills, and impressive  mountains. The landscape of Isle of Skye is breathtaking and fascinates everyone.&#10;&#10;In the tile-laying game Isle of Skye: From Chieftain to King, 2&ndash;5 players are chieftains of famous clans and want to build their kingdoms to score as many points as possible&mdash;but in each game only four of the sixteen scoring tiles will be scored.&#10;&#10;Thanks to the scoring tiles, each game is different and leads to different tactics and strategies, but having enough money is useful no matter what else is going on. Managing that money can be tricky, though. Each turn, each player places two area tiles in front of them and sets the selling price for the tiles. Setting a high price is great, but only so long as someone actually pays the price because if no one opts to buy, then the seller must buy the tiles at the price they previously requested.&#10;&#10;In the end, the player with the best kingdom&mdash;and not the richest player&mdash;becomes the sovereign of the island.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2524838_t.jpg",
+            "year": 2015,
+            "minPlayers": 2,
+            "maxPlayers": 5,
+            "playingTime": 50,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.50868,
+            "categories": [
+                "Territory Building",
+                "Economic"
+            ],
+            "mechanisms": [
+                "Auction/Bidding",
+                "Set Collection",
+                "Tile Placement"
             ],
             "expansion": false
         },
@@ -9585,7 +10368,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.2717,
+            "rating": 5.98313,
             "categories": [
                 "Bluffing",
                 "Party Game",
@@ -9597,6 +10380,53 @@
                 "Trading",
                 "Hand Management"
             ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 149869,
+        "name": "Sherlock 13",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic2689199_t.png",
+        "playsCount": 5,
+        "plays": [
+            {
+                "bggId": 149869,
+                "gameName": "Sherlock 13",
+                "date": "2017-11-04",
+                "count": 2
+            },
+            {
+                "bggId": 149869,
+                "gameName": "Sherlock 13",
+                "date": "2017-09-09",
+                "count": 1
+            },
+            {
+                "bggId": 149869,
+                "gameName": "Sherlock 13",
+                "date": "2017-09-09",
+                "count": 2
+            }
+        ],
+        "data": {
+            "id": 149869,
+            "type": "GAME",
+            "description": "In Sherlock 13, first published as Holmes 13, the players take the role of a detective, trying to unmask the famous thief Arsene Lupin, who is among them in disguise.&#10;&#10;The game consists of 13 character cards, with 2 to 3 characteristics each. Each characteristic is shared by 3 to 5 characters. The cards are shuffled and one is drawn and put aside. This card represents the disguise chosen by Arsene Lupin. The other cards are distributed evenly among the players. The players now tally the total of characteristics they have on their cards (e.g. 2 detectives, 1 female, 0 genius etc) and note them for later use.&#10;&#10;Players now take turns, asking a question to gather new evidence:&#10;&#10;a.) To all players: &quot;Who has (at least one) of (this characteristic)?&#10;&#10;OR&#10;&#10;b.) To one player: &quot;How many of (this characteristic) do you have?&#10;&#10;Using these clues the players try to figure out which disguise Arsene has chosen (i.e. which card is missing). Instead of a question, a player may announce which character he suspects to be Arsene in disguise. That player then secretly checks the hidden card. If the suspicion was correct, this player wins the game, otherwise the player is eliminated and the other players continue.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2689199_t.png",
+            "year": 2013,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 15,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.41794,
+            "categories": [
+                "Deduction",
+                "Card Game"
+            ],
+            "mechanisms": [],
             "expansion": false
         },
         "previouslyOwned": false
@@ -9656,7 +10486,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.20209,
+            "rating": 6.22188,
             "categories": [
                 "Dice",
                 "Fantasy"
@@ -9701,8 +10531,9 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.41174,
+            "rating": 7.39187,
             "categories": [
+                "Party Game",
                 "Real-time",
                 "Fantasy",
                 "Exploration",
@@ -9712,7 +10543,8 @@
             "mechanisms": [
                 "Grid Movement",
                 "Variable Player Powers",
-                "Co-operative Play"
+                "Co-operative Play",
+                "Tile Placement"
             ],
             "expansion": false
         },
@@ -9723,8 +10555,38 @@
         "name": "BANG!",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic1170986_t.jpg",
-        "playsCount": 35,
+        "playsCount": 41,
         "plays": [
+            {
+                "bggId": 3955,
+                "gameName": "BANG!",
+                "date": "2017-09-15",
+                "count": 1
+            },
+            {
+                "bggId": 3955,
+                "gameName": "BANG!",
+                "date": "2017-09-15",
+                "count": 1
+            },
+            {
+                "bggId": 3955,
+                "gameName": "BANG!",
+                "date": "2017-09-14",
+                "count": 1
+            },
+            {
+                "bggId": 3955,
+                "gameName": "BANG!",
+                "date": "2017-09-12",
+                "count": 1
+            },
+            {
+                "bggId": 3955,
+                "gameName": "BANG!",
+                "date": "2017-09-11",
+                "count": 2
+            },
             {
                 "bggId": 3955,
                 "gameName": "BANG!",
@@ -9839,7 +10701,7 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.55115,
+            "rating": 6.54626,
             "categories": [
                 "Fighting",
                 "American West",
@@ -9907,13 +10769,14 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.70651,
+            "rating": 7.69677,
             "categories": [
                 "Negotiation",
                 "Medieval",
                 "Bluffing",
                 "Party Game",
                 "Deduction",
+                "Spies/Secret Agents",
                 "Card Game",
                 "Fantasy"
             ],
@@ -9953,13 +10816,51 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.98753,
+            "rating": 6.99383,
             "categories": [
                 "Economic",
                 "Horror",
                 "Mature / Adult"
             ],
             "mechanisms": [
+                "Hand Management"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 56692,
+        "name": "Parade",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic2239001_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 56692,
+                "gameName": "Parade",
+                "date": "2017-11-04",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 56692,
+            "type": "GAME",
+            "description": "The characters of Alice in Wonderland are having a Parade!&#10;&#10;All players are producers of this parade. Characters from Lewis Carroll's books such as Alice, The White Rabbit, and The Mad Hatter are steadily invited to join this weird procession.&#10;&#10;On your turn, you play a card (from your hand of five) to the end of the parade. Unfortunately, that card might cause other cards to walk off the parade. These cards count as negative points in the end.&#10;&#10;The length of parade line is important. If the number of the card you just played is less than the line length, you may receive the excess cards (counting from last played to the first of the line). But you do not take all cards, only the cards that meet one of these requirements:&#10;&#10;1. color is the same as just played, or &#10;2. number is the same or lower than just played&#10;&#10;The game ends when the draw deck is exhausted or when one player has collected all six colors in their point piles. Then everyone plays one last card. From the four cards remaining in their hand, players choose two cards to add to his or her point piles. The player who has the least negative points after this is the winner.&#10;&#10;Scoring:&#10;Normally, negative points are same the number on the card. But if you have the most cards in a certain color, each of your cards of that color counts only 1 negative point!&#10;&#10;Thus, play your cards well!&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2239001_t.jpg",
+            "year": 2007,
+            "minPlayers": 2,
+            "maxPlayers": 6,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.93703,
+            "categories": [
+                "Novel-based",
+                "Card Game"
+            ],
+            "mechanisms": [
+                "Set Collection",
                 "Hand Management"
             ],
             "expansion": false
@@ -10003,7 +10904,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.73955,
+            "rating": 6.74096,
             "categories": [
                 "Abstract Strategy",
                 "Animals"
@@ -10042,7 +10943,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.04486,
+            "rating": 6.0485,
             "categories": [
                 "Abstract Strategy",
                 "Napoleonic",
@@ -10086,7 +10987,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.4523,
+            "rating": 7.4501,
             "categories": [
                 "Renaissance",
                 "Nautical",
@@ -10105,7 +11006,7 @@
         "id": 200077,
         "name": "Mint Works",
         "status": "OWNED",
-        "image": "https://cf.geekdo-images.com/images/pic3017718_t.png",
+        "image": "https://cf.geekdo-images.com/images/pic3017718_t.jpg",
         "playsCount": 6,
         "plays": [
             {
@@ -10143,14 +11044,14 @@
             "id": 200077,
             "type": "GAME",
             "description": "Mint Works is a light and straightforward worker placement game. Its compact size makes it easy to put in your pocket and take it anywhere. Its simple rules make it easy to introduce new players to the genre of worker placement.&#10;&#10;During the game each player will have a limited amount of Mint Tokens, which represent their workers. Players will use these mint tokens to earn more tokens, take first player or buy and build plans. Plans are how players earn points. Some plans will give only points, others will give extra powers to the owner.&#10;&#10;Once any player has at least 7 points earned (or if there are not enough plans to refill the stock) the end of the game is triggered. The game will then be over at the end of the current round.&#10;&#10;Whoever has the most points provided by plans they have built wins!&#10;&#10;",
-            "image": "https://cf.geekdo-images.com/images/pic3017718_t.png",
+            "image": "https://cf.geekdo-images.com/images/pic3418969_t.png",
             "year": 2017,
             "minPlayers": 1,
             "maxPlayers": 4,
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.3816,
+            "rating": 7.35362,
             "categories": [
                 "Economic",
                 "Industry / Manufacturing"
@@ -10166,7 +11067,7 @@
         "id": 174476,
         "name": "10' to Kill",
         "status": "OWNED",
-        "image": "https://cf.geekdo-images.com/images/pic2761517_t.jpg",
+        "image": "https://cf.geekdo-images.com/images/pic3723481_t.jpg",
         "playsCount": 15,
         "plays": [
             {
@@ -10223,7 +11124,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.46717,
+            "rating": 6.45578,
             "categories": [
                 "Animals",
                 "Bluffing",
@@ -10296,7 +11197,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.70593,
+            "rating": 6.68438,
             "categories": [
                 "Puzzle",
                 "Real-time"
@@ -10335,7 +11236,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.81318,
+            "rating": 6.81088,
             "categories": [
                 "Fighting",
                 "Dice",
@@ -10371,11 +11272,11 @@
             "image": "https://cf.geekdo-images.com/images/pic2080481_t.jpg",
             "year": 2005,
             "minPlayers": 2,
-            "maxPlayers": 4,
+            "maxPlayers": 5,
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.37377,
+            "rating": 6.37326,
             "categories": [
                 "Horror",
                 "Card Game",
@@ -10421,13 +11322,14 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.93802,
+            "rating": 6.93337,
             "categories": [
                 "Abstract Strategy",
                 "Territory Building"
             ],
             "mechanisms": [
                 "Area Enclosure",
+                "Hand Management",
                 "Tile Placement"
             ],
             "expansion": false
@@ -10465,7 +11367,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.05161,
+            "rating": 6.01935,
             "categories": [
                 "Party Game",
                 "Racing",
@@ -10512,7 +11414,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.63379,
+            "rating": 7.63029,
             "categories": [
                 "Card Game",
                 "Comic Book / Strip"
@@ -10530,8 +11432,20 @@
         "name": "Vye: The Card Game of Capture and Control",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic2626312_t.jpg",
-        "playsCount": 13,
+        "playsCount": 18,
         "plays": [
+            {
+                "bggId": 142239,
+                "gameName": "Vye: The Card Game of Capture and Control",
+                "date": "2017-10-10",
+                "count": 3
+            },
+            {
+                "bggId": 142239,
+                "gameName": "Vye: The Card Game of Capture and Control",
+                "date": "2017-10-02",
+                "count": 2
+            },
             {
                 "bggId": 142239,
                 "gameName": "Vye: The Card Game of Capture and Control",
@@ -10580,7 +11494,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.84305,
+            "rating": 6.8608,
             "categories": [
                 "Abstract Strategy",
                 "Card Game"
@@ -10624,9 +11538,10 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.07864,
+            "rating": 6.07005,
             "categories": [
                 "Print & Play",
+                "Economic",
                 "Arabian"
             ],
             "mechanisms": [
@@ -10734,7 +11649,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.17826,
+            "rating": 7.17474,
             "categories": [
                 "Civilization",
                 "Ancient",
@@ -10780,7 +11695,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.31522,
+            "rating": 7.31217,
             "categories": [
                 "Medieval",
                 "Economic",
@@ -10825,7 +11740,7 @@
             "playingTime": 10,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.5774,
+            "rating": 6.57183,
             "categories": [
                 "Party Game",
                 "Real-time",
@@ -10864,7 +11779,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.50267,
+            "rating": 6.47806,
             "categories": [
                 "Party Game",
                 "Deduction"
@@ -10957,7 +11872,7 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.76154,
+            "rating": 6.6963,
             "categories": [
                 "Fighting",
                 "Card Game",
@@ -10965,6 +11880,53 @@
                 "Humor"
             ],
             "mechanisms": [],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 176558,
+        "name": "Mafia de Cuba",
+        "status": "OWNED",
+        "image": "https://cf.geekdo-images.com/images/pic2519675_t.jpg",
+        "playsCount": 4,
+        "plays": [
+            {
+                "bggId": 176558,
+                "gameName": "Mafia de Cuba",
+                "date": "2017-10-27",
+                "count": 2
+            },
+            {
+                "bggId": 176558,
+                "gameName": "Mafia de Cuba",
+                "date": "2017-10-26",
+                "count": 2
+            }
+        ],
+        "data": {
+            "id": 176558,
+            "type": "GAME",
+            "description": "Havana, December 29, 1955: At the end of the meal offered at his &quot;faithful&quot; henchmen, don Alessandro evokes the &quot;business&quot; in progress. Suddenly, the phone rang in the back room of the restaurant. The Godfather is convened to the office of President Batista. He entrusted his precious cigar box to his henchmen. It must be said that the cigar box has a false bottom, under the first layer of cigars, the box is filled with diamonds!&#10;&#10;In Mafia de Cuba, each player will take the cigar box, open it and choose to:&#10;&#10;&#10;    Betray and steal some diamonds,&#10;    Remain a faithful and &quot;honest&quot; mafioso, be a driver, or act as an undercover CIA agent.&#10;&#10;&#10;In the evening, the Godfather recovers his cigar box. He blows a fuse when he finds the disappearance of diamonds. He must find his treasure and punish offenders by providing them cement shoes before throwing them in the bay. After heated debates and perilous deductions, The Godfather, with the help of is faithful henchmen will try to find all his stolen diamonds.&#10;&#10;Does he lose his honor by accusing wrongly?&#10;Do the most cunning thieves win?&#10;Or is it the CIA that will send these thugs behind bars?&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2519675_t.jpg",
+            "year": 2015,
+            "minPlayers": 6,
+            "maxPlayers": 12,
+            "playingTime": 20,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.69425,
+            "categories": [
+                "Mafia",
+                "Bluffing",
+                "Party Game",
+                "Deduction"
+            ],
+            "mechanisms": [
+                "Variable Player Powers",
+                "Partnerships",
+                "Role Playing"
+            ],
             "expansion": false
         },
         "previouslyOwned": false
@@ -11013,7 +11975,27 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 432,
+            "type": "GAME",
+            "description": "In 6 nimmt!, a.k.a. Category 5 and many other names, you want to score as few points as possible.&#10;&#10;To play the game, you shuffle the 104 number cards, lay out four cards face-up to start the four rows, then deal ten cards to each player. Each turn, players simultaneously choose and reveal a card from their hand, then add the cards to the rows, with cards being placed in ascending order based on their number; specifically, each card is placed in the row that ends with the highest number that's below the card's number. When the sixth card is placed in a row, the owner of that card claims the other five cards and the sixth card becomes the first card in a new row.&#10;&#10;In addition to a number from 1 to 104, each card has a point value. After finishing ten rounds, players tally their score and see whether the game ends. (Category 5 ends when a player has a score greater than 74, for example, while 6 nimmt! ends when someone tops 66.) When this happens, the player with the fewest points wins!&#10;&#10;6 nimmt! works with 2-10 players, and the dynamics of gameplay change the more players that you have. One variant for the game has you use 34 cards, 44 cards, 54 cards, etc. (instead of all 104 cards) when you have three, four, five, etc. number of players. This change allows you to know which cards are in play, thereby allowing you to track which cards have been played and (theoretically) make better choices as to which card to play when.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic2602138_t.jpg",
+            "year": 1994,
+            "minPlayers": 2,
+            "maxPlayers": 10,
+            "playingTime": 45,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.89095,
+            "categories": [
+                "Card Game"
+            ],
+            "mechanisms": [
+                "Simultaneous Action Selection",
+                "Hand Management"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -11047,7 +12029,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.78753,
+            "rating": 6.78497,
             "categories": [
                 "Ancient"
             ],
@@ -11091,7 +12073,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.21344,
+            "rating": 5.18989,
             "categories": [
                 "Abstract Strategy",
                 "Fantasy"
@@ -11131,7 +12113,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.5797,
+            "rating": 7.57273,
             "categories": [
                 "Animals",
                 "Fantasy",
@@ -11213,7 +12195,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.34362,
+            "rating": 6.34947,
             "categories": [
                 "Bluffing",
                 "Deduction"
@@ -11325,7 +12307,29 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 161226,
+            "type": "GAME",
+            "description": "Description from the publisher:&#10;&#10;From the Hanging Gardens of Babylon to the Pyramids of Egypt, and without forgetting the Greek Parthenon, The Builders: Antiquity &mdash; a standalone card game based on The Builders: Middle Ages &mdash; offers a whole range of challenges to its builders. To face these challenges, you must put on your foreman clothes. Between hiring workers, managing their organization, purchasing slaves or tools, and taking out loans, you'll have to make the right decisions to fulfill your dream: Becoming the greatest builder the age has ever known.&#10;&#10;In the game, players score points (and gain money) by completing the construction of buildings. Each building has four characteristics &mdash; carpentry, masonry, architecture, painting &mdash; rated between 0 and 5, and the workers have the same characteristics valued in the same range. To complete a construction, the player must add enough workers to cover the four characteristics of the building, but placing a worker on a construction site costs money.&#10;&#10;Each turn players have three free actions; however, for an added cost players may also chose to buy additional actions during their turn. Unlike in The Builders: Middle Ages, players can acquire slaves and put them to work, but if they don't pay to free the slaves by the end of the game, they lose points. Other changes from the original game include the ability to send your workers to universities or purchase tools to improve their characteristics.&#10;&#10;Make use of your workers, of your slaves, or your freed slaves to build your buildings and amass victory points to ultimately be named the greatest builder of all!&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3095866_t.jpg",
+            "year": 2015,
+            "minPlayers": 2,
+            "maxPlayers": 4,
+            "playingTime": 30,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.87739,
+            "categories": [
+                "Ancient",
+                "City Building"
+            ],
+            "mechanisms": [
+                "Card Drafting",
+                "Action Point Allowance System",
+                "Set Collection"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -11353,7 +12357,7 @@
             "playingTime": 100,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.00683,
+            "rating": 8.03303,
             "categories": [
                 "Economic",
                 "Nautical",
@@ -11394,7 +12398,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.01146,
+            "rating": 7.01243,
             "categories": [
                 "Nautical",
                 "Transportation",
@@ -11448,7 +12452,7 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.07324,
+            "rating": 6.08144,
             "categories": [
                 "Bluffing",
                 "Deduction"
@@ -11500,7 +12504,31 @@
                 "count": 7
             }
         ],
-        "data": null,
+        "data": {
+            "id": 2511,
+            "type": "GAME",
+            "description": "Have you ever had the desire to walk the streets of Victorian London with Sherlock Holmes in search of Professor Moriarty? To search the docks for the giant rat of Sumatra? To walk up Baker Street as the fog is rolling in and hear Holmes cry out, &quot;Come, Watson, come! The game is afoot!&quot;? Now you can! You can enter the opium den beneath the Bar of Gold, but beware, that may be Colonel Sebastian Moran lurking around the corner. You can capture the mystery and excitement of Holmes' London in this challenging and informative game. You, the player, will match your deductive abilities against your opponents and the master sleuth himself, Sherlock Holmes.&#10;&#10;In Sherlock Holmes Consulting Detective, you are presented with a mystery to solve, and it is then up to you to trace the threads of evidence through the byways and mansions of nineteenth century London. You will interview suspects, search the newspapers for clues, and put together the facts to reach a solution.&#10;&#10;Why were two lions murdered in Hyde Park? Who is responsible for the missing paintings from the National Gallery? Who murdered Oswald Mason and why? These are just a few of the cases that will challenge your ingenuity and deductive abilities.&#10;&#10;This is not a board game: No dice, no luck, but a challenge to your mental ability. The game has been thoroughly researched for Holmesian and Victorian accuracy so as to capture a feeling of that bygone era.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3514298_t.jpg",
+            "year": 1981,
+            "minPlayers": 1,
+            "maxPlayers": 8,
+            "playingTime": 120,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.83671,
+            "categories": [
+                "Novel-based",
+                "Deduction",
+                "Spies/Secret Agents",
+                "Murder/Mystery",
+                "Post-Napoleonic"
+            ],
+            "mechanisms": [
+                "Storytelling",
+                "Co-operative Play"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -11534,7 +12562,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.3239,
+            "rating": 7.28635,
             "categories": [],
             "mechanisms": [
                 "Card Drafting",
@@ -11542,6 +12570,47 @@
                 "Press Your Luck",
                 "Set Collection",
                 "Worker Placement"
+            ],
+            "expansion": false
+        },
+        "previouslyOwned": false
+    },
+    {
+        "id": 176083,
+        "name": "Hit Z Road",
+        "status": "OTHER",
+        "image": "https://cf.geekdo-images.com/images/pic3539855_t.jpg",
+        "playsCount": 1,
+        "plays": [
+            {
+                "bggId": 176083,
+                "gameName": "Hit Z Road",
+                "date": "2017-09-10",
+                "count": 1
+            }
+        ],
+        "data": {
+            "id": 176083,
+            "type": "GAME",
+            "description": "Description from the publisher:&#10;&#10;In the fast-paced and morbidly kitschy game Hit Z Road, you and your fellow players embark on a road trip going south from Chicago along America's famous Route 66 &mdash; now infested by zombies. As you travel though a deck of adventure cards rife with dangers, you battle zombie hordes, drive abandoned school buses, scavenge for gas and bullets, and explore a darkened, tainted American countryside full of shambling undead, haunted carnivals, and plumes of toxic gas. Your goal is to stay alive until you reach the safe, sandy beaches of the California coast.&#10;&#10;Three different stages of adventure cards create an experience of increasing difficulty and ensure that each playthrough is unique. Each round begins with an auction that determines both player order and which cards you will encounter. Since the resources used for bidding are the same as those used to battle the oncoming zombie hordes, your survival depends as much on your resource management as it does upon winning those bidding wars. The player who either accumulates the most points or survives the longest wins.&#10;&#10;Zombies of all types await, with cannibals, anti-personnel mines and radioactive wastes also being among the hazards awaiting the players. Who will survive the zombie onslaught?&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3539855_t.jpg",
+            "year": 2016,
+            "minPlayers": 1,
+            "maxPlayers": 4,
+            "playingTime": 60,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 6.87014,
+            "categories": [
+                "Fighting",
+                "Zombies"
+            ],
+            "mechanisms": [
+                "Card Drafting",
+                "Auction/Bidding",
+                "Press Your Luck",
+                "Dice Rolling",
+                "Player Elimination"
             ],
             "expansion": false
         },
@@ -11572,7 +12641,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.64765,
+            "rating": 6.65458,
             "categories": [
                 "Bluffing",
                 "Card Game",
@@ -11623,7 +12692,7 @@
             "playingTime": 75,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.63301,
+            "rating": 7.60799,
             "categories": [
                 "Puzzle",
                 "Real-time",
@@ -11676,7 +12745,7 @@
             "playingTime": 30,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.04074,
+            "rating": 7.03121,
             "categories": [
                 "Medieval",
                 "Bluffing"
@@ -11722,7 +12791,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.94127,
+            "rating": 6.93889,
             "categories": [
                 "Medieval",
                 "Bluffing"
@@ -11738,14 +12807,14 @@
     },
     {
         "id": 170969,
-        "name": "La chasse aux Gigamons",
+        "name": "La Chasse aux Gigamons",
         "status": "OTHER",
         "image": "https://cf.geekdo-images.com/images/pic2637292_t.jpg",
         "playsCount": 1,
         "plays": [
             {
                 "bggId": 170969,
-                "gameName": "La chasse aux Gigamons",
+                "gameName": "La Chasse aux Gigamons",
                 "date": "2017-01-15",
                 "count": 1
             }
@@ -11753,7 +12822,7 @@
         "data": {
             "id": 170969,
             "type": "GAME",
-            "description": "La chasse aux Gigamons is a game for 2 to 4 players from 5 years old.&#10;&#10;This is the last event to enter the guild of magicians. It remains the ultimate lesson to master: the invocation of Gigamons. After this test, one that will catch more Gigamons be promoted to Elemage. Good luck and good luck to all!&#10;&#10;Aim of the game&#10;Find the pairs Elemons to the exchange against Gigamons.&#10;&#10;Setting up of the game:&#10;&#10;1-Mix all the Elemons tiles face down and create a 3 by 3 square!&#10;2-Place the 7 Gigamons and the Rocks tiles on the side of the play area.&#10;3-The remaining Tiles of Elemons form the deck.&#10;&#10;How to play?&#10;&#10;    The youngest begins.&#10;    In turn, each player returns 2 face tiles.&#10;        If the tiles are different, the player puts the face down (Polymon always forms a pair with any elemon)&#10;        If the tiles are identical, the player wins and triggers the power the Elemon that is drawn (see specials ability of each Elemons. Then he replaces them 2 tiles from the deck without looking at them.&#10;    &#10;&#10;&#10;&#10;&#10;If a player has 3 identical Elemons, it can put them back in the box to catch the Gigamon associate. If an opponent already has this Gigamon, he can steal it.&#10;Then it was the turn of the next player.&#10;&#10;Elemon powers:&#10;&#10;&#10;     Polymon: Functions as a wild, always forming a pair with any elemon.&#10;     Floramon: The player takes a tile from the top of the draw pile and adds it to their group of tiles.&#10;     Aeromon: Swap one of the tiles in front of you with a tile in front of another player. The player who gets the ability gets to choose which tiles are swapped.&#10;     Pyromon: Choose a tile in front of another player and remove it from the game.&#10;     Hydromon: While everyone else closes their eyes, look at four of the tiles in the 3X3 grid and then turn them back over.&#10;     Geomon: Place a rock tile on one of the tiles in the 3X3 grid. No player may pick up the tile underneath the rock until the player who played it takes their next turn.&#10;     Electromon: The player gets an extra turn.&#10;&#10;&#10;End of the game&#10;The game ends in 2 ways:&#10;&#10;    When a player has caught 3 Gigamons;&#10;    When the Elemons tiles deck is empty.&#10;&#10;&#10;&#10;&#10;Who win the game?&#10;&#10;Who ever has the most Gigamons is  promoted to Elemage!&#10;In case of tie, who ever has the most Elemons wins.&#10;In case of a tie, all tied players are  promoted to Elemages.&#10;&#10;",
+            "description": "La Chasse aux Gigamons is a game for 2 to 4 players from 5 years old.&#10;&#10;This is the last event to enter the guild of magicians. It remains the ultimate lesson to master: the invocation of Gigamons. After this test, one that will catch more Gigamons be promoted to Elemage. Good luck and good luck to all!&#10;&#10;Aim of the game&#10;Find the pairs Elemons to the exchange against Gigamons.&#10;&#10;Setting up of the game:&#10;&#10;1-Mix all the Elemons tiles face down and create a 3 by 3 square!&#10;2-Place the 7 Gigamons and the Rocks tiles on the side of the play area.&#10;3-The remaining Tiles of Elemons form the deck.&#10;&#10;How to play?&#10;&#10;    The youngest begins.&#10;    In turn, each player returns 2 face tiles.&#10;        If the tiles are different, the player puts the face down (Polymon always forms a pair with any elemon)&#10;        If the tiles are identical, the player wins and triggers the power the Elemon that is drawn (see specials ability of each Elemons. Then he replaces them 2 tiles from the deck without looking at them.&#10;    &#10;&#10;&#10;&#10;&#10;If a player has 3 identical Elemons, it can put them back in the box to catch the Gigamon associate. If an opponent already has this Gigamon, he can steal it.&#10;Then it was the turn of the next player.&#10;&#10;Elemon powers:&#10;&#10;&#10;     Polymon: Functions as a wild, always forming a pair with any elemon.&#10;     Floramon: The player takes a tile from the top of the draw pile and adds it to their group of tiles.&#10;     Aeromon: Swap one of the tiles in front of you with a tile in front of another player. The player who gets the ability gets to choose which tiles are swapped.&#10;     Pyromon: Choose a tile in front of another player and remove it from the game.&#10;     Hydromon: While everyone else closes their eyes, look at four of the tiles in the 3X3 grid and then turn them back over.&#10;     Geomon: Place a rock tile on one of the tiles in the 3X3 grid. No player may pick up the tile underneath the rock until the player who played it takes their next turn.&#10;     Electromon: The player gets an extra turn.&#10;&#10;&#10;End of the game&#10;The game ends in 2 ways:&#10;&#10;    When a player has caught 3 Gigamons;&#10;    When the Elemons tiles deck is empty.&#10;&#10;&#10;&#10;&#10;Who win the game?&#10;&#10;Who ever has the most Gigamons is  promoted to Elemage!&#10;In case of tie, who ever has the most Elemons wins.&#10;In case of a tie, all tied players are  promoted to Elemages.&#10;&#10;",
             "image": "https://cf.geekdo-images.com/images/pic2637292_t.jpg",
             "year": 2014,
             "minPlayers": 2,
@@ -11761,8 +12830,9 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.71798,
+            "rating": 6.66559,
             "categories": [
+                "Children's Game",
                 "Memory",
                 "Fantasy"
             ],
@@ -11805,7 +12875,7 @@
             "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.71711,
+            "rating": 6.69458,
             "categories": [
                 "Fantasy"
             ],
@@ -11856,7 +12926,33 @@
                 "count": 1
             }
         ],
-        "data": null,
+        "data": {
+            "id": 478,
+            "type": "GAME",
+            "description": "In Citadels, players take on new roles each round to represent characters they hire in order to help them acquire gold and erect buildings. The game ends at the close of a round in which a player erects his/her eighth building. Players then tally their points, and the player with the highest score wins.&#10;&#10;Players start with a number of building cards in their hand; buildings come in five colors, with the purple buildings typically having a special ability and the other colored buildings providing a benefit when you play particular characters. At the start of each round, the player who was king the previous round discards one of the eight character cards at random, chooses one, then passes the cards to the next player, etc. until each player has secretly chosen a character. Each character has a special ability, and the usefulness of any character depends upon your situation, and that of your opponents. The characters then carry out their actions in numerical order: the assassin eliminating another character for the round, the thief stealing all gold from another character, the wizard swapping building cards with another player, the warlord optionally destroys a building in play, and so on.&#10;&#10;On a turn, a player earns two or more gold (or draws two building cards then discards one), then optionally constructs one building (or up to three if playing the architect this round). Buildings cost gold equal to the number of symbols on them, and each building is worth a certain number of points. In addition to points from buildings, at the end of the game a player scores bonus points for having eight buildings or buildings of all five colors.&#10;&#10;The expansion Citadels:  The Dark City was initially released as a separate item, but the second edition of the game from Hans im Gl&uuml;ck (packaged in a tin box) and the third edition from Fantasy Flight Games included this expansion and can be recognized by its rectangular box (not square). With Dark City, Citadels supports a maximum of eight players.&#10;&#10;",
+            "image": "https://cf.geekdo-images.com/images/pic3239104_t.jpg",
+            "year": 2000,
+            "minPlayers": 2,
+            "maxPlayers": 8,
+            "playingTime": 60,
+            "name": null,
+            "source": "BOARDGAMEGEEK",
+            "rating": 7.13464,
+            "categories": [
+                "Medieval",
+                "Bluffing",
+                "Card Game",
+                "City Building",
+                "Fantasy"
+            ],
+            "mechanisms": [
+                "Card Drafting",
+                "Variable Player Powers",
+                "Variable Phase Order",
+                "Set Collection"
+            ],
+            "expansion": false
+        },
         "previouslyOwned": false
     },
     {
@@ -11864,8 +12960,14 @@
         "name": "Metropolys",
         "status": "OTHER",
         "image": "https://cf.geekdo-images.com/images/pic297075_t.jpg",
-        "playsCount": 10,
+        "playsCount": 11,
         "plays": [
+            {
+                "bggId": 25568,
+                "gameName": "Metropolys",
+                "date": "2017-11-03",
+                "count": 1
+            },
             {
                 "bggId": 25568,
                 "gameName": "Metropolys",
@@ -11932,7 +13034,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.03551,
+            "rating": 7.03855,
             "categories": [
                 "City Building"
             ],
@@ -11981,7 +13083,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.5564,
+            "rating": 7.54809,
             "categories": [
                 "Bluffing",
                 "Party Game",
@@ -11990,7 +13092,6 @@
                 "Murder/Mystery"
             ],
             "mechanisms": [
-                "Storytelling",
                 "Partnerships"
             ],
             "expansion": false
@@ -12000,7 +13101,7 @@
     {
         "id": 176103,
         "name": "Shogun Big Box",
-        "status": "OWNED",
+        "status": "PREVIOUSLY_OWNED",
         "image": "https://cf.geekdo-images.com/images/pic2482561_t.jpg",
         "playsCount": 1,
         "plays": [
@@ -12022,7 +13123,7 @@
             "playingTime": 150,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.023,
+            "rating": 8.03341,
             "categories": [
                 "Territory Building",
                 "Economic"
@@ -12037,7 +13138,7 @@
             ],
             "expansion": false
         },
-        "previouslyOwned": false
+        "previouslyOwned": true
     },
     {
         "id": 166372,
@@ -12064,7 +13165,7 @@
             "playingTime": 50,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.20263,
+            "rating": 6.18238,
             "categories": [
                 "Medieval",
                 "Card Game",
@@ -12116,7 +13217,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.55846,
+            "rating": 5.55024,
             "categories": [
                 "Bluffing"
             ],
@@ -12153,13 +13254,14 @@
             "playingTime": 40,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.15448,
+            "rating": 7.13104,
             "categories": [
                 "Card Game",
                 "City Building"
             ],
             "mechanisms": [
                 "Auction/Bidding",
+                "Trick-taking",
                 "Hand Management",
                 "Tile Placement"
             ],
@@ -12192,7 +13294,7 @@
             "playingTime": 45,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.54822,
+            "rating": 6.54779,
             "categories": [
                 "Bluffing",
                 "Deduction",
@@ -12242,7 +13344,7 @@
             "playingTime": 90,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.3134,
+            "rating": 7.30034,
             "categories": [
                 "Civilization",
                 "Fighting",
@@ -12290,7 +13392,7 @@
             "playingTime": 20,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.61313,
+            "rating": 6.6207,
             "categories": [
                 "Children's Game",
                 "Animals",
@@ -12328,7 +13430,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.01298,
+            "rating": 6.99025,
             "categories": [
                 "Abstract Strategy",
                 "Miniatures",
@@ -12350,8 +13452,14 @@
         "name": "Eight-Minute Empire: Legends",
         "status": "OWNED",
         "image": "https://cf.geekdo-images.com/images/pic1708628_t.jpg",
-        "playsCount": 7,
+        "playsCount": 8,
         "plays": [
+            {
+                "bggId": 142326,
+                "gameName": "Eight-Minute Empire: Legends",
+                "date": "2017-10-24",
+                "count": 1
+            },
             {
                 "bggId": 142326,
                 "gameName": "Eight-Minute Empire: Legends",
@@ -12406,7 +13514,7 @@
             "playingTime": 32,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.0924,
+            "rating": 7.08059,
             "categories": [
                 "Territory Building",
                 "Civilization",
@@ -12450,7 +13558,7 @@
             "playingTime": 15,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 6.38222,
+            "rating": 6.3719,
             "categories": [
                 "Number",
                 "Deduction",
@@ -12494,7 +13602,7 @@
             "playingTime": 75,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 7.1903,
+            "rating": 7.18609,
             "categories": [
                 "Territory Building",
                 "Civilization",
@@ -12536,7 +13644,7 @@
             "playingTime": 60,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 5.42971,
+            "rating": 5.40214,
             "categories": [
                 "Card Game"
             ],
@@ -12575,15 +13683,17 @@
             "year": 2017,
             "minPlayers": 1,
             "maxPlayers": 4,
-            "playingTime": 150,
+            "playingTime": 120,
             "name": null,
             "source": "BOARDGAMEGEEK",
-            "rating": 8.21479,
+            "rating": 8.21228,
             "categories": [
                 "Economic",
                 "Science Fiction"
             ],
             "mechanisms": [
+                "Card Drafting",
+                "Action Point Allowance System",
                 "Variable Player Powers",
                 "Dice Rolling",
                 "Worker Placement"

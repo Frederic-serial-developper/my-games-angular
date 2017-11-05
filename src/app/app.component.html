@@ -1,20 +1,8 @@
-<div *ngIf="!auth.isAuthenticated()" class="welcome-page-container">
-    <img src="assets/BGG-logo.png" width="250px" height="250px" class="welcome-page-data" />
-    <h1>Welcome to My Games</h1>
-    <h2>Your game library from boardgamegeek</h2>
-    <button class="btn btn-primary btn-margin welcome-page-button" (click)="auth.login()">
-          <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Log In
-    </button>
-</div>
-
-<div *ngIf="auth.isAuthenticated()">
-    <md-toolbar color="primary">
+<div>
+    <mat-toolbar color="primary">
         <a class="menu-item" routerLinkActive="active" routerLink="/library">My Library</a>
         <a class="menu-item" routerLinkActive="active" routerLink="/plays">My Plays</a>
         <a class="menu-item" routerLinkActive="active" routerLink="/statistics">My Statistics</a>
-        <button class="btn btn-primary btn-margin float-right" (click)="auth.logout()">
-          <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
-      </button>
-    </md-toolbar>
+    </mat-toolbar>
     <router-outlet></router-outlet>
 </div>

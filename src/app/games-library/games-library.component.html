@@ -1,65 +1,62 @@
-<div *ngIf="auth.isAuthenticated()">
-    <toaster-container></toaster-container>
-    <div *ngIf="bggUser">
-        <div *ngIf="loading">
-            <md-spinner></md-spinner>
+<toaster-container></toaster-container>
+<div *ngIf="bggUser">
+    <div *ngIf="loading">
+        <mat-spinner></mat-spinner>
+    </div>
+    <div *ngIf="!loading">
+        <div class="filtering-menu">
+            <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="filterGames()">
+                Expansions
+            </mat-slide-toggle>
+            <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="filterGames()">
+                Previously Owned
+            </mat-slide-toggle>
+            <input matInput placeholder="Game name" [(ngModel)]="gameName" (ngModelChange)="filterGames()">
+            <span>{{displayedGames.length}} games</span>
         </div>
-        <div *ngIf="!loading">
-            <div class="filtering-menu">
-                <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="filterGames()">
-                    Expansions
-                </md-slide-toggle>
-                <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="filterGames()">
-                    Previously Owned
-                </md-slide-toggle>
-                <input mdInput placeholder="Game name" [(ngModel)]="gameName" (ngModelChange)="filterGames()">
-                <span>{{displayedGames.length}} games</span>
-            </div>
-            <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
-                <button md-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
+        <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
+            <button mat-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
                     <span *ngIf="nameOrderAsc === false" class="button-icon glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
                     <span *ngIf="nameOrderAsc === true" class="button-icon glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByRating()" data-toggle="tooltip" title="Sort by rating">
+            <button mat-icon-button (click)="sortByRating()" data-toggle="tooltip" title="Sort by rating">
                     <span *ngIf="ratingOrderAsc === true" class="button-icon glyphicon glyphicon-sort-by-order-alt" aria-hidden="true"></span>
                     <span *ngIf="ratingOrderAsc === false" class="button-icon glyphicon glyphicon-sort-by-order" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByPlaysCount()" data-toggle="tooltip" title="Sort by plays count">
+            <button mat-icon-button (click)="sortByPlaysCount()" data-toggle="tooltip" title="Sort by plays count">
                     <span *ngIf="playsCountOrderAsc === true" class="button-icon glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
                     <span *ngIf="playsCountOrderAsc === false" class="button-icon glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByPlaysDate()" data-toggle="tooltip" title="Sort by plays date">
+            <button mat-icon-button (click)="sortByPlaysDate()" data-toggle="tooltip" title="Sort by plays date">
                     <span *ngIf="playsDateOrderAsc === true" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                     <span *ngIf="playsDateOrderAsc === false" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                 </button>
-                <div mdTooltip="Players count" mdTooltipPosition="right">
-                    <md-slider [min]="1" [max]="10" [step]="1" [thumb-label]="true" [tick-interval]="1" [value]="playerCountFilter" (input)="onSliderPlayerCountEvent($event)">
-                    </md-slider>
-                </div>
+            <div matTooltip="Players count" matTooltipPosition="right">
+                <mat-slider [min]="1" [max]="10" [step]="1" [thumb-label]="true" [tick-interval]="1" [value]="playerCountFilter" (input)="onSliderPlayerCountEvent($event)">
+                </mat-slider>
             </div>
-
-
-            <div class="visible-xs">
-                <div>
-                    <md-list>
-                        <md-list-item *ngFor="let game of displayedGames">
-                            <md-icon md-list-icon><img [src]="game.image" height="40
-                            px" width="40px"></md-icon>
-                            <p md-line>{{game.name}}</p>
-                            <p md-line *ngIf="game.data" md-line><span class="glyphicon glyphicon-user" aria-hidden="true"></span>{{game.data.minPlayers}} to
-                                {{game.data.maxPlayers}} / <i class="glyphicon glyphicon-star" aria-hidden="true"></i>{{game.data.rating
-                                | number : '1.1-1'}}</p>
-                            <p md-line>{{game.playsCount}} plays</p>
-                        </md-list-item>
-                    </md-list>
-                </div>
-            </div>
-            <div fxLayoutWrap class="hidden-xs">
-                <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
-                    <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
-                </div>
-            </div>
-
         </div>
+
+
+        <div class="visible-xs">
+            <div>
+                <mat-list>
+                    <mat-list-item *ngFor="let game of displayedGames">
+                        <mat-icon mat-list-icon><img [src]="game.image" height="40
+                            px" width="40px"></mat-icon>
+                        <p matLine>{{game.name}}</p>
+                        <p matLine *ngIf="game.data" matLine><span class="glyphicon glyphicon-user" aria-hidden="true"></span>{{game.data.minPlayers}} to {{game.data.maxPlayers}}
+                            / <i class="glyphicon glyphicon-star" aria-hidden="true"></i>{{game.data.rating | number : '1.1-1'}}</p>
+                        <p matLine>{{game.playsCount}} plays</p>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+        <div fxLayoutWrap class="hidden-xs">
+            <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
+                <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
+            </div>
+        </div>
+
     </div>
 </div>

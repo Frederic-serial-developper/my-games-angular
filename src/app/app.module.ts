@@ -4,9 +4,6 @@ import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-// auth service
-import { AuthService } from './auth-service';
-
 // ng bootstrap
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -19,9 +16,9 @@ import { ToasterModule, ToasterService } from 'angular2-toaster';
 // material2
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
-  MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-  MdToolbarModule, MdDialogModule, MdListModule
+  MatButtonModule, MatCheckboxModule, MatSliderModule, MatSelectModule,
+  MatTooltipModule, MatProgressSpinnerModule, MatSlideToggleModule,
+  MatToolbarModule, MatDialogModule, MatListModule, MATERIAL_COMPATIBILITY_MODE
 } from '@angular/material';
 
 import 'hammerjs';
@@ -49,6 +46,8 @@ import { CollectionStatisticsService } from './games-statistics/games-statistics
 // menu component
 import { OnlineMenuComponent } from './online-menu/online-menu.component';
 import { GamesService } from 'app/games-library/games.service';
+// user service
+import { UserService } from 'app/user.service';
 
 const appRoutes: Routes = [
   { path: 'library', component: GamesLibraryComponent },
@@ -64,9 +63,9 @@ const appRoutes: Routes = [
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
-    MdButtonModule, MdCheckboxModule, MdSliderModule, MdSelectModule,
-    MdTooltipModule, MdProgressSpinnerModule, MdSlideToggleModule,
-    ChartsModule, FlexLayoutModule, MdToolbarModule, MdDialogModule, MdListModule,
+    MatButtonModule, MatCheckboxModule, MatSliderModule, MatSelectModule,
+    MatTooltipModule, MatProgressSpinnerModule, MatSlideToggleModule,
+    ChartsModule, FlexLayoutModule, MatToolbarModule, MatDialogModule, MatListModule,
     ToasterModule],
   exports: [
     GameFullDetailComponent
@@ -84,7 +83,10 @@ const appRoutes: Routes = [
     OnlineMenuComponent,
     GameFullDetailComponent],
   bootstrap: [AppComponent],
-  providers: [GameLibraryService, GamesService, CollectionStatisticsService, ToasterService, AuthService],
+  providers: [
+    {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
+    GameLibraryService, GamesService, CollectionStatisticsService, ToasterService, UserService
+  ],
   entryComponents: [GameFullDetailComponent]
 })
 export class AppModule { }

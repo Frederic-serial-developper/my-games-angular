@@ -1,14 +1,14 @@
 <div *ngIf="loading">
-    <md-spinner></md-spinner>
+    <mat-spinner></mat-spinner>
 </div>
 <div *ngIf="!loading" class="online-menu">
-    <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion">
+    <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion">
         Expansions
-    </md-slide-toggle>
-    <md-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned">
+    </mat-slide-toggle>
+    <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned">
         Previously Owned
-    </md-slide-toggle>
-    <button md-button-icon (click)="reload()">
+    </mat-slide-toggle>
+    <button mat-button-icon (click)="reload()">
         <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
     </button>
 </div>

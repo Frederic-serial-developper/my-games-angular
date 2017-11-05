@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MdDialogRef } from '@angular/material';
+import { MatDialogRef } from '@angular/material';
 
 import { Game } from '../model/game';
 
@@ -11,7 +11,7 @@ import { Game } from '../model/game';
 export class GameFullDetailComponent {
   @Input() game: Game;
 
-  constructor(public dialogRef: MdDialogRef<GameFullDetailComponent>) { }
+  constructor(public dialogRef: MatDialogRef<GameFullDetailComponent>) { }
 
   close(): void {
     this.dialogRef.close();

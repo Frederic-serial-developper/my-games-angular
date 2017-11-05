@@ -10,8 +10,8 @@ import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
-import { AuthService } from '../auth-service';
 import { GamesService } from 'app/games-library/games.service';
+import { UserService } from 'app/user.service';
 
 @Component({
   selector: 'app-games-plays',
@@ -33,7 +33,7 @@ export class GamesPlaysComponent implements OnInit {
 
   private selectedGame: Game;
 
-  constructor(public auth: AuthService,
+  constructor(private userService: UserService,
     private gameLibrayService: GameLibraryService,
     private gameService: GamesService,
     private toasterService: ToasterService) {
@@ -41,17 +41,15 @@ export class GamesPlaysComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
-    this.auth.getUserMetadata().subscribe(
-      metadata => this.initializeScreen(metadata),
-      error => this.handleError());
+    this.initializeScreen();
   }
 
-  initializeScreen(metadata: UserMetadata): void {
+  initializeScreen(): void {
     this.ratingOrderAsc = false;
     this.nameOrderAsc = true;
     this.playsCountOrderAsc = false;
     this.playsDateOrderAsc = true;
-    this.bggUser = metadata.bggLogin;
+    this.bggUser = this.userService.getCurrentUser();
 
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;

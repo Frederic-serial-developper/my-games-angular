@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { MdDialog, MdDialogRef } from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material';
 
 import { GameFullDetailComponent } from './game-full-detail.component';
 
@@ -15,10 +15,10 @@ export class GameDetailComponent {
 
   @Output() hideDetailsEventEmitter = new EventEmitter();
 
-  constructor(public dialog: MdDialog) { }
+  constructor(public dialog: MatDialog) { }
 
   openFullDetails(): void {
-     const dialogRef: MdDialogRef<GameFullDetailComponent> = this.dialog.open(GameFullDetailComponent);
+     const dialogRef: MatDialogRef<GameFullDetailComponent> = this.dialog.open(GameFullDetailComponent);
      dialogRef.componentInstance.game = this.game;
   }
 

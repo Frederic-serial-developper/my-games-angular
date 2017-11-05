@@ -8,7 +8,7 @@
         <div class="media-body">
             <h4 class="media-heading">
                 {{game.name}} <span *ngIf="game.data">({{game.data.year}})</span>
-                <button md-icon-button (click)="openFullDetails()" data-toggle="tooltip" title="Game details">
+                <button mat-icon-button (click)="openFullDetails()" data-toggle="tooltip" title="Game details">
                     <span class="button-icon glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                 </button>
             </h4>

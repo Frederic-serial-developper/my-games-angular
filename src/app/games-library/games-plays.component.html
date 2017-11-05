@@ -1,36 +1,34 @@
-<div *ngIf="auth.isAuthenticated()">
-    <toaster-container></toaster-container>
-    <div *ngIf="bggUser">
-        <div *ngIf="loading">
-            <md-spinner></md-spinner>
-        </div>
-        <div *ngIf="!loading">
-            <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
-                <button md-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
+<toaster-container></toaster-container>
+<div *ngIf="bggUser">
+    <div *ngIf="loading">
+        <mat-spinner></mat-spinner>
+    </div>
+    <div *ngIf="!loading">
+        <div fxLayoutWrap class="btn-group library-btn" data-toggle="buttons">
+            <button mat-icon-button (click)="sortByName()" data-toggle="tooltip" title="Sort by name">
                     <span *ngIf="nameOrderAsc === false" class="button-icon glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
                     <span *ngIf="nameOrderAsc === true" class="button-icon glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByRating()" data-toggle="tooltip" title="Sort by rating">
+            <button mat-icon-button (click)="sortByRating()" data-toggle="tooltip" title="Sort by rating">
                     <span *ngIf="ratingOrderAsc === true" class="button-icon glyphicon glyphicon-sort-by-order-alt" aria-hidden="true"></span>
                     <span *ngIf="ratingOrderAsc === false" class="button-icon glyphicon glyphicon-sort-by-order" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByPlaysCount()" data-toggle="tooltip" title="Sort by plays count">
+            <button mat-icon-button (click)="sortByPlaysCount()" data-toggle="tooltip" title="Sort by plays count">
                     <span *ngIf="playsCountOrderAsc === true" class="button-icon glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
                     <span *ngIf="playsCountOrderAsc === false" class="button-icon glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span>
                 </button>
-                <button md-icon-button (click)="sortByPlaysDate()" data-toggle="tooltip" title="Sort by plays date">
+            <button mat-icon-button (click)="sortByPlaysDate()" data-toggle="tooltip" title="Sort by plays date">
                     <span *ngIf="playsDateOrderAsc === true" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                     <span *ngIf="playsDateOrderAsc === false" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                 </button>
-                <span class="btn-group library-btn">
+            <span class="btn-group library-btn">
                     {{displayedGames.length}} games
                 </span>
-            </div>
+        </div>
 
-            <div fxLayoutWrap>
-                <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
-                    <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
-                </div>
+        <div fxLayoutWrap>
+            <div *ngFor="let game of displayedGames" (click)="onSelect(game)">
+                <app-games-library-thumbnail [game]="game"></app-games-library-thumbnail>
             </div>
         </div>
     </div>

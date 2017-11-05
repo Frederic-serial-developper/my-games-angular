@@ -9,8 +9,7 @@ import { ToasterService } from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
 
 import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
-
-import { AuthService } from '../auth-service';
+import { UserService } from 'app/user.service';
 
 @Component({
   selector: 'app-games-statistics',
@@ -21,18 +20,18 @@ export class GamesStatisticsComponent implements OnInit {
   bggUser: string;
   loading: boolean;
 
-  constructor(public auth: AuthService, private statsService: CollectionStatisticsService, private toasterService: ToasterService) {
+  constructor(private userService: UserService,
+    private statsService: CollectionStatisticsService,
+    private toasterService: ToasterService) {
   }
 
   ngOnInit(): void {
     this.loading = true;
-    this.auth.getUserMetadata().subscribe(
-      metadata => this.initializeScreen(metadata),
-      error => this.handleError());
+    this.initializeScreen();
   }
 
-  initializeScreen(metadata: UserMetadata): void {
-    this.bggUser = metadata.bggLogin;
+  initializeScreen(): void {
+    this.bggUser = this.userService.getCurrentUser();
     const parameters = new OnlineMenuParameters();
     parameters.service = environment.boardGameServiceUrl;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
