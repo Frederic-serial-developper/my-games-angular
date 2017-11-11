@@ -4,5 +4,13 @@
         <a class="menu-item" routerLinkActive="active" routerLink="/plays">My Plays</a>
         <a class="menu-item" routerLinkActive="active" routerLink="/statistics">My Statistics</a>
     </mat-toolbar>
+    <mat-form-field style="margin-left:10px">
+        <mat-select [(ngModel)]="selectedUser" (change)="changeUser()">
+            <mat-option *ngFor="let user of availableUsers" [value]="user">
+                {{ user.name }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
     <router-outlet></router-outlet>
+
 </div>

@@ -5,13 +5,14 @@ import { environment } from '../../environments/environment';
 import { Game } from '../model/game';
 import { UserMetadata } from '../model/userMetadata';
 
-import {ServiceParameters } from '../model/serviceParameters';
+import { ServiceParameters } from '../model/serviceParameters';
 
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { GamesService } from 'app/games-library/games.service';
 import { UserService } from 'app/user.service';
+import { User } from 'app/model/user';
 
 @Component({
   selector: 'app-games-plays',
@@ -24,7 +25,7 @@ export class GamesPlaysComponent implements OnInit {
 
   loading: boolean;
 
-  bggUser: string;
+  currentUser: User;
 
   private ratingOrderAsc: boolean;
   private nameOrderAsc: boolean;
@@ -41,15 +42,16 @@ export class GamesPlaysComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
-    this.initializeScreen();
+    this.userService.userChangeEvent.subscribe(selectedUser => this.initializeScreen(selectedUser));
+    this.initializeScreen(this.userService.getCurrentUser());
   }
 
-  initializeScreen(): void {
+  initializeScreen(user: User): void {
     this.ratingOrderAsc = false;
     this.nameOrderAsc = true;
     this.playsCountOrderAsc = false;
     this.playsDateOrderAsc = true;
-    this.bggUser = this.userService.getCurrentUser();
+    this.currentUser = user;
 
     const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
@@ -59,13 +61,13 @@ export class GamesPlaysComponent implements OnInit {
   }
 
   reload(parameter: ServiceParameters): void {
-    if (this.bggUser) {
+    if (this.currentUser) {
       this.loading = true;
       if (parameter.service === 'local') {
         this.gameLibrayService.getPlaysFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
       } else {
         this.gameLibrayService.getPlays( //
-          this.bggUser, //
+          this.currentUser.bgglogin, //
           parameter.service) //
           .subscribe(
           receivedGames => this.onReceiveData(receivedGames),

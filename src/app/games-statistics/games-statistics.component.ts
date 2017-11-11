@@ -8,8 +8,9 @@ import { UserMetadata } from '../model/userMetadata';
 import { ToasterService } from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
 
-import {ServiceParameters } from '../model/serviceParameters';
+import { ServiceParameters } from '../model/serviceParameters';
 import { UserService } from 'app/user.service';
+import { User } from 'app/model/user';
 
 @Component({
   selector: 'app-games-statistics',
@@ -17,7 +18,7 @@ import { UserService } from 'app/user.service';
 })
 export class GamesStatisticsComponent implements OnInit {
   stats: CollectionStatistics;
-  bggUser: string;
+  currentUser: User;
   loading: boolean;
 
   constructor(private userService: UserService,
@@ -27,15 +28,16 @@ export class GamesStatisticsComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
-    this.initializeScreen();
+    this.userService.userChangeEvent.subscribe(selectedUser => this.initializeScreen(selectedUser));
+    this.initializeScreen(this.userService.getCurrentUser());
   }
 
-  initializeScreen(): void {
-    this.bggUser = this.userService.getCurrentUser();
+  initializeScreen(user: User): void {
     const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
+    this.currentUser = user;
 
     this.reload(parameters);
   }
@@ -47,12 +49,12 @@ export class GamesStatisticsComponent implements OnInit {
 
   reload(parameter: ServiceParameters): void {
     this.loading = true;
-    if (this.bggUser) {
+    if (this.currentUser) {
       if (parameter.service === 'local') {
         this.statsService.getCollectionStatisticsFromFile().subscribe(receivedStats => this.onReceiveData(receivedStats));
       } else {
         this.statsService.getCollectionStatistics( //
-          this.bggUser, //
+          this.currentUser.bgglogin, //
           parameter.service, //
           parameter.includeExpansion, //
           parameter.includePreviouslyOwned) //

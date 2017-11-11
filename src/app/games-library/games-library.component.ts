@@ -5,13 +5,14 @@ import { environment } from '../../environments/environment';
 import { Game } from '../model/game';
 import { UserMetadata } from '../model/userMetadata';
 
-import {ServiceParameters } from '../model/serviceParameters';
+import { ServiceParameters } from '../model/serviceParameters';
 
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
 
 import { GamesService } from 'app/games-library/games.service';
 import { UserService } from 'app/user.service';
+import { User } from 'app/model/user';
 
 @Component({
   selector: 'app-games-library',
@@ -24,7 +25,7 @@ export class GamesLibraryComponent implements OnInit {
 
   loading: boolean;
 
-  bggUser: string;
+  currentUser: User;
 
   private ratingOrderAsc: boolean;
   private nameOrderAsc: boolean;
@@ -37,7 +38,7 @@ export class GamesLibraryComponent implements OnInit {
 
   private selectedGame: Game;
 
-  constructor(private uerService: UserService,
+  constructor(private userService: UserService,
     private gameLibrayService: GameLibraryService,
     private gameService: GamesService,
     private toasterService: ToasterService) {
@@ -45,19 +46,19 @@ export class GamesLibraryComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
-    this.initializeScreen();
+    this.userService.userChangeEvent.subscribe(selectedUser => this.initializeScreen(selectedUser));
+    this.initializeScreen(this.userService.getCurrentUser());
   }
 
-  initializeScreen(): void {
+  initializeScreen(user: User): void {
     this.ratingOrderAsc = false;
     this.nameOrderAsc = true;
     this.playsCountOrderAsc = true;
     this.playsDateOrderAsc = true;
     this.playerCountFilter = 4;
-    this.bggUser = this.uerService.getCurrentUser();
+    this.currentUser = user;
 
     this.initializeGrid();
-
     const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
     this.includeExpansion = false;
@@ -76,13 +77,13 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   reload(parameter: ServiceParameters): void {
-    if (this.bggUser) {
+    if (this.currentUser) {
       this.loading = true;
       if (parameter.service === 'local') {
         this.gameLibrayService.getGamesFromFile().subscribe(receivedGames => this.onReceiveData(receivedGames));
       } else {
         this.gameLibrayService.getGames( //
-          this.bggUser, //
+          this.currentUser.bgglogin, //
           parameter.service, //
           parameter.includeExpansion, //
           parameter.includePreviouslyOwned) //

@@ -1,5 +1,4 @@
 export class User {
-  email: string;
+  bgglogin: string;
   name: string;
-  nickname: string;
 }

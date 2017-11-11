@@ -1,15 +1,16 @@
-<div *ngIf="bggUser">
+<div *ngIf="currentUser">
     <toaster-container></toaster-container>
-    <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion">
-        Expansions
-    </mat-slide-toggle>
-    <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned">
-        Previously Owned
-    </mat-slide-toggle>
-    <button mat-button-icon (click)="reload($event)">
-        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-    </button>
-
+    <div class="filtering-menu">
+        <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion">
+            Expansions
+        </mat-slide-toggle>
+        <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned">
+            Previously Owned
+        </mat-slide-toggle>
+        <button mat-button-icon (click)="reload($event)">
+            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+        </button>
+    </div>
     <div class="statistics-container">
         <div *ngIf="loading">
             <mat-spinner></mat-spinner>
@@ -22,7 +23,7 @@
         </div>
     </div>
 </div>
-<div *ngIf="!loading && !bggUser">
+<div *ngIf="!loading && !currentUser">
     <h3>
         <p>Your boardgamegeek user is not yet configured.</p>
         <p>Please, send a mail to
