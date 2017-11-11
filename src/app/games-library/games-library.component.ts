@@ -5,7 +5,7 @@ import { environment } from '../../environments/environment';
 import { Game } from '../model/game';
 import { UserMetadata } from '../model/userMetadata';
 
-import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
+import {ServiceParameters } from '../model/serviceParameters';
 
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
@@ -58,7 +58,7 @@ export class GamesLibraryComponent implements OnInit {
 
     this.initializeGrid();
 
-    const parameters = new OnlineMenuParameters();
+    const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
     this.includeExpansion = false;
     this.includePreviouslyOwned = false;
@@ -75,7 +75,7 @@ export class GamesLibraryComponent implements OnInit {
 
   }
 
-  reload(parameter: OnlineMenuParameters): void {
+  reload(parameter: ServiceParameters): void {
     if (this.bggUser) {
       this.loading = true;
       if (parameter.service === 'local') {

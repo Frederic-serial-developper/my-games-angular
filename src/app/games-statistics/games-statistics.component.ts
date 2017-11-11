@@ -8,7 +8,7 @@ import { UserMetadata } from '../model/userMetadata';
 import { ToasterService } from 'angular2-toaster';
 import { CollectionStatisticsService } from './games-statistics.service';
 
-import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
+import {ServiceParameters } from '../model/serviceParameters';
 import { UserService } from 'app/user.service';
 
 @Component({
@@ -32,7 +32,7 @@ export class GamesStatisticsComponent implements OnInit {
 
   initializeScreen(): void {
     this.bggUser = this.userService.getCurrentUser();
-    const parameters = new OnlineMenuParameters();
+    const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
@@ -45,7 +45,7 @@ export class GamesStatisticsComponent implements OnInit {
     this.loading = false;
   }
 
-  reload(parameter: OnlineMenuParameters): void {
+  reload(parameter: ServiceParameters): void {
     this.loading = true;
     if (this.bggUser) {
       if (parameter.service === 'local') {

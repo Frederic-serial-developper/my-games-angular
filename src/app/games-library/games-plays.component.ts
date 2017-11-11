@@ -5,7 +5,7 @@ import { environment } from '../../environments/environment';
 import { Game } from '../model/game';
 import { UserMetadata } from '../model/userMetadata';
 
-import { OnlineMenuParameters } from '../online-menu/onlineMenuParameters';
+import {ServiceParameters } from '../model/serviceParameters';
 
 import { GameLibraryService } from './games-library.service';
 import { ToasterService } from 'angular2-toaster';
@@ -51,14 +51,14 @@ export class GamesPlaysComponent implements OnInit {
     this.playsDateOrderAsc = true;
     this.bggUser = this.userService.getCurrentUser();
 
-    const parameters = new OnlineMenuParameters();
+    const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
     this.reload(parameters);
   }
 
-  reload(parameter: OnlineMenuParameters): void {
+  reload(parameter: ServiceParameters): void {
     if (this.bggUser) {
       this.loading = true;
       if (parameter.service === 'local') {

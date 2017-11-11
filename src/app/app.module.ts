@@ -44,7 +44,6 @@ import { GamesStatisticsGlobalComponent } from './games-statistics/games-statist
 import { GamesStatisticsPlaysComponent } from './games-statistics/games-statistics-plays.component';
 import { CollectionStatisticsService } from './games-statistics/games-statistics.service';
 // menu component
-import { OnlineMenuComponent } from './online-menu/online-menu.component';
 import { GamesService } from 'app/games-library/games.service';
 // user service
 import { UserService } from 'app/user.service';
@@ -80,7 +79,6 @@ const appRoutes: Routes = [
     GamesStatisticsGlobalComponent,
     GamesStatisticsYearComponent,
     GamesStatisticsPlaysComponent,
-    OnlineMenuComponent,
     GameFullDetailComponent],
   bootstrap: [AppComponent],
   providers: [
