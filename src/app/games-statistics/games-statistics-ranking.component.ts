@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
+import { GamesStatisticsComponent } from 'app/games-statistics/games-statistics.component';
 
 @Component({
   selector: 'app-games-statistics-ranking',
@@ -21,18 +22,28 @@ export class GamesStatisticsRankingComponent implements OnInit {
 
   barChartData: any[];
 
+  constructor(private statComponent: GamesStatisticsComponent) { }
+
   ngOnInit(): void {
-    this.barChartData = [{data: [
-      this.stats.gamesByRatingLevel.LEVEL_0,
-      this.stats.gamesByRatingLevel.LEVEL_1,
-      this.stats.gamesByRatingLevel.LEVEL_2,
-      this.stats.gamesByRatingLevel.LEVEL_3,
-      this.stats.gamesByRatingLevel.LEVEL_4,
-      this.stats.gamesByRatingLevel.LEVEL_5,
-      this.stats.gamesByRatingLevel.LEVEL_6,
-      this.stats.gamesByRatingLevel.LEVEL_7,
-      this.stats.gamesByRatingLevel.LEVEL_8,
-      this.stats.gamesByRatingLevel.LEVEL_9], label: 'Game count by ranking'}];
+    this.statComponent.statChangeEvent.subscribe(stat => this.loadData(stat));
+    this.loadData(this.stats);
+  }
+
+  loadData(values: CollectionStatistics): void {
+
+    this.barChartData = [{
+      data: [
+        values.gamesByRatingLevel.LEVEL_0,
+        values.gamesByRatingLevel.LEVEL_1,
+        values.gamesByRatingLevel.LEVEL_2,
+        values.gamesByRatingLevel.LEVEL_3,
+        values.gamesByRatingLevel.LEVEL_4,
+        values.gamesByRatingLevel.LEVEL_5,
+        values.gamesByRatingLevel.LEVEL_6,
+        values.gamesByRatingLevel.LEVEL_7,
+        values.gamesByRatingLevel.LEVEL_8,
+        values.gamesByRatingLevel.LEVEL_9], label: 'Game count by ranking'
+    }];
   }
 }
 

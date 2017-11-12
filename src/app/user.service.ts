@@ -9,7 +9,7 @@ export class UserService {
     benjamin: User = { bgglogin: 'benofx', name: 'Benjamin' };
     frederic: User = { bgglogin: 'fredericdib', name: 'Frederic' };
 
-    availableUsers: [User] = [this.benjamin, this.antoni, this.frederic];
+    availableUsers: [User] = [this.antoni, this.benjamin, this.frederic];
     currentUser: User;
 
     constructor() {

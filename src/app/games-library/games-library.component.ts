@@ -58,25 +58,17 @@ export class GamesLibraryComponent implements OnInit {
     this.playerCountFilter = 4;
     this.currentUser = user;
 
-    this.initializeGrid();
     const parameters = new ServiceParameters();
     parameters.service = environment.boardGameServiceUrl;
     this.includeExpansion = false;
     this.includePreviouslyOwned = false;
     parameters.includeExpansion = environment.defaultIncludeExpansion;
     parameters.includePreviouslyOwned = environment.defaultIncludePreviouslyOwned;
-    this.reload(parameters);
+    this.loadStats(parameters);
   }
 
-  private initializeGrid(): void {
 
-  }
-
-  private setGridData(): void {
-
-  }
-
-  reload(parameter: ServiceParameters): void {
+  loadStats(parameter: ServiceParameters): void {
     if (this.currentUser) {
       this.loading = true;
       if (parameter.service === 'local') {
@@ -105,7 +97,6 @@ export class GamesLibraryComponent implements OnInit {
     this.receivedGames = receivedGames;
     this.filterGames();
     this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
-    this.setGridData();
     this.loading = false;
   }
 
@@ -121,7 +112,6 @@ export class GamesLibraryComponent implements OnInit {
       this.includePreviouslyOwned,
       this.playerCountFilter);
     this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
-    this.setGridData();
   }
 
   sortByName(): void {

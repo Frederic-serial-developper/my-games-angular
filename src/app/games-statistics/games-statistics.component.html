@@ -1,21 +1,18 @@
 <div *ngIf="currentUser">
     <toaster-container></toaster-container>
     <div class="filtering-menu">
-        <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion">
+        <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includeExpansion" (change)="updateStats()">
             Expansions
         </mat-slide-toggle>
-        <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned">
+        <mat-slide-toggle class="online-menu-toggle" [(ngModel)]="includePreviouslyOwned" (change)="updateStats()">
             Previously Owned
         </mat-slide-toggle>
-        <button mat-button-icon (click)="reload($event)">
-            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-        </button>
     </div>
     <div class="statistics-container">
         <div *ngIf="loading">
             <mat-spinner></mat-spinner>
         </div>
-        <div *ngIf="!loading && stats != null">
+        <div *ngIf="!loading && stats">
             <app-games-statistics-global class="col-sm-12" [stats]="stats"></app-games-statistics-global>
             <app-games-statistics-ranking class="col-sm-6" [stats]="stats"></app-games-statistics-ranking>
             <app-games-statistics-year class="col-sm-6" [stats]="stats"></app-games-statistics-year>

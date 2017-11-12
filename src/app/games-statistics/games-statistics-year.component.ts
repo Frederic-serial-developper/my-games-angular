@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 import { CollectionStatistics } from '../model/collectionStatistics';
+import { GamesStatisticsComponent } from 'app/games-statistics/games-statistics.component';
 
 @Component({
   selector: 'app-games-statistics-year',
@@ -15,17 +16,25 @@ export class GamesStatisticsYearComponent implements OnInit {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  barChartLabels: string[] = [];
+  barChartLabels: string[];
   barChartType = 'bar';
   barChartLegend = true;
 
   barChartData: any[];
 
+  constructor(private statComponent: GamesStatisticsComponent) { }
+
   ngOnInit(): void {
+    this.statComponent.statChangeEvent.subscribe(stat => this.loadData(stat));
+    this.loadData(this.stats);
+  }
+
+  loadData(values: CollectionStatistics): void {
+    this.barChartLabels = [];
     const data: any[] = [];
     const currentYear = new Date().getFullYear();
     for (let year = 1990; year <= currentYear; year++) {
-      const stat = this.stats.gamesByYear[year];
+      const stat = values.gamesByYear[year];
       if (stat != null) {
         this.barChartLabels.push(year.toString());
         data.push(stat);
