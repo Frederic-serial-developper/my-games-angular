@@ -46,7 +46,7 @@ export class GamesService {
     }
 
     private matchPlayerCountFilter(game: Game, playerCount: number): boolean {
-        return game.data === null || game.data.minPlayers <= playerCount && playerCount <= game.data.maxPlayers;
+        return game.data === null || playerCount === null || game.data.minPlayers <= playerCount && playerCount <= game.data.maxPlayers;
     }
 
     public sortByName(games: Game[], asc: boolean): Game[] {

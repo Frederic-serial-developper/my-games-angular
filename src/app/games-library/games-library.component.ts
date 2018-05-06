@@ -21,7 +21,9 @@ import { User } from 'app/model/user';
 export class GamesLibraryComponent implements OnInit {
   private displayedGames: Game[];
   private receivedGames: Game[];
+
   private displayedGamesCount: number;
+  private playerCountEnabled: boolean;
 
   loading: boolean;
 
@@ -55,6 +57,7 @@ export class GamesLibraryComponent implements OnInit {
     this.nameOrderAsc = true;
     this.playsCountOrderAsc = true;
     this.playsDateOrderAsc = true;
+    this.playerCountEnabled = false;
     this.playerCountFilter = 4;
     this.currentUser = user;
 
@@ -105,13 +108,21 @@ export class GamesLibraryComponent implements OnInit {
   }
 
   filterGames(): void {
+    let filterOnPlayerCount = null;
+    if (this.playerCountEnabled === true) {
+      filterOnPlayerCount = this.playerCountFilter;
+    }
     this.displayedGames = this.gameService.filterGamesWithName(
       this.receivedGames,
       this.gameName,
       this.includeExpansion,
       this.includePreviouslyOwned,
-      this.playerCountFilter);
+      filterOnPlayerCount);
     this.displayedGames = this.gameService.sortByName(this.displayedGames, this.nameOrderAsc);
+  }
+
+  onEnablePlayerCount(event: any): void {
+    this.filterGames();
   }
 
   sortByName(): void {

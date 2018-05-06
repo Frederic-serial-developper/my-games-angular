@@ -31,8 +31,9 @@
                     <span *ngIf="playsDateOrderAsc === true" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                     <span *ngIf="playsDateOrderAsc === false" class="button-icon glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
                 </button>
-            <div matTooltip="Players count" matTooltipPosition="right">
-                <mat-slider [min]="1" [max]="10" [step]="1" [thumb-label]="true" [tick-interval]="1" [value]="playerCountFilter" (input)="onSliderPlayerCountEvent($event)">
+            <div>
+                <mat-checkbox (change)="onEnablePlayerCount($event)" [(ngModel)]="playerCountEnabled">Players count</mat-checkbox>                            
+                <mat-slider [hidden]="!playerCountEnabled" [min]="1" [max]="10" [step]="1" [thumb-label]="true" [tick-interval]="1" [value]="playerCountFilter" (input)="onSliderPlayerCountEvent($event)">
                 </mat-slider>
             </div>
         </div>
